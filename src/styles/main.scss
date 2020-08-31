@@ -7,8 +7,6 @@
 
 @import "./components/autocontainer";
 @import "./components/contactwidget";
-@import "./components/header";
-@import "./components/footer";
 @import "./components/affiliateStores";
 @import "./components/faq";
 @import "./components/impactBox";
@@ -18,6 +16,7 @@
 @import "./components/video";
 @import "./components/whyEcocart";
 
+@import "./layout/header";
 @import "./layout/footer";
 
 @import "./pages/help";

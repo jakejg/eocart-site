@@ -27,6 +27,7 @@
         font-size: 3.6rem;
         margin-bottom: 1.6rem;
         color: $color-black;
+        text-align: left;
         @media (max-width: 37.5em) {
           text-align: center;
         }
@@ -61,7 +62,7 @@
     font-size: 1.6rem;
     font-weight: 700;
     color: $color-black;
-
+    text-align: left;
     @media (max-width: 37.5em) {
       font-size: 2rem;
     }
@@ -132,6 +133,7 @@
     font-size: 1.6rem;
     font-weight: 700;
     color: $color-black;
+    text-align: left;
   }
   .faqs {
     .faq {

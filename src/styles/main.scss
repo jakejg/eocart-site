@@ -1,0 +1,25 @@
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+@import "~bootstrap/scss/bootstrap";
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/autocontainer";
+@import "./components/contactwidget";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/affiliateStores";
+@import "./components/faq";
+@import "./components/impactBox";
+@import "./components/landing";
+@import "./components/projectBox";
+@import "./components/testimonial";
+@import "./components/video";
+@import "./components/whyEcocart";
+
+@import "./layout/footer";
+
+@import "./pages/help";
+@import "./pages/categoryfaq";
+@import "./pages/index";

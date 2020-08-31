@@ -1,0 +1,82 @@
+.panel-default {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  border-color: #efefef;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.29);
+}
+
+.panel-collapse {
+  height: 495px;
+  max-height: 495px;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+}
+
+.panel-close {
+  max-height: 0;
+}
+
+.panel-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-expand {
+  cursor: pointer;
+  border-bottom: 1.5px solid #00924a;
+  text-align: center;
+}
+
+#project-photo {
+  border-radius: 100%;
+  width: 160px;
+  padding: 10px;
+}
+
+#heading-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#project-title {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.box-label {
+  font-size: 20px;
+  font-weight: 600;
+  color: #00b04e;
+  text-align: center;
+}
+
+ul {
+  height: 220px;
+  list-style-image: url("../images/projects/check-16px.png");
+}
+
+li {
+  text-align: left;
+  font-size: 14px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.sd-image {
+  width: 75px;
+  padding-bottom: 1vh;
+}
+
+.project-images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.verification-image {
+  width: auto;
+  height: 6vh;
+  padding-bottom: 3vh;
+}

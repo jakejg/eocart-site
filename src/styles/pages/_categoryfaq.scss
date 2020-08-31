@@ -1,0 +1,116 @@
+.category_page {
+  padding: 6rem 0;
+  .form-group {
+    position: relative;
+    svg {
+      position: absolute;
+      font-size: 1.6rem;
+      top: 25%;
+      left: 4%;
+      color: $color-light;
+      @media (max-width: 56.25em) {
+        left: 2%;
+      }
+      @media (max-width: 37.5em) {
+        left: 3%;
+        top: 35%;
+      }
+    }
+
+    ::placeholder {
+      color: $color-light;
+    }
+    .autoContainer {
+      top: 4.5rem !important;
+      width: 35rem;
+      z-index: 1;
+    }
+  }
+  input {
+    padding: 1.6rem 3.2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    @media (max-width: 37.5em) {
+      padding: 2.4rem 4rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  .nav-link {
+    color: $color-light-black;
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+    font-weight: 400;
+    width: max-content;
+    color: $color-black;
+    font-weight: 500;
+    padding: 1rem 0 0.3rem 0;
+    @media (max-width: 37.5em) {
+      font-weight: 700;
+    }
+    &:active {
+      border: 0px;
+      box-shadow: none;
+      outline: none;
+    }
+
+    &.active {
+      border-bottom: 0.4rem solid $color-green;
+      font-weight: 700;
+    }
+  }
+  .tab_container {
+    box-shadow: 0 0.2rem 0.9rem 0 rgba($color-black, 0.03);
+    border: solid 0.1rem rgba($color-black, 0.06);
+    border-radius: 0.2rem;
+    padding: 4rem 3rem;
+    .title {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 3rem;
+      color: $color-black;
+    }
+    .faqs {
+      .faq {
+        border-top: 0.05rem solid rgba($color-light, 0.5);
+        padding: 1rem 0;
+        &:last-child {
+          border-bottom: 0.05rem solid rgba($color-light, 0.5);
+        }
+      }
+    }
+
+    .faq {
+      padding: 0;
+    }
+    .faq_title {
+      color: $color-green;
+      font-size: 1.8rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 500;
+      width: 100%;
+      letter-spacing: 0.05rem;
+      padding: 0 1rem;
+      line-height: 1.8;
+      box-shadow: none;
+      text-align: left;
+      @media (max-width: 37.5em) {
+        font-size: 2rem;
+      }
+    }
+    .faq_body {
+      font-size: 1.6rem;
+      line-height: 2.1;
+      color: $color-light-black;
+      font-weight: 400;
+      letter-spacing: 0.05rem;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}

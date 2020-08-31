@@ -1,0 +1,47 @@
+.autoContainer {
+  position: absolute;
+  top: 6.3rem;
+  left: 2rem;
+  background-color: $color-white;
+  width: 85%;
+  display: flex;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.2rem 0.9rem 0 rgba($color-black, 0.03);
+  border: solid 0.1rem rgba($color-black, 0.06);
+  flex-direction: column;
+  padding: 0.5rem 0;
+  &:before,
+  &:after {
+    bottom: 100%;
+    left: 12%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    background: transparent;
+  }
+  &:before {
+    border-color: rgba(32, 32, 32, 0);
+    border-bottom-color: rgba(32, 32, 32, 0.1);
+    border-width: 1.1rem;
+    margin-left: -1.1rem;
+  }
+  &:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #ffffff;
+    border-width: 1rem;
+    margin-left: -1rem;
+  }
+  a {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: $color-light-black;
+    text-decoration: none;
+    &:hover {
+      background: $color-green;
+      color: $color-white;
+    }
+  }
+}

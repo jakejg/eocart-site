@@ -1,0 +1,178 @@
+.hero_section {
+  height: 50rem;
+  background-color: #eaf6fa;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 30%;
+  background-image: url("../images/hero-bg.png");
+  @media (min-width: 112.5em) {
+    background-size: 30%;
+  }
+  @media (max-width: 75em) {
+    background-size: 35%;
+  }
+  @media (max-width: 56.25em) {
+    background-size: 40%;
+  }
+  @media (max-width: 37.5em) {
+    background-size: 45%;
+  }
+
+  .container {
+    height: 100%;
+    .row {
+      height: 100%;
+      h2 {
+        font-weight: bold;
+        font-size: 3.6rem;
+        margin-bottom: 1.6rem;
+        color: $color-black;
+        @media (max-width: 37.5em) {
+          text-align: center;
+        }
+      }
+      .form-group {
+        position: relative;
+        svg {
+          position: absolute;
+          font-size: 1.8rem;
+          top: 30%;
+          left: 2.5%;
+          color: $color-light;
+        }
+
+        ::placeholder {
+          color: $color-light;
+        }
+      }
+      input {
+        padding: 2.4rem 4rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.categories_section {
+  padding: 6rem 0;
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $color-black;
+
+    @media (max-width: 37.5em) {
+      font-size: 2rem;
+    }
+  }
+
+  .cat_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 450px) {
+      grid-template-columns: 1fr;
+    }
+    a {
+      text-decoration-color: $color-green;
+    }
+    .category {
+      border: 0.1rem solid $color-light;
+      padding: 6rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.3rem;
+      transition: box-shadow 0.3s;
+
+      @media (max-width: 1000px) {
+        padding: 4rem 0;
+      }
+      @media (max-width: 450px) {
+        padding: 8rem 0;
+      }
+
+      cursor: pointer;
+      &:hover {
+        box-shadow: 0 2rem 2rem -2rem rgba($color-light-black, 0.5);
+        text-decoration-color: $color-green;
+      }
+      &_img {
+        height: 16rem;
+        @media (max-width: 37.5em) {
+          height: 25rem;
+        }
+      }
+      &_title {
+        margin-top: 2.8rem;
+        color: $color-light-black;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        font-weight: 500;
+        line-height: 1.4;
+        text-align: center;
+        text-decoration-color: $color-green;
+        @media (max-width: 37.5em) {
+          font-size: 2.8rem;
+        }
+      }
+    }
+  }
+}
+
+.faqs_section {
+  padding-bottom: 6rem;
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $color-black;
+  }
+  .faqs {
+    .faq {
+      border-top: 0.05rem solid rgba($color-light, 0.5);
+      padding: 1rem 0;
+      &:last-child {
+        border-bottom: 0.05rem solid rgba($color-light, 0.5);
+      }
+    }
+  }
+
+  .faq {
+    padding: 0;
+
+    &_title {
+      color: $color-green;
+      font-size: 1.8rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 500;
+      width: 100%;
+      letter-spacing: 0.05rem;
+      padding: 0 1rem;
+      line-height: 1.8;
+      box-shadow: none;
+      text-align: left;
+      @media (max-width: 37.5em) {
+        font-size: 2rem;
+      }
+    }
+    &_body {
+      font-size: 1.6rem;
+      line-height: 2.1;
+      color: $color-light-black;
+      font-weight: 400;
+      letter-spacing: 0.05rem;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 1rem;
+    }
+  }
+}

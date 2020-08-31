@@ -1,0 +1,76 @@
+.no-gutters {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* HOW IT WORKS SECTION */
+
+#how-it-works {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  padding: 5vh 0;
+}
+
+/* IMPACT/PROJECTS SECTION */
+#impact {
+  background-color: #ffffff;
+  height: auto;
+  padding: 8vh 0;
+}
+
+.impact-box-container {
+  padding-top: 8vh;
+  padding-bottom: 10vh;
+  max-width: 100vw;
+}
+
+.impact-subtitle-container {
+  padding-bottom: 8vh;
+}
+.impact-sub-heading {
+  width: 100%;
+  line-height: 0.1em;
+}
+
+.impact-sub-heading span {
+  font-weight: 500;
+  background: #fff;
+}
+
+.project-boxes {
+  display: flex;
+  justify-content: center;
+}
+
+/* TESTIMONIAL SECTION */
+
+#testimonials {
+  padding: 5vh 0;
+  text-align: center;
+  background-color: #eaf6fa;
+  height: auto;
+}
+
+/* QUESTIONS SECTION */
+
+#questions {
+  padding: 5vh 30vh;
+  height: auto;
+}
+
+.container {
+  text-align: center;
+}
+
+/* BOTTOM SECTION */
+
+#bottom {
+  height: auto;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  text-align: center;
+  background-color: #efefef;
+}

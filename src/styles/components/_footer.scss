@@ -1,0 +1,120 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  background-color: #262626;
+  height: 57vh;
+}
+
+.footer-content {
+  width: 75vw;
+}
+
+/* Image styles */
+.footer-logo {
+  display: flex;
+  width: 40vw;
+  flex-direction: column;
+  padding: 1.7rem 0 0;
+  background: url(../images/footer-bg.svg) bottom left no-repeat;
+}
+
+.ecocart-logo {
+  height: auto;
+}
+
+.paper-airplane {
+  width: 30vw;
+  height: auto;
+}
+
+/* Resources and about section styles */
+.logo-ecocart-businesses {
+  display: flex;
+  height: 45vh;
+  border-bottom: 1px solid white;
+}
+
+.ecocart-businesses {
+  display: flex;
+  width: 35vw;
+  padding: 30px 0px;
+}
+
+.ecocart-businesses a {
+  cursor: pointer;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 0;
+}
+
+.ecocart-businesses a:hover {
+  color: #00b04f;
+}
+
+.footer-ecocart,
+.footer-businesses {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.ecocart-businesses h2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: normal;
+  color: #00b050;
+  margin-bottom: 1rem;
+}
+
+/* Social media and Shopify app store icon styles */
+.footer-underline {
+  color: #fff;
+  border-top: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 1em 0em;
+}
+
+.footer-underline-col {
+  display: flex;
+  flex: 0 0 50%;
+}
+
+.footer-underline a {
+  display: block;
+  margin: 0 0.75rem;
+  border: 0;
+}
+
+i.heart {
+  display: inline-block;
+  background: url(../images/heart-icon.svg) center no-repeat;
+  background-size: contain;
+  width: 1.6rem;
+  height: 1.3rem;
+}
+.madewith {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.copyright {
+  font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 1600px) {
+  .logo-ecocart-businesses {
+    height: 35vh;
+  }
+}
+
+/* Hide footer on small devices */
+@media only screen and (max-width: 800px) {
+  .footer-component {
+    display: none;
+  }
+}

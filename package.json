@@ -19,6 +19,7 @@
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-sharp": "^2.6.28",
     "gatsby-source-filesystem": "^2.3.25",
+    "gatsby-source-graphql": "^2.7.2",
     "gatsby-transformer-sharp": "^2.5.13",
     "gsap": "^3.5.1",
     "isomorphic-fetch": "^2.2.1",

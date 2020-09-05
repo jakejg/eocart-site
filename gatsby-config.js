@@ -7,6 +7,17 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: "gatsby-source-graphql",
+      options: {
+        // Arbitrary name for the remote schema Query type
+        typeName: "WORDPRESS",
+        // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
+        fieldName: "wordpress",
+        // Url to query from
+        url: "https://ecocart.io/graphql",
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

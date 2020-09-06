@@ -27,7 +27,6 @@ const DropdownComponent = () => {
     }
   `);
   const [display, setDisplay] = useState(false);
-  const [options, setOptions] = useState([]);
   const [search, setSeatch] = useState("");
   const onTextChange = (e) => {
     setSeatch(e.target.value);

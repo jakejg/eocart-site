@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import SEO from "../components/seo";
 import Grid from "../components/About/grid";
 import Info from "../components/About/info";
+import Cta from "../components/About/cta";
 
 const About = () => {
   return (
@@ -93,6 +94,7 @@ const About = () => {
             </Row>
           </Container>
         </section>
+        <Cta />
       </div>
     </Layout>
   );

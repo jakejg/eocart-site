@@ -46,7 +46,7 @@ const ContactWidget = () => {
     tl.to(".contact_form", {
       duration: 0.7,
       ease: "power1.out",
-      y: 500,
+      y: '100vh',
     }).to(".contact_btn", {
       duration: 0.1,
       ease: "power3.in",

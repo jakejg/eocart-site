@@ -10,7 +10,6 @@ import {
 } from "react-bootstrap";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import DropdownComponent from "../components/General/dropdownComponent";
-import { FaChevronDown } from "react-icons/fa";
 import SEO from "../components/seo";
 import Layout from "../components/layout";
 
@@ -25,25 +24,6 @@ const Faq = (props) => {
               id
               name
               slug
-            }
-          }
-        }
-      }
-      faqs: wordpress {
-        ecocartFaqs {
-          edges {
-            node {
-              id
-              title
-              content
-              ecocartFaqCategories {
-                edges {
-                  node {
-                    name
-                    slug
-                  }
-                }
-              }
             }
           }
         }

@@ -1,16 +1,31 @@
 import React, { useState } from "react";
+import { useStaticQuery, graphql, Link } from "gatsby";
 import { Form } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
-// import faqs from "../faqs";
 
 const DropdownComponent = () => {
-  const faqs = [
-    { name: "zeeshan" },
-    { name: "sobia" },
-    { name: "gurya" },
-    { name: "kiran" },
-    { name: "razo" },
-  ];
+  const data = useStaticQuery(graphql`
+    query {
+      faqs: wordpress {
+        ecocartFaqs {
+          edges {
+            node {
+              id
+              title
+              ecocartFaqCategories {
+                edges {
+                  node {
+                    name
+                    slug
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
   const [display, setDisplay] = useState(false);
   const [options, setOptions] = useState([]);
   const [search, setSeatch] = useState("");
@@ -33,12 +48,19 @@ const DropdownComponent = () => {
       <FaSearch />
       {display && (
         <div className="autoContainer">
-          {faqs.map((result, index) => {
-            return (
-              <a key={index} href="#">
-                {result.name}
-              </a>
-            );
+          {data.faqs.ecocartFaqs.edges.map((result, index) => {
+            if (
+              result.node.title.toLowerCase().indexOf(search.toLowerCase()) ===
+              -1
+            ) {
+              return null;
+            } else {
+              return (
+                <Link key={index} to={`/category/privacy`}>
+                  {result.node.title}
+                </Link>
+              );
+            }
           })}
         </div>
       )}

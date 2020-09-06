@@ -1,7 +1,28 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require(`path`);
 
-// You can delete this file if you're not using it
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions;
+  const { data } = await graphql(`
+    query {
+      wordpress {
+        ecocartFaqCategories {
+          nodes {
+            slug
+            name
+          }
+        }
+      }
+    }
+  `);
+  if (!data.wordpress) return null;
+  data.wordpress.ecocartFaqCategories.nodes.forEach((cat) => {
+    createPage({
+      path: `/category/${cat.slug}`,
+      component: path.resolve(`./src/templates/category.js`),
+      context: {
+        slug: cat.slug,
+        name: cat.name,
+      },
+    });
+  });
+};

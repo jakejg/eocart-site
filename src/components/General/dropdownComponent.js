@@ -12,14 +12,7 @@ const DropdownComponent = () => {
             node {
               id
               title
-              ecocartFaqCategories {
-                edges {
-                  node {
-                    name
-                    slug
-                  }
-                }
-              }
+              slug
             }
           }
         }
@@ -55,7 +48,7 @@ const DropdownComponent = () => {
               return null;
             } else {
               return (
-                <Link key={index} to={`/category/privacy`}>
+                <Link key={index} to={`/${result.node.slug}`}>
                   {result.node.title}
                 </Link>
               );

@@ -11,6 +11,13 @@ exports.createPages = async ({ graphql, actions }) => {
             name
           }
         }
+        ecocartFaqs {
+          nodes {
+            slug
+            title
+            content
+          }
+        }
       }
     }
   `);
@@ -22,6 +29,17 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         slug: cat.slug,
         name: cat.name,
+      },
+    });
+  });
+  data.wordpress.ecocartFaqs.nodes.forEach((faq) => {
+    createPage({
+      path: `/${faq.slug}`,
+      component: path.resolve(`./src/templates/faq.js`),
+      context: {
+        slug: faq.slug,
+        title: faq.title,
+        content: faq.content,
       },
     });
   });

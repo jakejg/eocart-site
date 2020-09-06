@@ -75,6 +75,33 @@
       text-align: left;
     }
     .faqs {
+      .sfaq_header {
+        background-color: $color-white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        h2 {
+          color: $color-green;
+          font-size: 2.8rem;
+          text-decoration: none;
+          font-weight: 500;
+          width: 100%;
+          letter-spacing: 0.05rem;
+          line-height: 1.4;
+          box-shadow: none;
+          text-align: left;
+        }
+      }
+      .sfaq_body {
+        font-size: 1.6rem;
+        line-height: 2.1;
+        color: $color-light-black;
+        font-weight: 400;
+        letter-spacing: 0.05rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: left;
+      }
       .faq {
         border-top: 0.05rem solid rgba($color-light, 0.5);
         padding: 1rem 0;

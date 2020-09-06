@@ -1,6 +1,10 @@
 .category_page {
   margin-top: 8rem;
   padding: 6rem 0;
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .form-group {
     position: relative;
     svg {
@@ -93,8 +97,8 @@
         }
       }
       .sfaq_body {
-        font-size: 1.6rem;
-        line-height: 2.1;
+        font-size: 1.4rem;
+        line-height: 1.7;
         color: $color-light-black;
         font-weight: 400;
         letter-spacing: 0.05rem;

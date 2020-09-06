@@ -68,7 +68,7 @@ const ContactWidget = () => {
             {(createSubmission, { loading, error, data }) => (
               <>
                 <div>
-                  {loading && <p>Loading...</p>}
+                  {loading && <p class="loading">Loading...</p>}
                   {error && (
                     <p className="error">
                       An unknown error has occured, please try again later...

@@ -61,7 +61,6 @@
     .div1 {
       grid-row: -1/1;
       grid-column: 1/2;
-      width: 100%;
       height: 70%;
       align-self: center;
       grid-column: span 1 / span 2;
@@ -102,7 +101,7 @@
 
   .info {
     background-color: #eaf6fa;
-    padding: 4rem 0;
+    padding: 6rem 0;
 
     h1 {
       font-size: 4rem;
@@ -141,6 +140,54 @@
       p {
         font-size: 1.6rem;
       }
+    }
+  }
+
+  .business {
+    padding: 6rem 0;
+
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      grid-gap: 15px;
+      width: 100%;
+      div {
+        min-height: 12rem;
+        width: 100%;
+      }
+      .div1 {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        background-color: #4ca3b8;
+      }
+      .div2 {
+        grid-column: 3/-1;
+        grid-row: 1/3;
+        background-image: url("../images/about5.svg");
+        background-size: cover;
+      }
+      .div3 {
+        grid-column: 1/3;
+        grid-row: 3/-1;
+        background-image: url("../images/about5.svg");
+        background-size: cover;
+      }
+      .div4 {
+        grid-column: 3/-1;
+        grid-row: 3/-1;
+        background-color: #009249;
+      }
+    }
+    h2 {
+      text-align: left;
+      font-weight: bold;
+      font-size: 3.2rem;
+    }
+    .content {
+      text-align: left;
+      font-size: 1.6rem;
+      font-weight: 500;
     }
   }
 }

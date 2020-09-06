@@ -20,13 +20,13 @@ const About = () => {
               </Col>
             </Row>
             <Grid />
-            <Row class="justify-content-center">
+            <Row className="justify-content-center">
               <Col lg="10" sm style={{ margin: "0 auto" }}>
                 <h3 class="about__hero-sheading">
                   We believe everyone should have the information they need to
                   make the best decisions with their money
                 </h3>
-                <div class="about__hero-content">
+                <div className="about__hero-content">
                   <p>
                     It’s easy to spend money online. But getting the most value
                     is a different story. Take shopping for example. Finding the
@@ -58,6 +58,38 @@ const About = () => {
             </Row>
             <Row>
               <Info />
+            </Row>
+          </Container>
+        </section>
+        <section className="business">
+          <Container>
+            <Row className="align-items-center">
+              <Col md={6} sm>
+                <div className="business__grid">
+                  <div className="div1"></div>
+                  <div className="div2"></div>
+                  <div className="div3"></div>
+                  <div className="div4"></div>
+                </div>
+              </Col>
+              <Col md={6} sm>
+                <h2>Our buinsess</h2>
+                <div className="content">
+                  <p>
+                    We will never sell your data. We're in the business of
+                    saving the planet, not violating your privacy.
+                  </p>
+                  <p>
+                    We earn a comission when you shop with our 10,000+ brand
+                    partners, and then use it to fund certified carbon offset
+                    projects on your behalf.
+                  </p>
+                  <p>
+                    With EcoCart, you don't have to choose between helping the
+                    planet and shopping at your favorite stores.
+                  </p>
+                </div>
+              </Col>
             </Row>
           </Container>
         </section>

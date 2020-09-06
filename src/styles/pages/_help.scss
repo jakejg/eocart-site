@@ -1,10 +1,10 @@
 .hero_section {
-  margin-top: 8rem;
-  height: 50rem;
+  margin-top: 6rem;
+  height: 40rem;
   background-color: #eaf6fa;
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 30%;
+  background-size: 27%;
   background-image: url("../images/hero-bg.png");
   @media (min-width: 112.5em) {
     background-size: 30%;
@@ -176,6 +176,7 @@
       padding-top: 0;
       padding-bottom: 0;
       margin-top: 1rem;
+      text-align: left;
     }
   }
 }

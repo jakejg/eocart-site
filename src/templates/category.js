@@ -57,7 +57,7 @@ const Category = (props) => {
       <div className="category_page">
         <Container>
           <Row>
-            <Col sm={12} md={3}>
+            <Col sm md={3}>
               <DropdownComponent />
               <Nav variant="link" className="flex-column">
                 {data.faqCategories.ecocartFaqCategories.edges.map((faq) => (
@@ -74,7 +74,7 @@ const Category = (props) => {
                 ))}
               </Nav>
             </Col>
-            <Col sm={12} md={9}>
+            <Col sm md={9}>
               <div className="tab_container">
                 <div className="faqs">
                   <h2 className="title">{name}</h2>

@@ -1,6 +1,6 @@
 .contact_form {
   position: fixed;
-  z-index: 1;
+  z-index: 10001;
   background-color: $color-white;
   bottom: 0;
   right: 3%;
@@ -14,17 +14,25 @@
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
+  .loading {
+    padding: 1rem 0 2rem 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+  }
   .success {
     padding: 1rem 0 2rem 0;
     font-size: 1.8rem;
     font-weight: 500;
     color: $color-green;
+    text-align: center;
   }
   .error {
     padding: 1rem 0 2rem 0;
     font-size: 1.8rem;
     font-weight: 500;
     color: #721c24;
+    text-align: center;
   }
   &__header {
     background-color: $color-green;

@@ -12,7 +12,6 @@ const DropdownComponent = () => {
             node {
               id
               title
-              content
               slug
             }
           }
@@ -43,7 +42,7 @@ const DropdownComponent = () => {
         <div className="autoContainer">
           {data.faqs.ecocartFaqs.edges.map((result, index) => {
             if (
-              result.node.content.toLowerCase().indexOf(search.toLowerCase()) ===
+              result.node.title.toLowerCase().indexOf(search.toLowerCase()) ===
               -1
             ) {
               return null;

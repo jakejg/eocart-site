@@ -26,7 +26,7 @@ const Info = () => {
   return (
     <>
       {data.map((item) => (
-        <Col sm key={item.id} className="infoBox">
+        <Col md key={item.id} className="infoBox">
           <img src={require(`../../images/${item.img}`)} />
           <h2>{item.name}</h2>
           <p>{item.span}</p>

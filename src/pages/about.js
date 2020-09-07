@@ -65,7 +65,7 @@ const About = () => {
         <section className="business">
           <Container>
             <Row className="align-items-center">
-              <Col md={6} sm>
+              <Col lg={6} md>
                 <div className="business__grid">
                   <div className="div1"></div>
                   <div className="div2"></div>
@@ -73,7 +73,7 @@ const About = () => {
                   <div className="div4"></div>
                 </div>
               </Col>
-              <Col md={6} sm>
+              <Col lg={6} md className="mt-5">
                 <h2>Our buinsess</h2>
                 <div className="content">
                   <p>

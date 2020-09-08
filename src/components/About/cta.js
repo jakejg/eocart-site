@@ -10,7 +10,7 @@ const Cta = () => {
             <h2>
               Ready to start
               <br />
-              shopping sustainabliy?
+              shopping sustainably?
             </h2>
             <a
               className="btn navbar-button"

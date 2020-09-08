@@ -75,7 +75,7 @@ const About = () => {
                 </div>
               </Col>
               <Col lg={6} md className="mt-5 business__content">
-                <h2>Our buinsess</h2>
+                <h2>Our business</h2>
                 <div className="content">
                   <p>
                     We will never sell your data. We’re in the business of

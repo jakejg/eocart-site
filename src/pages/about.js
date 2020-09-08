@@ -24,24 +24,25 @@ const About = () => {
             <Row className="justify-content-center">
               <Col lg="10" sm style={{ margin: "0 auto" }}>
                 <h3 class="about__hero-sheading">
-                  We believe everyone should have the information they need to
-                  make the best decisions with their money
+                  We make fighting climate change simple, cost-effective, and
+                  accessible for everyone.
                 </h3>
                 <div className="about__hero-content">
-                  <p>
-                    We make fighting climate change simple, cost-effective, and
-                    accessible for everyone.
-                  </p>
                   <p>
                     We love shopping — But it’s a huge contributor to climate
                     change. Everyday in the U.S. alone, online orders travel
                     about the same distance as going to the moon and back
-                    ...133,000 times! EcoCart is here to help. Every time you
-                    shop at one of our 10,000+ partner stores, we’ll
-                    automatically offset the environmental impact of your order.
-                    Plus, you’ll earn EcoPoints that you can use for gift cards
-                    or to make an even bigger impact on the planet. The best
-                    part? EcoCart is always FREE.
+                    <strong> ...133,000 times!</strong>
+                  </p>
+                  <p>
+                    EcoCart is here to help. Every time you shop at one of our
+                    10,000+ partner stores, we’ll automatically offset the
+                    environmental impact of your order. Plus, you’ll earn
+                    EcoPoints that you can use for gift cards or to make an even
+                    bigger impact on the planet.
+                  </p>
+                  <p>
+                    The best part? EcoCart is always <strong> FREE.</strong>
                   </p>
                 </div>
               </Col>

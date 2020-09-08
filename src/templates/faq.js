@@ -12,6 +12,7 @@ import { useStaticQuery, graphql, Link } from "gatsby";
 import DropdownComponent from "../components/General/dropdownComponent";
 import SEO from "../components/seo";
 import Layout from "../components/layout";
+import ContactWidget from "../components/General/contactWidget";
 
 const Faq = (props) => {
   const { title, content, slug } = props.pageContext;
@@ -73,6 +74,7 @@ const Faq = (props) => {
           </Row>
         </Container>
       </div>
+      <ContactWidget />
     </Layout>
   );
 };

@@ -4,6 +4,7 @@ import Categories from "../components/Help/categories";
 import Faqs from "../components/Help/faqs";
 import SEO from "../components/seo";
 import Layout from "../components/layout";
+import ContactWidget from "../components/General/contactWidget";
 
 const Help = () => {
   return (
@@ -14,6 +15,7 @@ const Help = () => {
         <Categories />
         <Faqs />
       </div>
+      <ContactWidget />
     </Layout>
   );
 };

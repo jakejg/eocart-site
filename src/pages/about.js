@@ -29,21 +29,19 @@ const About = () => {
                 </h3>
                 <div className="about__hero-content">
                   <p>
-                    It’s easy to spend money online. But getting the most value
-                    is a different story. Take shopping for example. Finding the
-                    best deal takes time, prices change depending on the buyer,
-                    and payment methods aren’t always in your best interest.
-                  </p>
-                  <p>We don’t think that’s fair.</p>
-                  <p>
-                    Honey is here to help. We give everyone the tools it takes
-                    to find the best savings, perks, and all around value. And
-                    we make them free and easy-to-use. So you can always spend
-                    with confidence.
+                    We make fighting climate change simple, cost-effective, and
+                    accessible for everyone.
                   </p>
                   <p>
-                    If it involves spending money online, we’ll be there to
-                    help.
+                    We love shopping — But it’s a huge contributor to climate
+                    change. Everyday in the U.S. alone, online orders travel
+                    about the same distance as going to the moon and back
+                    ...133,000 times! EcoCart is here to help. Every time you
+                    shop at one of our 10,000+ partner stores, we’ll
+                    automatically offset the environmental impact of your order.
+                    Plus, you’ll earn EcoPoints that you can use for gift cards
+                    or to make an even bigger impact on the planet. The best
+                    part? EcoCart is always FREE.
                   </p>
                 </div>
               </Col>
@@ -73,20 +71,20 @@ const About = () => {
                   <div className="div4"></div>
                 </div>
               </Col>
-              <Col lg={6} md className="mt-5">
+              <Col lg={6} md className="mt-5 business__content">
                 <h2>Our buinsess</h2>
                 <div className="content">
                   <p>
-                    We will never sell your data. We're in the business of
+                    We will never sell your data. We’re in the business of
                     saving the planet, not violating your privacy.
                   </p>
                   <p>
-                    We earn a comission when you shop with our 10,000+ brand
+                    We earn a commission when you shop with our 10,000+ brand
                     partners, and then use it to fund certified carbon offset
                     projects on your behalf.
                   </p>
                   <p>
-                    With EcoCart, you don't have to choose between helping the
+                    With EcoCart, you don’t have to choose between helping the
                     planet and shopping at your favorite stores.
                   </p>
                 </div>

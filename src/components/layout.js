@@ -7,7 +7,6 @@
 
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
-import ContactWidget from "./General/contactWidget";
 import Header from "./header";
 import Footer from "./footer";
 import "../styles/main.scss";
@@ -21,7 +20,6 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <main>{children}</main>
-      <ContactWidget />
       <Footer />
     </>
   );

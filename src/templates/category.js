@@ -13,6 +13,7 @@ import DropdownComponent from "../components/General/dropdownComponent";
 import { FaChevronDown } from "react-icons/fa";
 import SEO from "../components/seo";
 import Layout from "../components/layout";
+import ContactWidget from "../components/General/contactWidget";
 
 const Category = (props) => {
   const { name, slug } = props.pageContext;
@@ -113,6 +114,7 @@ const Category = (props) => {
           </Row>
         </Container>
       </div>
+      <ContactWidget />
     </Layout>
   );
 };

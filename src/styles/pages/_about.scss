@@ -153,6 +153,10 @@
       display: inline;
       position: relative;
 
+      @media (max-width: 403px) {
+        font-size: 3rem;
+      }
+
       &:before,
       &:after {
         content: "";
@@ -162,6 +166,9 @@
         height: 0.15rem;
         top: 50%;
         transform: translateY(-50%);
+        @media (max-width: 330px) {
+          display: none;
+        }
       }
       &:before {
         left: -4rem;
@@ -185,6 +192,9 @@
         font-size: 1.6rem;
         color: #404040;
         font-weight: 500;
+        @media (max-width: 767px) {
+          font-size: 2.2rem;
+        }
       }
     }
   }

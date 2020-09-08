@@ -57,9 +57,9 @@
     margin: 4rem 0;
     width: 100%;
     display: grid;
-    grid-template-columns: 14% 34.5% 34.5% 14%;
-    grid-column-gap: 1%;
-    grid-row-gap: 1rem;
+    grid-template-columns: 14% 34% 34% 14%;
+    grid-column-gap: 1.5%;
+    grid-row-gap: 1.5rem;
     grid-template-rows: repeat(2, 1fr);
 
     @media (max-width: 570px) {

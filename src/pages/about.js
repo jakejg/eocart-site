@@ -67,6 +67,8 @@ const About = () => {
                 <div className="business__grid">
                   <div className="div1"></div>
                   <div className="div2"></div>
+                </div>
+                <div className="business__grid2">
                   <div className="div3"></div>
                   <div className="div4"></div>
                 </div>

@@ -4,8 +4,6 @@ import {
   Col,
   Row,
   Container,
-  Accordion,
-  Button,
   Card,
 } from "react-bootstrap";
 import { useStaticQuery, graphql, Link } from "gatsby";

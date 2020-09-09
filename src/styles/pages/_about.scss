@@ -145,7 +145,7 @@
     background-color: #eaf6fa;
     padding: 5rem 0;
 
-    .infoBox:not(last-child) {
+    .infoBox:not(:last-child) {
       @media (max-width: 767px) {
         margin-bottom: 5rem !important;
       }
@@ -283,7 +283,7 @@
       text-align: left;
       font-size: 1.7rem;
       font-weight: 500;
-      @media (min-width: 767px) {
+      @media (max-width: 767px) {
         font-size: 2rem;
       }
     }

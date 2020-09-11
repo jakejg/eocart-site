@@ -21,7 +21,7 @@ export default class ProjectBox extends Component {
             ></img>
             <div id="heading-text" className="vertical-center">
               <h3 id="project-title">{this.props.title}</h3>
-              <i style={{ fontSize: "14px" }}>
+              <i style={{ fontSize: "16px" }}>
                 <img src={pin} height="25px" width="25px" alt="green pin"></img>
                 {this.props.location}
               </i>

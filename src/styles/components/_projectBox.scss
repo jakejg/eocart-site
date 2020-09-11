@@ -26,6 +26,13 @@
   cursor: pointer;
   border-bottom: 1.5px solid #00924a;
   text-align: center;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #212529;
+  &:hover {
+    text-decoration: none;
+    color: #212529;
+  }
 }
 
 #project-photo {
@@ -42,7 +49,7 @@
 }
 
 #project-title {
-  font-size: 1.5em;
+  font-size: 2.4em;
   font-weight: 700;
 }
 

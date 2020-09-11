@@ -5,7 +5,6 @@ const Landing = React.forwardRef((props, ref) => {
   return (
     <section id="landing">
       <div ref={ref}>
-        <img src={props.logo} alt="EcoCart" id="logo" />
         <div id="content">
           <h1>Click Button. Save Planet.</h1>
           <h3>

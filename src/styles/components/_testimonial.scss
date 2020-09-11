@@ -5,6 +5,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  h3 {
+    font-size: 2.55rem;
+  }
+}
+#testimonials {
+  h1 {
+    font-size: 6.4rem;
+    font-weight: bold;
+  }
 }
 
 .text {
@@ -41,6 +50,6 @@
 }
 
 .quote {
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   margin-top: 1rem;
 }

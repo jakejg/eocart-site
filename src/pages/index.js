@@ -12,6 +12,7 @@ import Video from "../components/Landing/Video";
 import ProjectBox from "../components/Landing/ProjectBox";
 import Button from "react-bootstrap/Button";
 import StarIcon from "mdi-react/StarIcon";
+import Cta from "../components/About/cta";
 
 //MEDIA IMPORTS
 import howItWorks from "../videos/how-it-works.mp4";
@@ -164,7 +165,7 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="bottom">
+    {/* <section id="bottom">
       <Container>
         <h1 style={{ marginBottom: "3vh" }}>
           Ready to start <br></br> shopping sustainably?
@@ -173,7 +174,8 @@ const IndexPage = () => (
           <b>Add to Chrome</b> — It's Free!
         </Button>
       </Container>
-    </section>
+    </section> */}
+    <Cta />
   </Layout>
 );
 

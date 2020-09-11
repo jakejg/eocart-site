@@ -8,18 +8,18 @@
   background-size: cover;
 
   h1 {
-    font-size: 5.2rem;
+    font-size: 6.4rem;
+    font-weight: bold;
   }
 
-  /* Styles for the EcoCart logo */
-  #logo {
-    margin: 22px 38px;
-    width: 15%;
+  h3 {
+    font-size: 2.55rem;
   }
+  /* Styles for the EcoCart logo */
 
   /* Styles for the text in front of the wallpaper */
   #content {
-    margin-top: 12vh;
+    padding-top: 16rem;
     text-align: center;
   }
   /* Styles for the app button */
@@ -28,15 +28,14 @@
     text-decoration: none;
     background-color: #00b04f;
     border-color: #00b04f;
-    padding: 1rem 2rem;
-    font-size: 1.4rem;
+    padding: 1.4rem 2rem;
+    font-size: 1.6rem;
     margin-top: 3.5vh;
-  }
-
-  .add-button:hover {
-    background-color: #ffffff;
-    border-color: #00b04f;
-    color: #00b04f;
+    &:hover {
+      background-color: #ffffff;
+      border-color: #00b04f;
+      color: #00b04f;
+    }
   }
 
   /* Styles and animations for the arrow that points downwards */

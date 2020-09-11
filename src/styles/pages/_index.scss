@@ -12,6 +12,20 @@
   justify-content: center;
   height: auto;
   padding: 5vh 0;
+  .steps-container {
+    #title {
+      font-size: 6.4rem;
+      font-weight: bold;
+    }
+    .step-content {
+      h3 {
+        font-size: 2.55rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
 }
 
 /* IMPACT/PROJECTS SECTION */
@@ -19,6 +33,10 @@
   background-color: #ffffff;
   height: auto;
   padding: 8vh 0;
+  h1 {
+    font-size: 6.4rem;
+    font-weight: bold;
+  }
 }
 
 .impact-box-container {
@@ -33,6 +51,8 @@
 .impact-sub-heading {
   width: 100%;
   line-height: 0.1em;
+  font-size: 3.8rem;
+  font-weight: 700;
 }
 
 .impact-sub-heading span {
@@ -59,6 +79,10 @@
 #questions {
   padding: 5vh 30vh;
   height: auto;
+  h1 {
+    font-size: 6.4rem;
+    font-weight: bold;
+  }
 }
 
 .container {

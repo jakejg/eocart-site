@@ -3,313 +3,317 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #EAF6FA;
+  background-color: #eaf6fa;
   height: 80vh;
   padding: 5vh 0;
-}
-
-/* Store image sizes */
-.store-lg {
-  position: absolute;
-  height: 100px;
-  width: 100px;
-}
-
-.store-md {
-  position: absolute;
-  height: 75px;
-  width: 75px;
-}
-
-
-/* Store positioning */
-#foot-locker {
-  bottom: -200px;
-  left: 300px;
-}
-
-#freshly {
-  bottom: -300px;
-  left: 250px;
-}
-
-#glossier {
-  bottom: -380px;
-  left: 340px;
-}
-
-#casper {
-  bottom: -500px;
-  left: 220px;
-}
-
-#kohls {
-  bottom: -550px;
-  left: 350px;
-}
-
-#levis {
-  bottom: -200px;
-  left: 1100px;
-}
-
-#nixon {
-  bottom: -300px;
-  left: 1150px;
-}
-
-#petco {
-  bottom: -380px;
-  left: 1050px;
-}
-
-#ulta_beauty {
-  bottom: -480px;
-  left: 1160px;
-}
-
-#vans {
-  bottom: -550px;
-  left: 1030px;
-}
-
-/* Phone styles */
-@media only screen and (max-width: 400px) {
-  .store-lg {
-    display: none;
+  #affiliate-title {
+    font-size: 6.4rem;
+    font-weight: bold;
+    color: #0c3c2a;
   }
 
-  .store-md {
-    display: none;
-  }
-}
-
-/* 800 x 600 styles */
-@media only screen and (min-width: 400px) and (max-width: 800px) {
-  #foot-locker {
-    bottom: -150px;
-    left: 90px;
-  }
-  
-  #freshly {
-    bottom: -165px;
-    left: 355px;
-  }
-  
-  #glossier {
-    bottom: -140px;
-    left: 580px;
-  }
-  
-  #casper {
-    bottom: -450px;
-    left: 125px;
-  }
-  
-  #kohls {
-    bottom: -400px;
-    left: 340px;
-  }
-  
-  #levis {
-    bottom: -460px;
-    left: 540px;
-  }
-  
-  /* Hide these icons on small screens */
-  #nixon {
-    display: none;
-    bottom: -300px;
-    left: 890px;
-  }
-  
-  #petco {
-    display: none;
-    bottom: -380px;
-    left: 820px;
-  }
-  
-  #ulta_beauty {
-    display: none;
-    bottom: -480px;
-    left: 890px;
-  }
-  
-  #vans {
-    display: none;
-    bottom: -550px;
-    left: 860px;
-  }
-}
-
-/* 1024 x 768 styles */
-@media only screen and (min-width: 900px) and  (max-width: 1025px) {
-  #foot-locker {
-    bottom: -200px;
-    left: 90px;
-  }
-  
-  #freshly {
-    bottom: -300px;
-    left: 40px;
-  }
-  
-  #glossier {
-    bottom: -380px;
-    left: 130px;
-  }
-  
-  #casper {
-    bottom: -500px;
-    left: 10px;
-  }
-  
-  #kohls {
-    bottom: -550px;
-    left: 140px;
-  }
-  
-  #levis {
-    bottom: -200px;
-    left: 840px;
-  }
-  
-  #nixon {
-    bottom: -300px;
-    left: 900px;
-  }
-  
-  #petco {
-    bottom: -380px;
-    left: 800px;
-  }
-  
-  #ulta_beauty {
-    bottom: -460px;
-    left: 890px;
-  }
-  
-  #vans {
-    bottom: -550px;
-    left: 870px;
-  }
-}
-
-/* 1280 x 800 styles */
-@media only screen and (min-width: 1030px) and  (max-width: 1300px) {
-  #foot-locker {
-    bottom: -200px;
-    left: 220px;
-  }
-  
-  #freshly {
-    bottom: -300px;
-    left: 170px;
-  }
-  
-  #glossier {
-    bottom: -380px;
-    left: 260px;
-  }
-  
-  #casper {
-    bottom: -500px;
-    left: 140px;
-  }
-  
-  #kohls {
-    bottom: -550px;
-    left: 270px;
-  }
-  
-  #levis {
-    bottom: -200px;
-    left: 1000px;
-  }
-  
-  #nixon {
-    bottom: -300px;
-    left: 1060px;
-  }
-  
-  #petco {
-    bottom: -380px;
-    left: 960px;
-  }
-  
-  #ulta_beauty {
-    bottom: -480px;
-    left: 1060px;
-  }
-  
-  #vans {
-    bottom: -550px;
-    left: 930px;
-  }
-}
-
-/* 1920 x 1080 styles */
-@media only screen and (min-width: 1800px ) and (max-width: 2000px) {
   /* Store image sizes */
   .store-lg {
     position: absolute;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
   }
 
   .store-md {
     position: absolute;
-    height: 125px;
-    width: 125px;
+    height: 75px;
+    width: 75px;
   }
 
+  /* Store positioning */
   #foot-locker {
-    bottom: -300px;
-    left: 360px;
+    bottom: -200px;
+    left: 300px;
   }
-  
+
   #freshly {
-    bottom: -430px;
-    left: 310px;
-  }
-  
-  #glossier {
-    bottom: -530px;
-    left: 400px;
-  }
-  
-  #casper {
-    bottom: -670px;
-    left: 280px;
-  }
-  
-  #kohls {
-    bottom: -760px;
-    left: 410px;
-  }
-  
-  #levis {
     bottom: -300px;
-    left: 1420px;
+    left: 250px;
   }
-  
+
+  #glossier {
+    bottom: -380px;
+    left: 340px;
+  }
+
+  #casper {
+    bottom: -500px;
+    left: 220px;
+  }
+
+  #kohls {
+    bottom: -550px;
+    left: 350px;
+  }
+
+  #levis {
+    bottom: -200px;
+    left: 1100px;
+  }
+
   #nixon {
-    bottom: -430px;
-    left: 1520px;
+    bottom: -300px;
+    left: 1150px;
   }
-  
+
   #petco {
-    bottom: -520px;
-    left: 1380px;
+    bottom: -380px;
+    left: 1050px;
   }
-  
+
   #ulta_beauty {
-    bottom: -630px;
-    left: 1520px;
+    bottom: -480px;
+    left: 1160px;
   }
-  
+
   #vans {
-    bottom: -750px;
-    left: 1440px;
+    bottom: -550px;
+    left: 1030px;
+  }
+
+  /* Phone styles */
+  @media only screen and (max-width: 400px) {
+    .store-lg {
+      display: none;
+    }
+
+    .store-md {
+      display: none;
+    }
+  }
+
+  /* 800 x 600 styles */
+  @media only screen and (min-width: 400px) and (max-width: 800px) {
+    #foot-locker {
+      bottom: -150px;
+      left: 90px;
+    }
+
+    #freshly {
+      bottom: -165px;
+      left: 355px;
+    }
+
+    #glossier {
+      bottom: -140px;
+      left: 580px;
+    }
+
+    #casper {
+      bottom: -450px;
+      left: 125px;
+    }
+
+    #kohls {
+      bottom: -400px;
+      left: 340px;
+    }
+
+    #levis {
+      bottom: -460px;
+      left: 540px;
+    }
+
+    /* Hide these icons on small screens */
+    #nixon {
+      display: none;
+      bottom: -300px;
+      left: 890px;
+    }
+
+    #petco {
+      display: none;
+      bottom: -380px;
+      left: 820px;
+    }
+
+    #ulta_beauty {
+      display: none;
+      bottom: -480px;
+      left: 890px;
+    }
+
+    #vans {
+      display: none;
+      bottom: -550px;
+      left: 860px;
+    }
+  }
+
+  /* 1024 x 768 styles */
+  @media only screen and (min-width: 900px) and (max-width: 1025px) {
+    #foot-locker {
+      bottom: -200px;
+      left: 90px;
+    }
+
+    #freshly {
+      bottom: -300px;
+      left: 40px;
+    }
+
+    #glossier {
+      bottom: -380px;
+      left: 130px;
+    }
+
+    #casper {
+      bottom: -500px;
+      left: 10px;
+    }
+
+    #kohls {
+      bottom: -550px;
+      left: 140px;
+    }
+
+    #levis {
+      bottom: -200px;
+      left: 840px;
+    }
+
+    #nixon {
+      bottom: -300px;
+      left: 900px;
+    }
+
+    #petco {
+      bottom: -380px;
+      left: 800px;
+    }
+
+    #ulta_beauty {
+      bottom: -460px;
+      left: 890px;
+    }
+
+    #vans {
+      bottom: -550px;
+      left: 870px;
+    }
+  }
+
+  /* 1280 x 800 styles */
+  @media only screen and (min-width: 1030px) and (max-width: 1300px) {
+    #foot-locker {
+      bottom: -200px;
+      left: 220px;
+    }
+
+    #freshly {
+      bottom: -300px;
+      left: 170px;
+    }
+
+    #glossier {
+      bottom: -380px;
+      left: 260px;
+    }
+
+    #casper {
+      bottom: -500px;
+      left: 140px;
+    }
+
+    #kohls {
+      bottom: -550px;
+      left: 270px;
+    }
+
+    #levis {
+      bottom: -200px;
+      left: 1000px;
+    }
+
+    #nixon {
+      bottom: -300px;
+      left: 1060px;
+    }
+
+    #petco {
+      bottom: -380px;
+      left: 960px;
+    }
+
+    #ulta_beauty {
+      bottom: -480px;
+      left: 1060px;
+    }
+
+    #vans {
+      bottom: -550px;
+      left: 930px;
+    }
+  }
+
+  /* 1920 x 1080 styles */
+  @media only screen and (min-width: 1800px) and (max-width: 2000px) {
+    /* Store image sizes */
+    .store-lg {
+      position: absolute;
+      height: 150px;
+      width: 150px;
+    }
+
+    .store-md {
+      position: absolute;
+      height: 125px;
+      width: 125px;
+    }
+
+    #foot-locker {
+      bottom: -300px;
+      left: 360px;
+    }
+
+    #freshly {
+      bottom: -430px;
+      left: 310px;
+    }
+
+    #glossier {
+      bottom: -530px;
+      left: 400px;
+    }
+
+    #casper {
+      bottom: -670px;
+      left: 280px;
+    }
+
+    #kohls {
+      bottom: -760px;
+      left: 410px;
+    }
+
+    #levis {
+      bottom: -300px;
+      left: 1420px;
+    }
+
+    #nixon {
+      bottom: -430px;
+      left: 1520px;
+    }
+
+    #petco {
+      bottom: -520px;
+      left: 1380px;
+    }
+
+    #ulta_beauty {
+      bottom: -630px;
+      left: 1520px;
+    }
+
+    #vans {
+      bottom: -750px;
+      left: 1440px;
+    }
   }
 }

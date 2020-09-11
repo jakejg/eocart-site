@@ -1,26 +1,29 @@
+import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React, { useState, useEffect } from "react";
 import logo from "../images/logo.svg";
 
 const Header = () => {
-  const [sticky, setSticky] = useState(true);
+  const [sticky, setSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY === 0) {
+      if (window.scrollY > 80) {
         setSticky(true);
-      } else if (window.scrollY !== 0) {
-        setSticky(true);
+      } else {
+        setSticky(false);
       }
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
   return (
     <header>
-      <nav className={sticky ? "navbar navbar-sticky" : "navbar"}>
+      <nav className={`navbar-sticky navbar ${sticky && "bgWhite"}`}>
         <div className="navbar--logo-holder">
-          {sticky ? (
-            <div className="nav-row">
+          <div className="nav-row">
+            <Link className="logo-link" to="/">
               <img src={logo} alt="logo" className="navbar--logo" />
+            </Link>
+            {sticky && (
               <a
                 className="btn navbar-button"
                 size="small"
@@ -30,8 +33,8 @@ const Header = () => {
               >
                 <strong>Add to Chrome</strong> — It's Free!
               </a>
-            </div>
-          ) : null}
+            )}
+          </div>
         </div>
       </nav>
     </header>

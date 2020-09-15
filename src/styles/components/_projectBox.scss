@@ -7,7 +7,6 @@
 }
 
 .panel-collapse {
-  height: 495px;
   max-height: 495px;
   overflow: hidden;
   transition: max-height 0.2s ease;
@@ -45,12 +44,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #project-title {
-  font-size: 2.4em;
+  font-size: 2.2rem;
   font-weight: 700;
+  text-align: left;
 }
 
 .box-label {

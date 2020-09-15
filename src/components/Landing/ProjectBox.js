@@ -42,7 +42,7 @@ export default class ProjectBox extends Component {
                 })}
               </ul>
             </div>
-            <h4 className="box-label">Verifications</h4>
+            <h4 className="box-label mb-3 mt-3">Verifications</h4>
             <div className="project-images">
               {this.props.verifications.map((value, index) => {
                 return (
@@ -50,7 +50,7 @@ export default class ProjectBox extends Component {
                 );
               })}
             </div>
-            <h4 className="box-label">Sustainable Development</h4>
+            <h4 className="box-label mb-3">Sustainable Development</h4>
             <div className="project-images">
               {this.props.developments.map((value, index) => {
                 return <img className="sd-image" src={value} alt=""></img>;

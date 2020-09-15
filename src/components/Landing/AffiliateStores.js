@@ -11,13 +11,20 @@ import nixon from "../../images/affiliate-images/nixon.png";
 import petco from "../../images/affiliate-images/petco.png";
 import ulta_beauty from "../../images/affiliate-images/ulta_beauty.png";
 import vans from "../../images/affiliate-images/vans.png";
+import { Container, Row, Col } from "react-bootstrap";
 
 const AffiliateStores = () => {
   return (
     <section id="affiliate-stores">
-      <h1 id="affiliate-title">
-        Shop Sustainably at <br></br>10,000+ stores!
-      </h1>
+      <Container>
+        <Row>
+          <Col sm>
+            <h1 id="affiliate-title">
+              Shop Sustainably at <br></br>10,000+ stores!
+            </h1>
+          </Col>
+        </Row>
+      </Container>
       <img
         className="store-lg"
         id="foot-locker"

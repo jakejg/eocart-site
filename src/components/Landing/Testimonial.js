@@ -19,7 +19,10 @@ function Testimonial(props) {
                   alt="testimony"
                 ></img>
                 <p className="quote">{review.quote}</p>
-                <div className="row" style={{ marginLeft: "0px" }}>
+                <div
+                  className="row align-items-center"
+                  style={{ marginLeft: "0px" }}
+                >
                   <h3>— {review.author}</h3>
                   <div style={{ marginLeft: "10px" }}>
                     <StarIcon size={20} color="rgb(12, 60, 42)" />

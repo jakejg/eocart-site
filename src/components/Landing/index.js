@@ -1,5 +1,5 @@
 import React from "react";
-
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 const Landing = React.forwardRef((props, ref) => {
   return (
@@ -21,9 +21,10 @@ const Landing = React.forwardRef((props, ref) => {
             <b>Add to Chrome</b> — It's Free!
           </a>
         </div>
-        <a href="#how-it-works">
-          <div className="scroll-down"></div>
-        </a>
+        <div
+          onClick={() => scrollTo("#how-it-works")}
+          className="scroll-down"
+        ></div>
       </div>
     </section>
   );

@@ -1,31 +1,30 @@
 import React, { Component } from "react";
+import { Col } from "react-bootstrap";
 import Faq from "react-faq-component"; //DOCUMENTATION: https://www.npmjs.com/package/react-faq-component
 
-
-
 export default class FaqBox extends Component {
-   data = {
+  data = {
     //left this here so extra line appears on top of this component
     title: ".",
-    rows: this.props.faqs
+    rows: this.props.faqs,
   };
-  
-   styles = {
+
+  styles = {
     bgColor: "white",
     titleTextColor: "white",
     rowTitleColor: "black",
     rowContentColor: "black",
     arrowColor: "grey",
   };
-  
-   config = {
+
+  config = {
     animate: true,
   };
   render() {
     return (
-      <div>
+      <Col sm style={{ textAlign: "left" }}>
         <Faq data={this.data} styles={this.styles} config={this.config} />
-      </div>
+      </Col>
     );
   }
 }

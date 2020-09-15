@@ -1,18 +1,22 @@
 .testimonial {
-  padding-top: 5vw;
+  padding-top: 6rem;
   width: 30vw;
-  padding-bottom: 7vw;
+  padding-bottom: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
   h3 {
-    font-size: 2.55rem;
+    font-size: 2rem;
   }
 }
 #testimonials {
   h1 {
-    font-size: 6.4rem;
+    font-size: 5rem;
     font-weight: bold;
+    color: #0D3C2A;
+  }
+  .carousel-indicators li {
+    height: 5px;
   }
 }
 
@@ -50,6 +54,6 @@
 }
 
 .quote {
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   margin-top: 1rem;
 }

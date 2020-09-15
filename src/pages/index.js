@@ -39,6 +39,7 @@ import reviews from "../static/reviews";
 import faqs from "../static/faqs";
 
 import Layout from "../components/layout";
+import { Link } from "gatsby";
 
 const IndexPage = () => (
   <Layout>
@@ -149,20 +150,23 @@ const IndexPage = () => (
 
     {/* Frequently asked questions section */}
     <section id="questions">
-      <div class="container">
-        <h1>Questions?</h1>
-      </div>
-      <FaqBox faqs={faqs}></FaqBox>
-      <br></br>
-      <div class="container">
-        <a
-          href="https://ecocart.io/faq/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <b>More FAQs</b>
-        </a>
-      </div>
+      <Container>
+        <Row className="justify-content-center">
+          <Col xm>
+            <h1>Questions?</h1>
+          </Col>
+        </Row>
+        <Row>
+          <FaqBox faqs={faqs}></FaqBox>
+        </Row>
+        <Row className="justify-content-center mt-5">
+          <Col sm>
+            <Link className="more-faqs" to="/help">
+              <b>More FAQs</b>
+            </Link>
+          </Col>
+        </Row>
+      </Container>
     </section>
 
     {/* <section id="bottom">

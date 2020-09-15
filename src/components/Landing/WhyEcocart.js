@@ -10,7 +10,7 @@ const WhyEcocart = () => {
   return (
     <div id="why-ecocart">
       <Container className="px-4">
-        <Row className="justify-content-center mb-3 no-gutters">
+        <Row className="justify-content-center mb-5 no-gutters">
           <h1>Why EcoCart?</h1>
         </Row>
         <Row className="no-gutters">

@@ -9,7 +9,7 @@
 
   &:before {
     content: "";
-    background-color: #00924a;
+    background-color: $color-green;
     width: 100%;
     height: 0.3rem;
     position: absolute;
@@ -19,9 +19,9 @@
     z-index: -1;
   }
   h2 {
-    color: #00924a;
+    color: $color-green;
     font-weight: 600;
-    font-size: 3.2rem;
+    font-size: 5rem;
     background-color: $color-white;
     display: inline;
     padding: 1rem 3rem;

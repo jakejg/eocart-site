@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import logo from "../images/logo.svg";
@@ -45,20 +46,8 @@ const Footer = () => {
                   >
                     Terms of Service
                   </a>
-                  <a
-                    href="https://ecocart.io/privacy-policy/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Privacy Policy
-                  </a>
-                  <a
-                    href="https://google.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Help
-                  </a>
+                  <Link to="/privacy-policy">Privacy Policy</Link>
+                  <Link to="/help">Help</Link>
                 </div>
               </Col>
               <Col className="ecocart-businesses" sm={3}>

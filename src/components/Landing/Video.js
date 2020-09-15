@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Col, Row } from "react-bootstrap";
 import ReactPlayer from "react-player"; //DOCUMENTATION: https://www.npmjs.com/package/react-player
 
 export default class Video extends Component {
@@ -53,8 +54,8 @@ export default class Video extends Component {
 
   render() {
     return (
-      <div id="video-component">
-        <div className="video-container">
+      <Row>
+        <Col md={8} sm className="video-container">
           <ReactPlayer
             ref={this.ref}
             url={this.props.video}
@@ -66,9 +67,9 @@ export default class Video extends Component {
             height="100%"
             onProgress={this.handleProgress}
           />
-        </div>
+        </Col>
 
-        <div className="steps-container">
+        <Col md={4} sm className="steps-container">
           <h1 id="title"> How it works</h1>
           <div id="steps">
             <div
@@ -85,7 +86,9 @@ export default class Video extends Component {
                   this.state.activeStep === 1 ? "step-content-active" : ""
                 }`}
               >
-                <h3><strong>1. Add in Seconds</strong></h3>
+                <h3>
+                  <strong>1. Add in Seconds</strong>
+                </h3>
                 <p>It's free and just takes 2 clicks.</p>
               </div>
             </div>
@@ -103,8 +106,13 @@ export default class Video extends Component {
                   this.state.activeStep === 2 ? "step-content-active" : ""
                 }`}
               >
-                <h3><strong>2. Shop like Normal</strong></h3>
-                <p>We'll find the carbon emissions <br></br> of your unique order.</p>
+                <h3>
+                  <strong>2. Shop like Normal</strong>
+                </h3>
+                <p>
+                  We'll find the carbon emissions <br></br> of your unique
+                  order.
+                </p>
               </div>
             </div>
             <div
@@ -121,16 +129,18 @@ export default class Video extends Component {
                   this.state.activeStep === 3 ? "step-content-active" : ""
                 }`}
               >
-                <h3><strong>3. Save the Planet</strong></h3>
+                <h3>
+                  <strong>3. Save the Planet</strong>
+                </h3>
                 <p>
-                  At no cost to you, we'll make sure your <br></br> orders are completely
-                  carbon neutral.
+                  At no cost to you, we'll make sure your <br></br> orders are
+                  completely carbon neutral.
                 </p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </Col>
+      </Row>
     );
   }
 }

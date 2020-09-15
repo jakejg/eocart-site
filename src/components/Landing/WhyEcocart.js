@@ -10,7 +10,10 @@ const WhyEcocart = () => {
   return (
     <div id="why-ecocart">
       <Container className="px-4">
-        <Row className="justify-content-center mb-5 no-gutters">
+        <Row
+          className="justify-content-center no-gutters"
+          style={{ marginBottom: "50px" }}
+        >
           <h1>Why EcoCart?</h1>
         </Row>
         <Row className="no-gutters">

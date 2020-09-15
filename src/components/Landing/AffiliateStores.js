@@ -17,8 +17,8 @@ const AffiliateStores = () => {
   return (
     <section id="affiliate-stores">
       <Container>
-        <Row>
-          <Col sm>
+        <Row className="justify-content-center">
+          <Col lg={6} md={8} sm>
             <h1 id="affiliate-title">
               Shop Sustainably at <br></br>10,000+ stores!
             </h1>

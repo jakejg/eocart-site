@@ -42,7 +42,7 @@ export default class ProjectBox extends Component {
                 })}
               </ul>
             </div>
-            <h4 className="box-label mb-3 mt-3">Verifications</h4>
+            <h4 className="box-label mb-4 mt-4">Verifications</h4>
             <div className="project-images">
               {this.props.verifications.map((value, index) => {
                 return (

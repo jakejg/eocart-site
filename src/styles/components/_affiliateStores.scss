@@ -4,68 +4,80 @@
   align-items: center;
   text-align: center;
   background-color: #eaf6fa;
-  padding: 15rem 0;
+  padding: 20rem 0;
   position: relative;
+  overflow: hidden;
   #affiliate-title {
     font-size: 5rem;
     font-weight: bold;
     color: #0c3c2a;
+    @media (max-width: 1200px) {
+      font-size: 4rem;
+    }
   }
 
   /* Store image sizes */
   .store-lg {
     position: absolute;
-    height: 12rem;
-    width: 12rem;
-    top: 0;
-    left: 0;
+    height: 10rem;
+    width: 10rem;
   }
 
   .store-md {
     position: absolute;
-    height: 10rem;
-    width: 10rem;
-    top: 0;
-    left: 0;
+    height: 8rem;
+    width: 8rem;
   }
 
   /* Store positioning */
   #foot-locker {
-    left: 30rem;
-    top: 2rem;
+    left: 20rem;
+    top: 3rem;
   }
 
   #freshly {
-    left: 24rem;
-    top: 12rem;
+    left: 14rem;
+    top: 16rem;
   }
 
   #glossier {
-    left: 30rem;
-    top: 22rem;
+    left: 24rem;
+    top: 23rem;
   }
 
   #casper {
-    left: 20rem;
-    bottom: 2rem;
+    left: 13rem;
+    top: 30rem;
   }
 
   #kohls {
+    top: 40rem;
+    left: 22rem;
   }
 
   #levis {
+    right: 20rem;
+    top: 3rem;
   }
 
   #nixon {
+    right: 14rem;
+    top: 16rem;
   }
 
   #petco {
+    right: 24rem;
+    top: 23rem;
   }
 
   #ulta_beauty {
+    right: 13rem;
+    top: 30rem;
   }
 
   #vans {
+    top: 40rem;
+    right: 22rem;
   }
 
   /* Phone styles */

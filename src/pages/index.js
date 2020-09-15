@@ -46,7 +46,14 @@ const IndexPage = () => (
     <Landing logo={logo} />
     <AffiliateStores />
     <section id="how-it-works">
-      <Video video={howItWorks} stepOne="1" stepTwo="5" stepThree="14"></Video>
+      <Container fluid>
+        <Video
+          video={howItWorks}
+          stepOne="1"
+          stepTwo="5"
+          stepThree="14"
+        ></Video>
+      </Container>
     </section>
     <WhyEcocart />
 
@@ -71,7 +78,7 @@ const IndexPage = () => (
             ></ImpactBox>
             <ImpactBox
               start={0}
-              count={8247}
+              count={135194}
               duration={3}
               subtitle="trees saved"
               icon={tree}

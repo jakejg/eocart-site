@@ -14,7 +14,7 @@ const Landing = React.forwardRef((props, ref) => {
           <a
             className="btn add-button"
             size="lg"
-            href="https://google.com"
+            href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -15,7 +15,7 @@ const Cta = () => {
             <a
               className="btn navbar-button"
               size="small"
-              href="https://google.com"
+              href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi"
               target="_blank"
               rel="noopener noreferrer"
             >

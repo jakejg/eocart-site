@@ -39,13 +39,7 @@ const Footer = () => {
                   >
                     Blog
                   </a>
-                  <a
-                    href="https://ecocart.io/terms-of-service/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Terms of Service
-                  </a>
+                  <Link to="/terms-of-services">Terms of Service</Link>
                   <Link to="/privacy-policy">Privacy Policy</Link>
                   <Link to="/help">Help</Link>
                 </div>

@@ -24,7 +24,7 @@ function Testimonial(props) {
                   style={{ marginLeft: "0px" }}
                 >
                   <h3>— {review.author}</h3>
-                  <div style={{ marginLeft: "10px" }}>
+                  <div style={{ marginLeft: "10px" }} className="stars">
                     <StarIcon size={20} color="rgb(12, 60, 42)" />
                     <StarIcon size={20} color="rgb(12, 60, 42)" />
                     <StarIcon size={20} color="rgb(12, 60, 42)" />

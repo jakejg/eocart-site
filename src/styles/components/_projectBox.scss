@@ -7,7 +7,7 @@
 }
 
 .panel-collapse {
-  max-height: 495px;
+  max-height: 540px;
   overflow: hidden;
   transition: max-height 0.2s ease;
 }
@@ -61,13 +61,13 @@
 }
 
 ul {
-  height: 220px;
+  height: 240px;
   list-style-image: url("../images/projects/check-16px.png");
 }
 
 li {
   text-align: left;
-  font-size: 15px;
+  font-size: 16px;
   margin-left: 5px;
   margin-bottom: 10px;
 }
@@ -80,10 +80,15 @@ li {
 .project-images {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .verification-image {
   width: auto;
-  height: 6vh;
+  height: 8vh;
   padding-bottom: 3vh;
+  
+}
+img[alt~="/static/gold-standard-99b0e4e73bad882238b9accef2ef7435.png"] {
+  height: 4rem !important;
 }

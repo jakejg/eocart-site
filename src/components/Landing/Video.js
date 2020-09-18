@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import ReactPlayer from "react-player"; //DOCUMENTATION: https://www.npmjs.com/package/react-player
 
 export default class Video extends Component {
@@ -54,93 +54,149 @@ export default class Video extends Component {
 
   render() {
     return (
-      <Row>
-        <Col md={8} sm className="video-container">
-          <ReactPlayer
-            ref={this.ref}
-            url={this.props.video}
-            playing={true}
-            loop={true}
-            muted={true}
-            progressInterval={1000}
-            width="100%"
-            height="100%"
-            onProgress={this.handleProgress}
-          />
-        </Col>
+      <>
+        <Row className="notMobile">
+          <Col md={8} sm className="video-container">
+            <ReactPlayer
+              ref={this.ref}
+              url={this.props.video}
+              playing={true}
+              loop={true}
+              muted={true}
+              progressInterval={1000}
+              width="100%"
+              height="100%"
+              onProgress={this.handleProgress}
+            />
+          </Col>
 
-        <Col md={4} sm className="steps-container">
-          <h1 id="title"> How it works</h1>
-          <div id="steps">
-            <div
-              className="row step"
-              onClick={() => this.clickStep(this.props.stepOne)}
-            >
-              <span
-                className={`line ${
-                  this.state.activeStep === 1 ? "line-active" : ""
-                }`}
-              ></span>
+          <Col md={4} sm className="steps-container">
+            <h1 id="title"> How it works</h1>
+            <div id="steps">
               <div
-                className={`step-one step-content ${
-                  this.state.activeStep === 1 ? "step-content-active" : ""
-                }`}
+                className="row step"
+                onClick={() => this.clickStep(this.props.stepOne)}
               >
-                <h3>
-                  <strong>1. Add in Seconds</strong>
-                </h3>
-                <p>It's free and just takes 2 clicks.</p>
+                <span
+                  className={`line ${
+                    this.state.activeStep === 1 ? "line-active" : ""
+                  }`}
+                ></span>
+                <div
+                  style={{ marginTop: ".5rem" }}
+                  className={`step-one step-content ${
+                    this.state.activeStep === 1 ? "step-content-active" : ""
+                  }`}
+                >
+                  <h3>
+                    <strong>1. Add in Seconds</strong>
+                  </h3>
+                  <p>It's free and just takes 2 clicks.</p>
+                </div>
+              </div>
+              <div
+                className="row step"
+                onClick={() => this.clickStep(this.props.stepTwo)}
+              >
+                <span
+                  className={`line ${
+                    this.state.activeStep === 2 ? "line-active" : ""
+                  }`}
+                ></span>
+                <div
+                  className={`step-two step-content ${
+                    this.state.activeStep === 2 ? "step-content-active" : ""
+                  }`}
+                >
+                  <h3>
+                    <strong>2. Shop like Normal</strong>
+                  </h3>
+                  <p>
+                    We'll find the carbon emissions <br></br> of your unique
+                    order.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="row step"
+                onClick={() => this.clickStep(this.props.stepThree)}
+              >
+                <span
+                  className={`line ${
+                    this.state.activeStep === 3 ? "line-active" : ""
+                  }`}
+                ></span>
+                <div
+                  style={{ marginTop: "1.7rem" }}
+                  className={`step-three step-content ${
+                    this.state.activeStep === 3 ? "step-content-active" : ""
+                  }`}
+                >
+                  <h3>
+                    <strong>3. Save the Planet</strong>
+                  </h3>
+                  <p>
+                    At no cost to you, we'll make sure your <br></br> orders are
+                    completely carbon neutral.
+                  </p>
+                </div>
               </div>
             </div>
-            <div
-              className="row step"
-              onClick={() => this.clickStep(this.props.stepTwo)}
+          </Col>
+        </Row>
+        <Container className="forMobile">
+          <Row className="justify-content-center">
+            <h1
+              id="title"
+              style={{
+                textAlign: "center",
+                fontSize: "5rem",
+                fontWeight: "bold",
+                color: "#0D3C2A",
+              }}
             >
-              <span
-                className={`line ${
-                  this.state.activeStep === 2 ? "line-active" : ""
-                }`}
-              ></span>
-              <div
-                className={`step-two step-content ${
-                  this.state.activeStep === 2 ? "step-content-active" : ""
-                }`}
-              >
-                <h3>
-                  <strong>2. Shop like Normal</strong>
-                </h3>
-                <p>
-                  We'll find the carbon emissions <br></br> of your unique
-                  order.
-                </p>
-              </div>
-            </div>
-            <div
-              className="row step"
-              onClick={() => this.clickStep(this.props.stepThree)}
-            >
-              <span
-                className={`line ${
-                  this.state.activeStep === 3 ? "line-active" : ""
-                }`}
-              ></span>
-              <div
-                className={`step-three step-content ${
-                  this.state.activeStep === 3 ? "step-content-active" : ""
-                }`}
-              >
-                <h3>
-                  <strong>3. Save the Planet</strong>
-                </h3>
-                <p>
-                  At no cost to you, we'll make sure your <br></br> orders are
-                  completely carbon neutral.
-                </p>
-              </div>
-            </div>
-          </div>
-        </Col>
-      </Row>
+              {" "}
+              How it works
+            </h1>
+          </Row>
+          <Row className="no-gutters">
+            <Col className="mb-4" md={12} lg={4}>
+              <img
+                src={require("../../images/chrome-icon.png")}
+                className="reason-icon"
+                alt="reason icon"
+              ></img>
+              <h3 className="reason-title">Add in Seconds</h3>
+              <p className="reason-description">
+                It's free and just takes 2 clicks.
+              </p>
+            </Col>
+            <Col className="mb-4" md={12} lg={4}>
+              <img
+                src={require("../../images/sbag.png")}
+                className="reason-icon"
+                alt="reason icon"
+              ></img>
+              <h3 className="reason-title">Shop like Normal</h3>
+              <p className="reason-description">
+                We'll find the carbon emissions <br></br> of your unique order.
+              </p>
+            </Col>
+            <Col className="mb-4" md={12} lg={4}>
+              <img
+                src={require("../../images/earth.png")}
+                className="reason-icon control-icon"
+                alt="reason icon"
+              ></img>
+              <h3 className="reason-title">Save the Planet</h3>
+              <p className="reason-description">
+                At no cost to you, we'll make sure your <br></br> orders are
+                completely carbon neutral.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </>
     );
   }
 }

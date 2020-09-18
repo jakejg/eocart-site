@@ -6,11 +6,11 @@
   background-color: #eaf6fa;
   padding: 20rem 0;
   position: relative;
-  overflow: hidden;
   #affiliate-title {
     font-size: 5rem;
     font-weight: bold;
     color: #0c3c2a;
+    position: relative;
     @media (max-width: 1200px) {
       font-size: 4rem;
     }
@@ -19,65 +19,65 @@
   /* Store image sizes */
   .store-lg {
     position: absolute;
-    height: 10rem;
-    width: 10rem;
+    height: 14rem;
+    width: 14rem;
   }
 
   .store-md {
     position: absolute;
-    height: 8rem;
-    width: 8rem;
+    height: 12rem;
+    width: 12rem;
   }
 
   /* Store positioning */
   #foot-locker {
-    left: 20rem;
-    top: 3rem;
+    left: 200px;
+    top: -20px;
   }
 
   #freshly {
-    left: 14rem;
-    top: 16rem;
+    left: 80px;
+    top: 80px;
   }
 
   #glossier {
-    left: 24rem;
-    top: 23rem;
+    left: 240px;
+    top: 220px;
   }
 
   #casper {
-    left: 13rem;
-    top: 30rem;
+    left: 100px;
+    top: 340px;
   }
 
   #kohls {
-    top: 40rem;
-    left: 22rem;
+    bottom: -30px;
+    left: 350px;
   }
 
   #levis {
-    right: 20rem;
-    top: 3rem;
+    right: 200px;
+    top: -20px;
   }
 
   #nixon {
-    right: 14rem;
-    top: 16rem;
+    right: 80px;
+    top: 80px;
   }
 
   #petco {
-    right: 24rem;
-    top: 23rem;
+    right: 240px;
+    top: 220px;
   }
 
   #ulta_beauty {
-    right: 13rem;
-    top: 30rem;
+    right: 100px;
+    top: 340px;
   }
 
   #vans {
-    top: 40rem;
-    right: 22rem;
+    bottom: -30px;
+    right: 350px;
   }
 
   /* Phone styles */
@@ -91,233 +91,123 @@
     }
   }
 
-  /* 800 x 600 styles */
-  @media only screen and (min-width: 400px) and (max-width: 800px) {
+  @media only screen and (max-width: 1030px) {
     #foot-locker {
-      bottom: -150px;
-      left: 90px;
+      left: 100px;
+      top: -10px;
     }
 
     #freshly {
-      bottom: -165px;
-      left: 355px;
+      left: 20px;
+      top: 120px;
     }
 
     #glossier {
-      bottom: -140px;
-      left: 580px;
+      left: 130px;
+      top: 200px;
     }
 
     #casper {
-      bottom: -450px;
-      left: 125px;
+      left: 0;
+      top: 260px;
     }
 
     #kohls {
-      bottom: -400px;
-      left: 340px;
+      bottom: -15px;
+      left: 200px;
     }
 
     #levis {
-      bottom: -460px;
-      left: 540px;
+      right: 100px;
+      top: -10px;
     }
 
-    /* Hide these icons on small screens */
     #nixon {
-      display: none;
-      bottom: -300px;
-      left: 890px;
+      right: 20px;
+      top: 120px;
     }
 
     #petco {
-      display: none;
-      bottom: -380px;
-      left: 820px;
+      right: 130px;
+      top: 200px;
     }
 
     #ulta_beauty {
-      display: none;
-      bottom: -480px;
-      left: 890px;
+      right: 0;
+      top: 260px;
     }
 
     #vans {
-      display: none;
-      bottom: -550px;
-      left: 860px;
+      bottom: -15px;
+      right: 200px;
     }
   }
 
-  /* 1024 x 768 styles */
-  @media only screen and (min-width: 900px) and (max-width: 1025px) {
+  @media (max-width: 720px) {
+    .store-lg {
+      height: 12rem;
+      width: 12rem;
+    }
+
+    .store-md {
+      height: 10rem;
+      width: 10rem;
+    }
     #foot-locker {
-      bottom: -200px;
-      left: 90px;
+      left: 80px;
+      top: -20px;
     }
 
     #freshly {
-      bottom: -300px;
-      left: 40px;
+      left: 0px;
+      top: 70px;
     }
 
     #glossier {
-      bottom: -380px;
-      left: 130px;
+      left: 180px;
+      top: 40px;
     }
 
     #casper {
-      bottom: -500px;
-      left: 10px;
+      left: 0;
+      top: 220px;
     }
 
     #kohls {
-      bottom: -550px;
-      left: 140px;
+      bottom: -15px;
+      left: 100px;
     }
-
     #levis {
-      bottom: -200px;
-      left: 840px;
+      right: 80px;
+      top: -20px;
     }
 
     #nixon {
-      bottom: -300px;
-      left: 900px;
+      right: 0px;
+      top: 70px;
     }
 
     #petco {
-      bottom: -380px;
-      left: 800px;
+      right: 170px;
+      top: 220px;
     }
 
     #ulta_beauty {
-      bottom: -460px;
-      left: 890px;
+      right: 0;
+      top: 220px;
     }
 
     #vans {
-      bottom: -550px;
-      left: 870px;
+      bottom: -15px;
+      right: 100px;
     }
   }
 
   /* 1280 x 800 styles */
   @media only screen and (min-width: 1030px) and (max-width: 1300px) {
-    #foot-locker {
-      bottom: -200px;
-      left: 220px;
-    }
-
-    #freshly {
-      bottom: -300px;
-      left: 170px;
-    }
-
-    #glossier {
-      bottom: -380px;
-      left: 260px;
-    }
-
-    #casper {
-      bottom: -500px;
-      left: 140px;
-    }
-
-    #kohls {
-      bottom: -550px;
-      left: 270px;
-    }
-
-    #levis {
-      bottom: -200px;
-      left: 1000px;
-    }
-
-    #nixon {
-      bottom: -300px;
-      left: 1060px;
-    }
-
-    #petco {
-      bottom: -380px;
-      left: 960px;
-    }
-
-    #ulta_beauty {
-      bottom: -480px;
-      left: 1060px;
-    }
-
-    #vans {
-      bottom: -550px;
-      left: 930px;
-    }
   }
 
   /* 1920 x 1080 styles */
   @media only screen and (min-width: 1800px) and (max-width: 2000px) {
-    /* Store image sizes */
-    .store-lg {
-      position: absolute;
-      height: 150px;
-      width: 150px;
-    }
-
-    .store-md {
-      position: absolute;
-      height: 125px;
-      width: 125px;
-    }
-
-    #foot-locker {
-      bottom: -300px;
-      left: 360px;
-    }
-
-    #freshly {
-      bottom: -430px;
-      left: 310px;
-    }
-
-    #glossier {
-      bottom: -530px;
-      left: 400px;
-    }
-
-    #casper {
-      bottom: -670px;
-      left: 280px;
-    }
-
-    #kohls {
-      bottom: -760px;
-      left: 410px;
-    }
-
-    #levis {
-      bottom: -300px;
-      left: 1420px;
-    }
-
-    #nixon {
-      bottom: -430px;
-      left: 1520px;
-    }
-
-    #petco {
-      bottom: -520px;
-      left: 1380px;
-    }
-
-    #ulta_beauty {
-      bottom: -630px;
-      left: 1520px;
-    }
-
-    #vans {
-      bottom: -750px;
-      left: 1440px;
-    }
   }
 }

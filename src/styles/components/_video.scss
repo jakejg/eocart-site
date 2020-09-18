@@ -74,3 +74,15 @@
     padding-right: 1em;
   }
 }
+
+@media (min-width: 1030px) {
+  .forMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1030px) {
+  .notMobile {
+    display: none;
+  }
+}

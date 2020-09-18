@@ -18,7 +18,7 @@ export default class ImpactBox extends Component {
         <div className="impact-text">
           <h2 id="count">
             <CountUp
-              start={this.state.start}
+              start={this.props.start}
               end={this.props.count}
               delay={0.2}
               redraw={false}

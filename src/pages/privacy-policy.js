@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
   const data = useStaticQuery(graphql`
     query {
       pp: wordpress {
-        pageBy(id: "cG9zdDoz") {
+        pageBy(id: "cG9zdDoxNTcy") {
           id
           title(format: RENDERED)
           content

@@ -20,7 +20,7 @@ import tree from "../images/tree.png";
 import earth from "../images/earth.png";
 import waterProj from "../images/projects/water-project.png";
 import forestProj from "../images/projects/forest-project.png";
-import windProj from "../images/projects/wind-project.png";
+import windProj from "../images/projects/cw.png";
 import un6 from "../images/projects/UN-Sustainability-Goal-6.png";
 import un7 from "../images/projects/UN-Sustainability-Goal-7.png";
 import un8 from "../images/projects/UN-Sustainability-Goal-8.png";

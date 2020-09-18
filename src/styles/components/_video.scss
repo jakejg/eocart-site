@@ -43,10 +43,6 @@
   opacity: 1;
 }
 
-.row {
-  width: 100%;
-}
-
 .steps-container {
   display: flex;
   flex-direction: column;
@@ -90,5 +86,6 @@
   }
   .reason-description {
     font-size: 18px;
+    padding: 0 !important;
   }
 }

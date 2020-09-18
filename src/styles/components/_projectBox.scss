@@ -35,8 +35,9 @@
 }
 
 #project-photo {
-  border-radius: 100%;
-  width: 12.5rem;
+  width: 100%;
+  border-radius: 150%;
+  max-width: 12.5rem;
   padding: 10px;
 }
 
@@ -87,7 +88,6 @@ li {
   width: auto;
   height: 8vh;
   padding-bottom: 3vh;
-  
 }
 img[alt~="/static/gold-standard-99b0e4e73bad882238b9accef2ef7435.png"] {
   height: 4rem !important;

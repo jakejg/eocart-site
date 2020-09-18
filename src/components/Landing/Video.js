@@ -179,7 +179,7 @@ export default class Video extends Component {
               ></img>
               <h3 className="reason-title">Shop like Normal</h3>
               <p className="reason-description">
-                We'll find the carbon emissions <br></br> of your unique order.
+                We'll find the carbon emissions of your unique order.
               </p>
             </Col>
             <Col className="mb-4" md={12} lg={4}>
@@ -190,8 +190,8 @@ export default class Video extends Component {
               ></img>
               <h3 className="reason-title">Save the Planet</h3>
               <p className="reason-description">
-                At no cost to you, we'll make sure your <br></br> orders are
-                completely carbon neutral.
+                At no cost to you, we'll make sure your orders are completely
+                carbon neutral.
               </p>
             </Col>
           </Row>

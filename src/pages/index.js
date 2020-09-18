@@ -87,7 +87,7 @@ const IndexPage = () => (
         </Row>
         <Row className="no-gutters">
           <Col style={{ borderTop: "1px solid black" }}></Col>
-          <Col xs={6} sm={4}>
+          <Col xs={12} sm={12}>
             <div className="impact-subtitle-container">
               <h2 className="center impact-sub-heading">
                 <span>We do this by...</span>

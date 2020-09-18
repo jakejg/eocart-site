@@ -35,7 +35,8 @@
     "react-faq-component": "^1.0.8",
     "react-helmet": "^6.1.0",
     "react-player": "^2.6.1",
-    "react-visibility-sensor": "^5.1.1"
+    "react-visibility-sensor": "^5.1.1",
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
     "prettier": "2.1.0"

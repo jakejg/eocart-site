@@ -152,7 +152,9 @@ const IndexPage = () => (
       <StarIcon size={38} color="rgb(12, 60, 42)" />
       <StarIcon size={38} color="rgb(12, 60, 42)" />
       {/* <i></i> */}
-      <Testimonial reviews={reviews}></Testimonial>
+      <Container>
+        <Testimonial reviews={reviews}></Testimonial>
+      </Container>
     </section>
 
     {/* Frequently asked questions section */}

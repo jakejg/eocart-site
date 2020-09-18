@@ -37,8 +37,9 @@
 }
 
 .control-icon {
-  height: 100px;
+  max-height: 100px;
   margin-top: 20px;
+  width: auto;
 }
 
 .reason-title {
@@ -98,5 +99,14 @@
 @media only screen and (min-width: 1800px) and (max-width: 2000px) {
   #why-ecocart {
     height: 52vh;
+  }
+}
+
+@media (max-width: 1030px) {
+  .reason-title {
+    font-size: 24px !important;
+  }
+  .reason-description {
+    font-size: 18px !important;
   }
 }

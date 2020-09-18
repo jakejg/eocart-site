@@ -20,7 +20,7 @@ function Testimonial(props) {
                 ></img>
                 <p className="quote">{review.quote}</p>
                 <div
-                  className="row align-items-center"
+                  className="row align-items-center nameClass"
                   style={{ marginLeft: "0px" }}
                 >
                   <h3>— {review.author}</h3>

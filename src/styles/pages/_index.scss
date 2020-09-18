@@ -16,7 +16,7 @@
     #title {
       font-size: 5rem;
       font-weight: bold;
-      color: #0D3C2A;
+      color: #0d3c2a;
     }
     .step-content {
       h3 {
@@ -37,7 +37,7 @@
   h1 {
     font-size: 5rem;
     font-weight: bold;
-    color: #0D3C2A;
+    color: #0d3c2a;
   }
 }
 
@@ -84,7 +84,7 @@
   h1 {
     font-size: 5rem;
     font-weight: bold;
-    color: #0D3C2A;
+    color: #0d3c2a;
   }
 }
 
@@ -100,4 +100,38 @@
   padding-bottom: 7vh;
   text-align: center;
   background-color: #efefef;
+}
+.mailWidget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 4rem;
+  input {
+    width: 100%;
+    min-height: 5rem;
+    font-size: 12px;
+    margin-bottom: 1rem;
+    padding: 1.4rem 2.4rem;
+    font-weight: 500;
+    border: 1px solid #ced4da;
+    outline: none;
+  }
+  button {
+    min-height: 5rem;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+@media (min-width: 450px) {
+  .mailWidget {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  #landing .add-button,
+  .navbar-button {
+    display: none;
+  }
 }

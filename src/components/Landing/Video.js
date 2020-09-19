@@ -160,7 +160,7 @@ export default class Video extends Component {
             </h1>
           </Row>
           <Row className="no-gutters">
-            <Col className="mb-4" md={12} lg={4}>
+            <Col className="mb-4 withArrows" md={12} lg={4}>
               <img
                 src={require("../../images/chrome-icon.png")}
                 className="reason-icon"
@@ -171,7 +171,7 @@ export default class Video extends Component {
                 It's free and just takes 2 clicks.
               </p>
             </Col>
-            <Col className="mb-4" md={12} lg={4}>
+            <Col className="mb-4 withArrows" md={12} lg={4}>
               <img
                 src={require("../../images/sbag.png")}
                 className="reason-icon"

@@ -16,6 +16,7 @@ import { createGlobalStyle, ThemeProvider, css } from "styled-components";
 const Layout = ({ children }) => {
   const GlobalStyle = createGlobalStyle`
     body{
+      overflow-x: hidden;
       ${(props) =>
         props.openedMenu &&
         css`

@@ -8,6 +8,7 @@
     font-size: 5rem;
     font-weight: bold;
     color: #0d3c2a;
+    margin-bottom: 5rem;
   }
   .reason-title {
     font-size: 2.2rem;
@@ -32,13 +33,12 @@
 }
 
 .reason-icon {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
 }
 
 .control-icon {
   max-height: 100px;
-  margin-top: 20px;
   width: auto;
 }
 
@@ -58,12 +58,18 @@
 .box:first-child {
   img {
     margin-right: 1.7rem !important;
+    @media (max-width: 767px) {
+      margin-right: 0 !important;
+    }
   }
 }
 
 .box:nth-child(2) {
   img {
     margin-right: 4rem !important;
+    @media (max-width: 767px) {
+      margin-right: 0 !important;
+    }
   }
 }
 /* Mobile styles */
@@ -108,5 +114,23 @@
   }
   .reason-description {
     font-size: 18px !important;
+  }
+}
+
+.withArrows {
+  position: relative;
+  margin-bottom: 80px !important;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 9rem solid transparent;
+    border-right: 9rem solid transparent;
+    border-top: 7rem solid #eaf6fa;
   }
 }

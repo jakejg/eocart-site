@@ -1,5 +1,6 @@
 .row-title {
   padding: 20px !important;
+  font-size: 16px !important;
 }
 
 .row-content-text {
@@ -15,10 +16,10 @@
   color: #00b04f !important;
 }
 
-.faq-row div:last-of-type {
-  // width: 85%;
-}
 .more-faqs {
   color: #00b04f !important;
   font-size: 1.6rem;
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
 }

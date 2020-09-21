@@ -8,7 +8,7 @@ function Testimonial(props) {
     <Carousel interval={4000} controls={false}>
       {props.reviews.map((review, index) => {
         return (
-          <Carousel.Item>
+          <Carousel.Item key={index}>
             <div className="testimonial row">
               <img className="avatar" src={review.avatar} alt="person"></img>
               <div className="text col">

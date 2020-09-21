@@ -161,7 +161,7 @@ const IndexPage = () => (
     <section id="questions">
       <Container>
         <Row className="justify-content-center">
-          <Col xm>
+          <Col xs>
             <h1>Questions?</h1>
           </Col>
         </Row>

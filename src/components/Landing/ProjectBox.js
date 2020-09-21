@@ -46,14 +46,16 @@ export default class ProjectBox extends Component {
             <div className="project-images">
               {this.props.verifications.map((value, index) => {
                 return (
-                  <img className="verification-image" src={value} alt=""></img>
+                  <img key={index} className="verification-image" src={value} alt=""></img>
                 );
               })}
             </div>
             <h4 className="box-label mb-3">Sustainable Development</h4>
             <div className="project-images">
               {this.props.developments.map((value, index) => {
-                return <img className="sd-image" src={value} alt=""></img>;
+                return (
+                  <img key={index} className="sd-image" src={value} alt="" />
+                );
               })}
             </div>
           </div>

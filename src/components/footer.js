@@ -25,21 +25,16 @@ const Footer = () => {
               <Col className="ecocart-businesses" sm={3}>
                 <div className="footer-ecocart">
                   <h2>EcoCart</h2>
+                  <Link to="/about">About Us</Link>
                   <a
-                    href="https://ecocart.io/about-us/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    About Us
-                  </a>
-                  <a
-                    href="https://ecocart.io/blog/"
+                    href="https://app.ecocart.io/blog/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Blog
                   </a>
-                  <Link to="/terms-of-services">Terms of Service</Link>
+                  <Link to="/terms-of-services-us">Terms of Service(US)</Link>
+                  <Link to="/terms-of-services-eu">Terms of Service(EU)</Link>
                   <Link to="/privacy-policy">Privacy Policy</Link>
                   <Link to="/help">Help</Link>
                 </div>
@@ -76,7 +71,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="https://ecocart.io/wp-content/themes/ecocart/images/instagram_logo.svg"
+                    src="https://app.ecocart.io/wp-content/themes/ecocart/images/instagram_logo.svg"
                     alt="instagram logo"
                   ></img>
                 </a>
@@ -86,7 +81,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="https://ecocart.io/wp-content/themes/ecocart/images/linkedin_logo.svg"
+                    src="https://app.ecocart.io/wp-content/themes/ecocart/images/linkedin_logo.svg"
                     alt="linkedin logo"
                   ></img>
                 </a>
@@ -96,7 +91,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="https://ecocart.io/wp-content/themes/ecocart/images/twitter_logo.svg"
+                    src="https://app.ecocart.io/wp-content/themes/ecocart/images/twitter_logo.svg"
                     alt="twitter logo"
                   ></img>
                 </a>

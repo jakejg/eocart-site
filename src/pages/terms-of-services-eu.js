@@ -4,11 +4,11 @@ import { Col, Container, Row } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-const PrivacyPolicy = () => {
+const TOS_EU = () => {
   const data = useStaticQuery(graphql`
     query {
-      pp: wordpress {
-        pageBy(id: "cG9zdDoxNTIy") {
+      tos: wordpress {
+        pageBy(id: "cG9zdDoxNTI4") {
           id
           title(format: RENDERED)
           content
@@ -18,22 +18,22 @@ const PrivacyPolicy = () => {
   `);
   return (
     <Layout>
-      <SEO title={data.pp.pageBy.title} />
-      <div className="privacy-policy">
+      <SEO title={data.tos.pageBy.title} />
+      <div className="tos">
         <Container>
           <Row>
             <Col lg>
               <div class="page-heading">
-                <h2>{data.pp.pageBy.title}</h2>
+                <h2>{data.tos.pageBy.title}</h2>
               </div>
             </Col>
           </Row>
           <Row>
             <Col lg xs={12}>
               <div
-                className="privacy-policy__content"
+                className="tos__content"
                 dangerouslySetInnerHTML={{
-                  __html: data.pp.pageBy.content,
+                  __html: data.tos.pageBy.content,
                 }}
               ></div>
             </Col>
@@ -44,4 +44,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default TOS_EU;

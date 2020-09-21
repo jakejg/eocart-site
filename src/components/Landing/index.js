@@ -1,6 +1,5 @@
 import React from "react";
 import scrollTo from "gatsby-plugin-smoothscroll";
-import MailWidget from "../../hooks/mailWidget";
 
 const Landing = React.forwardRef((props, ref) => {
   return (
@@ -21,7 +20,7 @@ const Landing = React.forwardRef((props, ref) => {
           >
             <b>Add to Chrome</b> — It's Free!
           </a>
-          <MailWidget />
+          {/* <MailWidget /> */}
         </div>
         <div
           onClick={() => scrollTo("#how-it-works")}

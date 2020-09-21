@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import MailWidget from "../../hooks/mailWidget";
 
 const Cta = () => {
   return (
@@ -22,7 +21,6 @@ const Cta = () => {
             >
               <strong>Add to Chrome</strong> — It's Free!
             </a>
-            <MailWidget />
           </Col>
         </Row>
       </Container>

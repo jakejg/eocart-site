@@ -33,6 +33,7 @@ import energyGlobe from "../images/projects/Energy-Globe.jpg";
 import americanCarbon from "../images/projects/american-carbon-registry.jpg";
 import goldStandard from "../images/projects/gold-standard.png";
 import logo from "../images/logo.svg";
+import SEO from "../components/seo";
 
 // STATIC IMPORTS
 import reviews from "../static/reviews";
@@ -43,6 +44,7 @@ import { Link } from "gatsby";
 
 const IndexPage = () => (
   <Layout>
+    <SEO title="Home" />
     <Landing logo={logo} />
     <AffiliateStores />
     <section id="how-it-works">

@@ -1,0 +1,4 @@
+# Redirects from what the browser requests to what we serve
+/project/forest-protection  https://app.ecocart.io/project/forest-protection
+/project/water-purification/  https://app.ecocart.io/project/water-purification
+/project/wind-energy/  https://app.ecocart.io/project/wind-energy

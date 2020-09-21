@@ -1,0 +1,20 @@
+.notFound-page {
+  padding: 15rem 0;
+  text-align: center;
+  h1 {
+    font-size: 30rem;
+    font-weight: bold;
+    color: $color-green;
+  }
+  h6 {
+    font-size: 3rem;
+    color: $color-black;
+    font-weight: bold;
+  }
+  p {
+    font-size: 1.8rem;
+    a {
+      color: $color-green;
+    }
+  }
+}

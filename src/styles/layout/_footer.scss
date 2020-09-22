@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   background-color: #262626;
-  height: 57vh;
 }
 
 .footer-content {
@@ -17,10 +16,10 @@
   padding: 1.7rem 0 0;
   background: url(../images/footer-bg.svg) bottom left no-repeat;
   background-size: 80%;
-  @media( max-width: 1680px){
+  @media (max-width: 1680px) {
     background-size: 50%;
   }
-  @media( max-width: 992px){
+  @media (max-width: 992px) {
     background-size: 70%;
   }
 }
@@ -37,7 +36,6 @@
 /* Resources and about section styles */
 .logo-ecocart-businesses {
   display: flex;
-  height: 45vh;
   border-bottom: 1px solid white;
 }
 
@@ -104,7 +102,7 @@ i.heart {
   background-size: contain;
   width: 1.6rem;
   height: 1.6rem;
-  margin-bottom: -.25rem;
+  margin-bottom: -0.25rem;
 }
 .madewith {
   font-size: 1.6rem;
@@ -113,8 +111,6 @@ i.heart {
 .copyright {
   font-size: 1.6rem;
 }
-
-
 
 /* Hide footer on small devices */
 @media only screen and (max-width: 800px) {

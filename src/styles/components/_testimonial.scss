@@ -21,9 +21,6 @@
   }
   .carousel-indicators li {
     height: 5px;
-    @media (max-width: 600px) {
-      display: none;
-    }
   }
 }
 
@@ -86,5 +83,8 @@
   }
   .nameClass {
     justify-content: flex-start;
+  }
+  .carousel-item {
+    min-height: 350px;
   }
 }

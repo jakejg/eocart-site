@@ -11,7 +11,7 @@ import PropTypes from "prop-types";
 import Header from "./header";
 import Footer from "./footer";
 import "../styles/main.scss";
-import { createGlobalStyle, ThemeProvider, css } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
 const Layout = ({ children }) => {
   const GlobalStyle = createGlobalStyle`

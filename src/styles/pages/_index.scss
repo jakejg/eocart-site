@@ -162,3 +162,20 @@
     display: none;
   }
 }
+
+.landing__btn {
+  display: inline;
+  position: relative;
+  a {
+    margin-top: 5rem;
+  }
+  img {
+    position: absolute;
+    top: -40px;
+    right: -60px;
+  }
+
+  @media (max-width: 450px) {
+    display: none;
+  }
+}

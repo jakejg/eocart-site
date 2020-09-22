@@ -1,5 +1,6 @@
 import React from "react";
 import scrollTo from "gatsby-plugin-smoothscroll";
+import MailWidget from "../General/mailWidget";
 
 const Landing = React.forwardRef((props, ref) => {
   return (
@@ -11,16 +12,19 @@ const Landing = React.forwardRef((props, ref) => {
             EcoCart instantly makes your online orders carbon neutral at no cost
             to you
           </h3>
-          <a
-            className="btn add-button"
-            size="lg"
-            href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <b>Add to Chrome</b> — It's Free!
-          </a>
-          {/* <MailWidget /> */}
+          <div className="landing__btn">
+            <a
+              className="btn add-button"
+              size="lg"
+              href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <b>Add to Chrome</b> — It's Free!
+            </a>
+            <img src={require("../../images/arrowicon.svg")} />
+          </div>
+          <MailWidget />
         </div>
         <div
           onClick={() => scrollTo("#how-it-works")}

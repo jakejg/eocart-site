@@ -10,7 +10,6 @@ import FaqBox from "../components/Landing/Faq";
 import Testimonial from "../components/Landing/Testimonial";
 import Video from "../components/Landing/Video";
 import ProjectBox from "../components/Landing/ProjectBox";
-import Button from "react-bootstrap/Button";
 import StarIcon from "mdi-react/StarIcon";
 import Cta from "../components/About/cta";
 

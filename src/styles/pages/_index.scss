@@ -74,6 +74,9 @@
   text-align: center;
   background-color: #eaf6fa;
   height: auto;
+  @media (max-width: 600px) {
+    padding-bottom: 0;
+  }
 }
 
 /* QUESTIONS SECTION */

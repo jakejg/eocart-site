@@ -22,7 +22,7 @@ const Cta = () => {
             >
               <strong>Add to Chrome</strong> — It's Free!
             </a>
-            <MailWidget />
+            {/* <MailWidget /> */}
           </Col>
         </Row>
       </Container>

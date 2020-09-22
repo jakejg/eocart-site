@@ -17,14 +17,14 @@ const Header = () => {
   useEffect(() => {
     dispatch({ type: "MENU_OPENED", openedMenu: false });
     const handleScroll = () => {
-      if (window.scrollY > 80) {
+      if (window.scrollY > 800) {
         setSticky(true);
       } else {
         setSticky(false);
       }
     };
     window.addEventListener("scroll", handleScroll);
-  }, [location]);
+  }, [location, dispatch]);
   const handleMenuToggle = () => {
     dispatch({ type: "MENU_OPENED", openedMenu: true });
   };
@@ -33,37 +33,39 @@ const Header = () => {
   };
   return (
     <header>
-      <nav className={`navbar-sticky navbar ${sticky && "bgWhite"}`}>
+      <nav className={`navbar ${sticky && "bgWhite navbar-sticky"}`}>
         <div className="navbar--logo-holder">
           <div className="nav-row">
             <Link className="logo-link" to="/">
               <img src={logo} alt="logo" className="navbar--logo" />
             </Link>
-            {sticky && (
-              <>
-                <a
-                  className="btn navbar-button"
-                  size="small"
-                  href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <strong>Add to Chrome</strong> — It's Free!
-                </a>
-                <span
-                  className="hamburger"
-                  onClick={handleMenuToggle}
-                  onKeyDown={handleMenuToggle}
-                >
-                  <FaBars />
-                </span>
-              </>
-            )}
+            <>
+              <a
+                className="btn navbar-button"
+                size="small"
+                href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>Add to Chrome</strong> — It's Free!
+              </a>
+              <span
+                className="hamburger"
+                onClick={handleMenuToggle}
+                onKeyDown={handleMenuToggle}
+              >
+                <FaBars />
+              </span>
+            </>
           </div>
         </div>
       </nav>
       <div className={`sideMenu ${!openedMenu && "hideMenu"}`}>
         <div className="menu-contianer">
+          <img
+            className="menu-contianer__logo"
+            src={require("../images/plane.svg")}
+          />
           <span
             onClick={handleCloseToggle}
             onKeyDown={handleCloseToggle}
@@ -90,7 +92,7 @@ const Header = () => {
             <div className="sidebar-menu__businesses">
               <h2>For Businesses</h2>
               <a
-                href="https://admin.ecocart.io/registration/"
+                href="https://app.ecocart.io"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -102,6 +104,30 @@ const Header = () => {
                 rel="noopener noreferrer"
               >
                 Become an Affiliate
+              </a>
+            </div>
+            <div className="sidebar-menu__businesses">
+              <h2>Follow Us</h2>
+              <a
+                href="https://www.instagram.com/ecocart.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+              <a
+                href="https://www.linkedin.com/company/ecocart-io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Linkedin
+              </a>
+              <a
+                href="https://twitter.com/EcoCart_io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
               </a>
             </div>
           </div>

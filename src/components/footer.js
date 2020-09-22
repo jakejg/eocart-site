@@ -10,11 +10,7 @@ const Footer = () => {
         <Row className="no-gutters">
           <Col className="no-gutters" sm={12}>
             <Row className="logo-ecocart-businesses no-gutters">
-              <Col
-                className="footer-logo"
-                sm={6}
-                style={{ backgroundSize: "80%" }}
-              >
+              <Col className="footer-logo" sm={6}>
                 <img
                   className="ecocart-logo"
                   width="256"
@@ -43,7 +39,7 @@ const Footer = () => {
                 <div className="footer-businesses">
                   <h2>For Businesses</h2>
                   <a
-                    href="https://admin.ecocart.io/registration/"
+                    href="https://app.ecocart.io"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -103,7 +99,7 @@ const Footer = () => {
               </Col>
               <Col className="no-gutters" sm={4}>
                 <div className="text-right copyright">
-                  All rights reserved<br></br>&copy; Ecocart 2020
+                  All rights reserved<br></br>&copy; EcoCart 2020
                 </div>
               </Col>
             </div>

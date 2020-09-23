@@ -8,7 +8,7 @@ const TOS_US = () => {
   const data = useStaticQuery(graphql`
     query {
       tos: wordpress {
-        pageBy(id: "cG9zdDoxNTI2") {
+        pageBy(id: "cG9zdDoxNTY0") {
           id
           title(format: RENDERED)
           content

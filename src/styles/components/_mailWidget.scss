@@ -1,6 +1,14 @@
 #hubspotForm {
   margin: 2rem auto;
   width: 90vw;
+  .hs-input {
+    width: 100%;
+    min-height: 50px;
+  }
+  .hs_recaptcha.hs-recaptcha.field.hs-form-field,
+  label#label-email-32756575-d700-41e5-92a8-c8a1eeb94114 {
+    display: none !important;
+  }
   @media (min-width: 451px) {
     display: none;
   }

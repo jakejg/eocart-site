@@ -35,9 +35,9 @@ const Cta = () => {
             >
               <strong>Add to Chrome</strong> — It's Free!
             </a>
-            <div id="hubspotForm2"></div>
           </Col>
         </Row>
+        <div id="hubspotForm2"></div>
       </Container>
     </section>
   );

@@ -1,2 +1,2 @@
-<p>Live preview at:</p><br />
-<a href="https://ecocart-new.netlify.app/" target="_blank>ecocart-new.netlify.app</a>
+<h2>Live preview at:</h2>
+[![ecocart-new.netlify.app](ecocart-new.netlify.app)]

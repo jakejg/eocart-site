@@ -46,6 +46,9 @@
     padding: 1.4rem 2rem;
     margin-left: auto;
     font-weight: 500;
+    &:focus {
+      outline: none;
+    }
   }
   .hs_recaptcha.hs-recaptcha.field.hs-form-field,
   label#label-email-32756575-d700-41e5-92a8-c8a1eeb94114 {

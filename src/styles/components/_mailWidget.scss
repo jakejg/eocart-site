@@ -58,3 +58,66 @@
     display: none;
   }
 }
+
+
+
+#hubspotForm2 {
+  margin: 4rem auto;
+  width: 90vw;
+  ul.no-list.hs-error-msgs.inputs-list {
+    height: auto;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .hs-input {
+    width: 100%;
+    padding: 1.4rem 2rem;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    &:focus {
+      color: #495057;
+      background-color: #fff;
+      border-color: #80bdff;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+  }
+  .submitted-message {
+    font-size: 16px !important;
+    font-weight: bold;
+  }
+  ul.no-list.hs-error-msgs.inputs-list {
+    list-style: none !important;
+
+    li {
+      text-align: center !important;
+      font-weight: 500;
+    }
+  }
+  input.hs-button.primary.large {
+    width: 100%;
+    margin-top: 1.5rem;
+    color: white;
+    text-decoration: none;
+    background-color: #00b04f;
+    border: 0px;
+    font-size: 16px;
+    padding: 1.4rem 2rem;
+    margin-left: auto;
+    font-weight: 500;
+    &:focus {
+      outline: none;
+    }
+  }
+  .hs_recaptcha.hs-recaptcha.field.hs-form-field,
+  label#label-email-32756575-d700-41e5-92a8-c8a1eeb94114 {
+    display: none !important;
+  }
+  @media (min-width: 451px) {
+    display: none;
+  }
+}

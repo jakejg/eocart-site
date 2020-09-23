@@ -24,7 +24,7 @@ const Landing = React.forwardRef((props, ref) => {
             </a>
             <img src={require("../../images/arrowicon.svg")} />
           </div>
-          <MailWidget />
+          <MailWidget formId="hubspotForm" />
         </div>
         <div
           onClick={() => scrollTo("#how-it-works")}

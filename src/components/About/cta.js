@@ -3,13 +3,18 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Cta = () => {
   useEffect(() => {
-    if (window.hbspt) {
-      window.hbspt.forms.create({
-        portalId: "7682224",
-        formId: "32756575-d700-41e5-92a8-c8a1eeb94114",
-        target: "#hubspotForm2",
-      });
-    }
+    const script = document.createElement("script");
+    script.src = "https://js.hsforms.net/forms/shell.js";
+    document.body.appendChild(script);
+    script.addEventListener("load", () => {
+      if (window.hbspt) {
+        window.hbspt.forms.create({
+          portalId: "7682224",
+          formId: "32756575-d700-41e5-92a8-c8a1eeb94114",
+          target: "#hubspotForm2",
+        });
+      }
+    });
   }, []);
   return (
     <section className="cta">

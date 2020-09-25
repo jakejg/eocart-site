@@ -109,6 +109,13 @@ const Header = () => {
             <div className="sidebar-menu__businesses">
               <h2>Follow Us</h2>
               <a
+                href="https://www.facebook.com/ecocart.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Facebook
+              </a>
+              <a
                 href="https://www.instagram.com/ecocart.io/"
                 target="_blank"
                 rel="noopener noreferrer"

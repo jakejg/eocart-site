@@ -16,9 +16,9 @@ const faqs = [
   {
     title: "How can I find stores to shop sustainably?",
     content: `EcoCart offers a few ways to find stores that support sustainable shopping. With the extension installed, you can:
-    Just shop like normal and EcoCart will notify you when you’re in a store that supports carbon neutral shopping.
-    When you search for stores on Google, participating stores will say “Shop Sustainably” next to the website name.
-    Or you can browse participating stores that offer carbon neutral shipping through the EcoCart extension.
+    1) Just shop like normal and EcoCart will notify you when you’re in a store that supports carbon neutral shopping.
+    2) When you search for stores on Google, participating stores will say “Shop Sustainably” next to the website name.
+    3) Or you can browse participating stores that offer carbon neutral shipping through the EcoCart extension.
     `,
   },
   {

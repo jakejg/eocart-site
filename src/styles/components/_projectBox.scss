@@ -14,6 +14,9 @@
   max-height: 540px;
   overflow: hidden;
   transition: max-height 0.2s ease;
+  @media (min-width: 1000px) {
+    height: 540px;
+  }
 }
 
 .panel-close {
@@ -111,4 +114,13 @@ li {
 }
 img[alt~="/static/gold-standard-99b0e4e73bad882238b9accef2ef7435.png"] {
   height: 40px !important;
+}
+
+@media (min-width: 1000px) {
+  .project-boxes .row .panel-group:last-child {
+    .project-images {
+      margin-bottom: 20px;
+      margin-top: 4rem;
+    }
+  }
 }

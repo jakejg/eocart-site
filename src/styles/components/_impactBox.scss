@@ -21,10 +21,16 @@
   color: white;
   width: 100%;
   text-align: center;
+  @media(max-width: 600px){
+    font-size: 6.8rem;
+  }
 }
 #stat {
   color: white;
   font-size: 1.6rem;
+  @media(max-width: 600px){
+    font-size: 18px;
+  }
 }
 .impact-text {
   display: flex;

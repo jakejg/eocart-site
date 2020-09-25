@@ -14,6 +14,9 @@
     @media (max-width: 1200px) {
       font-size: 4rem;
     }
+    @media (min-width: 1800px) {
+      font-size: 4.3rem;
+    }
   }
 
   /* Store image sizes */
@@ -78,6 +81,57 @@
   #vans {
     bottom: -30px;
     right: 350px;
+  }
+  @media only screen and (min-width: 1800px) {
+    #foot-locker {
+      left: 300px;
+      top: -20px;
+    }
+
+    #freshly {
+      left: 180px;
+      top: 80px;
+    }
+
+    #glossier {
+      left: 340px;
+      top: 220px;
+    }
+
+    #casper {
+      left: 200px;
+      top: 340px;
+    }
+
+    #kohls {
+      bottom: 70px;
+      left: 450px;
+    }
+
+    #levis {
+      right: 300px;
+      top: -20px;
+    }
+
+    #nixon {
+      right: 180px;
+      top: 80px;
+    }
+
+    #petco {
+      right: 340px;
+      top: 220px;
+    }
+
+    #ulta_beauty {
+      right: 200px;
+      top: 340px;
+    }
+
+    #vans {
+      bottom: 70px;
+      right: 450px;
+    }
   }
 
   @media only screen and (max-width: 1030px) {

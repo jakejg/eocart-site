@@ -54,22 +54,207 @@ const Faqs = () => {
         <h2>Frequently asked:</h2>
         <Row>
           <Col lg={12} md={12} sm={12} className="faqs">
-            {faqs.map((faq) => (
-              <Accordion className="faq" key={faq.id}>
-                <Accordion.Toggle
-                  className="faq_title"
-                  as={Button}
-                  variant="link"
-                  eventKey={faq.id}
-                >
-                  {faq.question}
-                  <FaChevronDown />
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey={faq.id}>
-                  <Card.Body className="faq_body">{faq.answer}</Card.Body>
-                </Accordion.Collapse>
-              </Accordion>
-            ))}
+            <Accordion className="faq">
+              <Accordion.Toggle
+                className="faq_title"
+                as={Button}
+                variant="link"
+                eventKey="1"
+              >
+                How to use the EcoCart browser extension?
+                <FaChevronDown />
+              </Accordion.Toggle>
+              <Accordion.Collapse eventKey="1">
+                <Card.Body className="faq_body">
+                  EcoCart is a free browser extension that offsets the
+                  environmental impact of your online orders so you can shop
+                  sustainably. We partner with thousands of stores that you love
+                  to offer free carbon neutral shipping. All you have to do is
+                  download the EcoCart extension for Chrome, create an account,
+                  and start shopping.
+                </Card.Body>
+              </Accordion.Collapse>
+
+              <Accordion.Toggle
+                className="faq_title"
+                as={Button}
+                variant="link"
+                eventKey="2"
+              >
+                How can I find stores to shop sustainably?
+                <FaChevronDown />
+              </Accordion.Toggle>
+              <Accordion.Collapse eventKey="2">
+                <Card.Body className="faq_body">
+                  <h2>
+                    EcoCart offers a few ways to find stores that support
+                    sustainable shopping. With the extension installed, you can:
+                  </h2>
+                  <ol>
+                    <li>
+                      Just shop like normal and EcoCart will notify you when
+                      you’re in a store that supports carbon neutral shopping.
+                    </li>
+                    <li>
+                      When you search for stores on Google, participating stores
+                      will say “Shop Sustainably” next to the website name.
+                    </li>
+                    <li>
+                      Or you can browse participating stores in the extension by
+                      clicking on the EcoCart plane icon on Chrome. You’ll see
+                      stores that are offering the most EcoPoints on the home
+                      tab and stores that are trending with other EcoCart users
+                      on the search tab. Or you can search for stores by name on
+                      the search tab.
+                    </li>
+                    <li>
+                      <h3>You don’t have any stores I shop at.</h3>
+                      <p>
+                        We’re constantly adding new stores that support
+                        sustainable shopping. If you’re looking for a particular
+                        store, let us know and we’ll get them on board! Just
+                        click the contact us button in the bottom right of the
+                        screen, or write to us at{" "}
+                        <a href="mailto:hello@ecocart.io">hello@ecocart.io</a>.
+                      </p>
+                    </li>
+
+                    <li>
+                      <h3>How does EcoCart work with ad blockers</h3>
+                      <p>
+                        To make sure you earn your EcoPoints, we need to
+                        validate your purchase by communicating with the store
+                        where you made your transaction. Certain ad blocker
+                        settings prevent us from doing so. If you’re finding
+                        trouble using EcoCart alongside your ad blocker, simply
+                        disable your ad blocker while you shop and re-enable it
+                        once you’re finished.
+                      </p>
+                    </li>
+                  </ol>
+                </Card.Body>
+              </Accordion.Collapse>
+
+              <Accordion.Toggle
+                className="faq_title"
+                as={Button}
+                variant="link"
+                eventKey="1"
+              >
+                How to use the EcoCart browser extension?
+                <FaChevronDown />
+              </Accordion.Toggle>
+              <Accordion.Collapse eventKey="1">
+                <Card.Body className="faq_body">
+                  EcoCart is a free browser extension that offsets the
+                  environmental impact of your online orders so you can shop
+                  sustainably. We partner with thousands of stores that you love
+                  to offer free carbon neutral shipping. All you have to do is
+                  download the EcoCart extension for Chrome, create an account,
+                  and start shopping.
+                </Card.Body>
+              </Accordion.Collapse>
+
+              <Accordion.Toggle
+                className="faq_title"
+                as={Button}
+                variant="link"
+                eventKey="1"
+              >
+                How to use the EcoCart browser extension?
+                <FaChevronDown />
+              </Accordion.Toggle>
+              <Accordion.Collapse eventKey="1">
+                <Card.Body className="faq_body">
+                  EcoCart is a free browser extension that offsets the
+                  environmental impact of your online orders so you can shop
+                  sustainably. We partner with thousands of stores that you love
+                  to offer free carbon neutral shipping. All you have to do is
+                  download the EcoCart extension for Chrome, create an account,
+                  and start shopping.
+                </Card.Body>
+              </Accordion.Collapse>
+
+              <Accordion.Toggle
+                className="faq_title"
+                as={Button}
+                variant="link"
+                eventKey="1"
+              >
+                How to use the EcoCart browser extension?
+                <FaChevronDown />
+              </Accordion.Toggle>
+              <Accordion.Collapse eventKey="1">
+                <Card.Body className="faq_body">
+                  EcoCart is a free browser extension that offsets the
+                  environmental impact of your online orders so you can shop
+                  sustainably. We partner with thousands of stores that you love
+                  to offer free carbon neutral shipping. All you have to do is
+                  download the EcoCart extension for Chrome, create an account,
+                  and start shopping.
+                </Card.Body>
+              </Accordion.Collapse>
+
+              <Accordion.Toggle
+                className="faq_title"
+                as={Button}
+                variant="link"
+                eventKey="1"
+              >
+                How to use the EcoCart browser extension?
+                <FaChevronDown />
+              </Accordion.Toggle>
+              <Accordion.Collapse eventKey="1">
+                <Card.Body className="faq_body">
+                  EcoCart is a free browser extension that offsets the
+                  environmental impact of your online orders so you can shop
+                  sustainably. We partner with thousands of stores that you love
+                  to offer free carbon neutral shipping. All you have to do is
+                  download the EcoCart extension for Chrome, create an account,
+                  and start shopping.
+                </Card.Body>
+              </Accordion.Collapse>
+
+              <Accordion.Toggle
+                className="faq_title"
+                as={Button}
+                variant="link"
+                eventKey="1"
+              >
+                How to use the EcoCart browser extension?
+                <FaChevronDown />
+              </Accordion.Toggle>
+              <Accordion.Collapse eventKey="1">
+                <Card.Body className="faq_body">
+                  EcoCart is a free browser extension that offsets the
+                  environmental impact of your online orders so you can shop
+                  sustainably. We partner with thousands of stores that you love
+                  to offer free carbon neutral shipping. All you have to do is
+                  download the EcoCart extension for Chrome, create an account,
+                  and start shopping.
+                </Card.Body>
+              </Accordion.Collapse>
+
+              <Accordion.Toggle
+                className="faq_title"
+                as={Button}
+                variant="link"
+                eventKey="1"
+              >
+                How to use the EcoCart browser extension?
+                <FaChevronDown />
+              </Accordion.Toggle>
+              <Accordion.Collapse eventKey="1">
+                <Card.Body className="faq_body">
+                  EcoCart is a free browser extension that offsets the
+                  environmental impact of your online orders so you can shop
+                  sustainably. We partner with thousands of stores that you love
+                  to offer free carbon neutral shipping. All you have to do is
+                  download the EcoCart extension for Chrome, create an account,
+                  and start shopping.
+                </Card.Body>
+              </Accordion.Collapse>
+            </Accordion>
           </Col>
         </Row>
       </Container>

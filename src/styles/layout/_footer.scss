@@ -15,12 +15,12 @@
   flex-direction: column;
   padding: 1.7rem 0 0;
   background: url(../images/footer-bg.svg) bottom left no-repeat;
-  background-size: 80%;
-  @media (max-width: 1680px) {
-    background-size: 50%;
-  }
+  background-size: auto;
+  // @media (max-width: 1680px) {
+  //   background-size: 50%;
+  // }
   @media (max-width: 992px) {
-    background-size: 70%;
+    background-size: 90%;
   }
 }
 

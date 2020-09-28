@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `EcoCart`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `A free and simple way to show your customers you care about the environment as much as they do.`,
     author: `zeeshan junaid`,
   },
   plugins: [
@@ -10,11 +10,8 @@ module.exports = {
     {
       resolve: "gatsby-source-graphql",
       options: {
-        // Arbitrary name for the remote schema Query type
         typeName: "WORDPRESS",
-        // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
         fieldName: "wordpress",
-        // Url to query from
         url: "https://app.ecocart.io/graphql",
       },
     },

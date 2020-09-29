@@ -11,7 +11,7 @@ exports.createPages = async ({ graphql, actions }) => {
             name
           }
         }
-        ecocartFaqs {
+        ecocartFaqs(first: 100) {
           nodes {
             slug
             title

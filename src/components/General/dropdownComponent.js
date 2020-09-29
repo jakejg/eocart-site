@@ -7,7 +7,7 @@ const DropdownComponent = () => {
   const data = useStaticQuery(graphql`
     query {
       faqs: wordpress {
-        ecocartFaqs {
+        ecocartFaqs(first: 100) {
           edges {
             node {
               id

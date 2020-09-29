@@ -31,7 +31,7 @@ const Category = (props) => {
         }
       }
       faqs: wordpress {
-        ecocartFaqs {
+        ecocartFaqs(first: 100) {
           edges {
             node {
               id

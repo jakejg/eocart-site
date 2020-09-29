@@ -22,7 +22,7 @@ const Landing = React.forwardRef((props, ref) => {
             >
               <b>Add to Chrome</b> — It's Free!
             </a>
-            <img src={require("../../images/arrowicon.svg")} />
+            <img alt="arrowicon" src={require("../../images/arrowicon.svg")} />
           </div>
           <MailWidget formId="hubspotForm" />
         </div>

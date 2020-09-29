@@ -17,7 +17,7 @@ const Faq = (props) => {
   const data = useStaticQuery(graphql`
     query {
       faqCategories: wordpress {
-        ecocartFaqCategories(where: { orderby: TERM_ORDER }) {
+        ecocartFaqCategories(where: { orderby: TERM_ORDER }, first: 100) {
           edges {
             node {
               id

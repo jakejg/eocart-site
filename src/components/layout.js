@@ -13,7 +13,6 @@ import Footer from "./footer";
 import "../styles/main.scss";
 import CookieConsent from "react-cookie-consent";
 import { createGlobalStyle, css } from "styled-components";
-import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "gatsby";
 
 const Layout = ({ children }) => {

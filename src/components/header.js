@@ -50,6 +50,8 @@ const Header = () => {
                 <strong>Add to Chrome</strong> — It's Free!
               </a>
               <span
+                tabIndex={0}
+                role="button"
                 className="hamburger"
                 onClick={handleMenuToggle}
                 onKeyDown={handleMenuToggle}
@@ -63,10 +65,13 @@ const Header = () => {
       <div className={`sideMenu ${!openedMenu && "hideMenu"}`}>
         <div className="menu-contianer">
           <img
+            alt="plane"
             className="menu-contianer__logo"
             src={require("../images/plane.svg")}
           />
           <span
+            tabIndex={0}
+            role="button"
             onClick={handleCloseToggle}
             onKeyDown={handleCloseToggle}
             className="cross-icon"

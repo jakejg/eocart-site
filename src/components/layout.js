@@ -11,7 +11,10 @@ import PropTypes from "prop-types";
 import Header from "./header";
 import Footer from "./footer";
 import "../styles/main.scss";
+import CookieConsent from "react-cookie-consent";
 import { createGlobalStyle, css } from "styled-components";
+import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "gatsby";
 
 const Layout = ({ children }) => {
   const GlobalStyle = createGlobalStyle`
@@ -35,6 +38,16 @@ const Layout = ({ children }) => {
       <Header />
       <main>{children}</main>
       <Footer />
+      <CookieConsent
+        location="bottom"
+        buttonText="Agree"
+        cookieName="ecoCartCookies"
+        expires={150}
+      >
+        EcoCart uses cookies to bring the best experience. In order to use this
+        website, you must agree our{" "}
+        <Link to="/terms-of-services-us">Terms of Use</Link>.
+      </CookieConsent>
     </>
   );
 };

@@ -3,10 +3,6 @@
     "develop": {
       "plugins": [
         {
-          "name": "babel-plugin-lodash",
-          "options": {}
-        },
-        {
           "name": "/Users/apple/Desktop/playground/ecocart/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
@@ -34,10 +30,6 @@
     },
     "develop-html": {
       "plugins": [
-        {
-          "name": "babel-plugin-lodash",
-          "options": {}
-        },
         {
           "name": "/Users/apple/Desktop/playground/ecocart/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
@@ -67,10 +59,6 @@
     "build-html": {
       "plugins": [
         {
-          "name": "babel-plugin-lodash",
-          "options": {}
-        },
-        {
           "name": "/Users/apple/Desktop/playground/ecocart/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
@@ -98,10 +86,6 @@
     },
     "build-javascript": {
       "plugins": [
-        {
-          "name": "babel-plugin-lodash",
-          "options": {}
-        },
         {
           "name": "/Users/apple/Desktop/playground/ecocart/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}

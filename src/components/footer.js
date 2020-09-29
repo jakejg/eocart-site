@@ -22,13 +22,7 @@ const Footer = () => {
                 <div className="footer-ecocart">
                   <h2>EcoCart</h2>
                   <Link to="/about">About Us</Link>
-                  <a
-                    href="https://app.ecocart.io/blog/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Blog
-                  </a>
+                  <Link to="/blog">Blog</Link>
                   <Link to="/terms-of-services-us">Terms of Service(US)</Link>
                   <Link to="/terms-of-services-eu">Terms of Service(EU)</Link>
                   <Link to="/privacy-policy">Privacy Policy</Link>

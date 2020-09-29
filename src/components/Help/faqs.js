@@ -95,6 +95,88 @@ const Faqs = () => {
                 className="faq_title"
                 as={Button}
                 variant="link"
+                eventKey="3"
+              >
+                What on Earth is a carbon offset?
+                <FaChevronDown />
+              </Accordion.Toggle>
+              <Accordion.Collapse eventKey="3">
+                <Card.Body className="faq_body">
+                  <p>
+                    Carbon offsets are a practical and effective way to reduce
+                    the effects of climate change by funding renewable energy,
+                    forestry, or clean water projects. These projects reduce
+                    emissions of carbon dioxide or other greenhouse gases in
+                    order to compensate for emissions made elsewhere, like the
+                    emissions created from ordering something online. EcoCart
+                    calculates the emissions created from your online orders and
+                    donates the exact dollar amount required to reduce those
+                    emissions directly to these projects on your behalf.
+                  </p>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Accordion>
+
+            <Accordion className="faq">
+              <Accordion.Toggle
+                className="faq_title"
+                as={Button}
+                variant="link"
+                eventKey="4"
+              >
+                What do you mean carbon neutral?
+                <FaChevronDown />
+              </Accordion.Toggle>
+              <Accordion.Collapse eventKey="4">
+                <Card.Body className="faq_body">
+                  <p>
+                    When we say orders will be “carbon neutral,” that means that
+                    we will eliminate, capture, or otherwise mitigate all of the
+                    carbon emissions created from shipping your online orders.
+                    “Net zero” is another term you might hear and it’s simply
+                    another way of describing what happens with carbon
+                    offsetting.
+                  </p>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Accordion>
+
+            <Accordion className="faq">
+              <Accordion.Toggle
+                className="faq_title"
+                as={Button}
+                variant="link"
+                eventKey="7"
+              >
+                What are EcoPoints?
+                <FaChevronDown />
+              </Accordion.Toggle>
+              <Accordion.Collapse eventKey="7">
+                <Card.Body className="faq_body">
+                  <p>
+                    EcoPoints are what make up the free EcoCart rewards system.
+                    You earn EcoPoints every time you make your order carbon
+                    neutral with EcoCart that you can redeem for earth-saving
+                    rewards like planting trees or giving clean water to
+                    families. <strong>OR</strong> you can use your EcoPoints
+                    just like cash, and redeem them for gift cards at your
+                    favorite stores!
+                  </p>
+                  <p>
+                    You'll often see EcoPoints multipliers next to stores that
+                    indicate you'll earn 2x or 3x the typical amount of
+                    EcoPoints when shopping at that store. Without an EcoPoints
+                    multiplier, $1 spent = 10 EcoPoints.
+                  </p>
+                  <Img fluid={faqsImages.image13.childImageSharp.fluid} />
+                </Card.Body>
+              </Accordion.Collapse>
+            </Accordion>
+            <Accordion className="faq">
+              <Accordion.Toggle
+                className="faq_title"
+                as={Button}
+                variant="link"
                 eventKey="2"
               >
                 How can I find stores to shop sustainably?
@@ -125,30 +207,6 @@ const Faqs = () => {
                       the search tab.
                     </li>
                     <Img fluid={faqsImages.image4.childImageSharp.fluid} />
-                    <li>
-                      <h3>You don’t have any stores I shop at.</h3>
-                      <p>
-                        We’re constantly adding new stores that support
-                        sustainable shopping. If you’re looking for a particular
-                        store, let us know and we’ll get them on board! Just
-                        click the contact us button in the bottom right of the
-                        screen, or write to us at{" "}
-                        <a href="mailto:hello@ecocart.io">hello@ecocart.io</a>.
-                      </p>
-                    </li>
-
-                    <li>
-                      <h3>How does EcoCart work with ad blockers</h3>
-                      <p>
-                        To make sure you earn your EcoPoints, we need to
-                        validate your purchase by communicating with the store
-                        where you made your transaction. Certain ad blocker
-                        settings prevent us from doing so. If you’re finding
-                        trouble using EcoCart alongside your ad blocker, simply
-                        disable your ad blocker while you shop and re-enable it
-                        once you’re finished.
-                      </p>
-                    </li>
                   </ol>
                 </Card.Body>
               </Accordion.Collapse>
@@ -159,58 +217,9 @@ const Faqs = () => {
                 className="faq_title"
                 as={Button}
                 variant="link"
-                eventKey="3"
-              >
-                What on Earth is a carbon offset?
-                <FaChevronDown />
-              </Accordion.Toggle>
-              <Accordion.Collapse eventKey="3">
-                <Card.Body className="faq_body">
-                  <p>
-                    Carbon offsets are a practical and effective way to reduce
-                    the effects of climate change by funding renewable energy,
-                    forestry, or clean water projects. These projects reduce
-                    emissions of carbon dioxide or other greenhouse gases in
-                    order to compensate for emissions made elsewhere, like the
-                    emissions created from ordering something online. EcoCart
-                    calculates the emissions created from your online orders and
-                    donates the exact dollar amount required to reduce those
-                    emissions directly to these projects on your behalf.
-                  </p>
-                </Card.Body>
-              </Accordion.Collapse>
-            </Accordion>
-            <Accordion className="faq">
-              <Accordion.Toggle
-                className="faq_title"
-                as={Button}
-                variant="link"
-                eventKey="4"
-              >
-                What do you mean “carbon neutral?
-                <FaChevronDown />
-              </Accordion.Toggle>
-              <Accordion.Collapse eventKey="4">
-                <Card.Body className="faq_body">
-                  <p>
-                    When we say orders will be “carbon neutral,” that means that
-                    we will eliminate, capture, or otherwise mitigate all of the
-                    carbon emissions created from shipping your online orders.
-                    “Net zero” is another term you might hear and it’s simply
-                    another way of describing what happens with carbon
-                    offsetting.
-                  </p>
-                </Card.Body>
-              </Accordion.Collapse>
-            </Accordion>
-            <Accordion className="faq">
-              <Accordion.Toggle
-                className="faq_title"
-                as={Button}
-                variant="link"
                 eventKey="5"
               >
-                How do you determine the shipping emissions of each order?
+                How do you determine the carbon footprint of each order?
                 <FaChevronDown />
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="5">
@@ -247,37 +256,6 @@ const Faqs = () => {
                     experience, which we explain in our{" "}
                     <Link to="/privacy-policy">privacy policy</Link>.
                   </p>
-                </Card.Body>
-              </Accordion.Collapse>
-            </Accordion>
-            <Accordion className="faq">
-              <Accordion.Toggle
-                className="faq_title"
-                as={Button}
-                variant="link"
-                eventKey="7"
-              >
-                What are EcoPoints?
-                <FaChevronDown />
-              </Accordion.Toggle>
-              <Accordion.Collapse eventKey="7">
-                <Card.Body className="faq_body">
-                  <p>
-                    EcoPoints are what make up the free EcoCart rewards system.
-                    You earn EcoPoints every time you make your order carbon
-                    neutral with EcoCart that you can redeem for earth-saving
-                    rewards like planting trees or giving clean water to
-                    families. <strong>OR</strong> you can use your EcoPoints
-                    just like cash, and redeem them for gift cards at your
-                    favorite stores!
-                  </p>
-                  <p>
-                    You'll often see EcoPoints multipliers next to stores that
-                    indicate you'll earn 2x or 3x the typical amount of
-                    EcoPoints when shopping at that store. Without an EcoPoints
-                    multiplier, $1 spent = 10 EcoPoints.
-                  </p>
-                  <Img fluid={faqsImages.image13.childImageSharp.fluid} />
                 </Card.Body>
               </Accordion.Collapse>
             </Accordion>

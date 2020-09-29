@@ -37,6 +37,9 @@ body {
   font-size: 16px;
   align-items: center !important;
   box-shadow: 0 2rem 2px 2rem rgba(64, 64, 64, 0.5);
+  a {
+    color: #00b04f !important;
+  }
   button#rcc-confirm-button {
     color: white !important;
     text-decoration: none !important;

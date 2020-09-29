@@ -44,8 +44,8 @@ const Layout = ({ children }) => {
         cookieName="ecoCartCookies"
         expires={150}
       >
-        EcoCart uses cookies to bring the best experience. In order to use this
-        website, you must agree our{" "}
+        EcoCart uses cookies to bring you the best experience possible. In order
+        to use this website, you agree to our{" "}
         <Link to="/terms-of-services-us">Terms of Use</Link>.
       </CookieConsent>
     </>

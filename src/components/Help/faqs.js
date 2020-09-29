@@ -9,28 +9,28 @@ const Faqs = () => {
     query {
       image1: file(relativePath: { eq: "helpFaqs/questions1.png" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
       image2: file(relativePath: { eq: "helpFaqs/questions2.png" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
       image4: file(relativePath: { eq: "helpFaqs/questions4.png" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
       image13: file(relativePath: { eq: "helpFaqs/questions13.png" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }

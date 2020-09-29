@@ -1,5 +1,5 @@
-import Jay from "../images/testimonials/Jay.png";
-import Kenneth from "../images/testimonials/Kenneth.jpg";
+import Kenneth from "../images/testimonials/Jay.png";
+import Jay  from "../images/testimonials/Kenneth.jpg";
 import Mariah from "../images/testimonials/Mariah.png";
 import Rebecca from "../images/testimonials/Rebecca.jpg";
 import Sarah from "../images/testimonials/Sarah.png";

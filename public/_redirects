@@ -8,6 +8,8 @@
 /login  https://shop.ecocart.io/login 200
 /success  https://shop.ecocart.io/success 200
 /register  https://shop.ecocart.io/register 200
-/reset_password https://shop.ecocart.io/register 200
+/oauth  https://shop.ecocart.io/oauth 200
+/reset_password https://shop.ecocart.io/reset_password 200
+/reset_password/success https://shop.ecocart.io/reset_password/success 200
 /terms-of-services /terms-of-services-us 301!
 /app/*  https://app.ecocart.io/:splat 200

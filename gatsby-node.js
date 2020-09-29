@@ -59,10 +59,10 @@ exports.createPages = async ({ graphql, actions }) => {
   data.wordpress.posts.nodes.forEach((post) => {
     createPage({
       path: `/posts/${post.slug}`,
-      component: path.resolve(`./src/templates/post.js`),
+      component: path.resolve(`./src/templates/single-post.js`),
       context: {
         slug: post.slug,
-        title: post.title,
+        postTitle: post.title,
         content: post.content,
         featuredImage: post.featuredImage.node.sourceUrl,
         id: post.id,

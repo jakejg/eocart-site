@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
 import { Col, Container, Row } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -52,7 +51,10 @@ const Blog = () => {
                   to={`/posts/${post.node.slug}`}
                   className="blog-page__post-img"
                 >
-                  <img src={post.node.featuredImage.node.sourceUrl} />
+                  <img
+                    alt="featured"
+                    src={post.node.featuredImage.node.sourceUrl}
+                  />
                 </Link>
                 <div className="blog-page__post-categories">
                   {post.node.categories.edges.map((category, i) => (

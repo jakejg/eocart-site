@@ -137,3 +137,8 @@ img[alt~="/static/gold-standard-99b0e4e73bad882238b9accef2ef7435.png"] {
     }
   }
 }
+@media (max-width: 600px) {
+  .verification-image {
+    height: auto !important;
+  }
+}

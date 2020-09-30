@@ -1,6 +1,24 @@
 module.exports = {
   siteMetadata: {
     title: `EcoCart`,
+    menuLinks:[
+      {
+         name:'Carbon Neutral Shopping | EcoCart Chrome Extension',
+         link:'/'
+      },
+      {
+         name:'Fighting Climate Change with EcoCart | EcoCart',
+         link:'/about'
+      },
+      {
+        name: 'Carbon Neutral Shipping | EcoCart for Shopify',
+        link:'/app'
+      },
+      {
+        name: 'Our Carbon Offset Projects | EcoCart',
+        link:'/app/our-projects/'
+      }
+   ],
     description: `A free and simple way to show your customers you care about the environment as much as they do.`,
     author: `zeeshan junaid`,
   },

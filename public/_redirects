@@ -1,10 +1,3 @@
-/project/forest-protection /app/project/forest-protection
-/project/water-purification /app/project/water-purification
-/project/wind-energy /app/project/wind-energy
-/our-projects /app/our-projects
-/how-it-works /app/how-it-works
-/chrome https://ecocart.io/ 301!
-/project/tri-city-forest-project-3/ /app/project/tri-city-forest-project-3/ 301!
 /login  https://shop.ecocart.io/login 200
 /success  https://shop.ecocart.io/success 200
 /register  https://shop.ecocart.io/register 200

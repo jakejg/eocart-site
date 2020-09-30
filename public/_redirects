@@ -13,6 +13,7 @@
 /reset_password/success https://shop.ecocart.io/reset_password/success 200
 /terms-of-services /terms-of-services-us 301!
 /app/*  https://app.ecocart.io/:splat 200
+/logout https://shop.ecocart.io/logout 200
 /api/projects https://shop.ecocart.io/api/projects 200
 /api/merchants https://shop.ecocart.io/api/merchants 200
 /api/messages https://shop.ecocart.io/api/messages 200

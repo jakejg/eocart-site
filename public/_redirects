@@ -21,6 +21,7 @@
 /api/redeem https://shop.ecocart.io/api/redeem 200
 /activate https://shop.ecocart.io/activate 200
 /change_password https://shop.ecocart.io/change_password 200
+/change_password_success https://shop.ecocart.io/change_password_success 200
 /uploads/2020/08/17/5f3a1eab4e6f7.png https://shop.ecocart.io/uploads/2020/08/17/5f3a1eab4e6f7.png 200
 /uploads/2020/08/17/5f3a1ed46699a.png https://shop.ecocart.io/uploads/2020/08/17/5f3a1ed46699a.png 200
 /uploads/2020/08/17/5f3a1ee384b35.png https://shop.ecocart.io/uploads/2020/08/17/5f3a1ee384b35.png 200

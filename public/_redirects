@@ -14,6 +14,6 @@
 /terms-of-services /terms-of-services-us 301!
 /app/*  https://app.ecocart.io/:splat 200
 /api/projects https://shop.ecocart.io/api/projects 200
-/api/merchants?limit=100 https://shop.ecocart.io/api/merchants?limit=100 200
+/api/merchants https://shop.ecocart.io/api/merchants 200
 /api/messages https://shop.ecocart.io/api/messages 200
 /api/profile https://shop.ecocart.io/api/profile 200

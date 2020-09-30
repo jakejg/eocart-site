@@ -13,3 +13,4 @@
 /reset_password/success https://shop.ecocart.io/reset_password/success 200
 /terms-of-services /terms-of-services-us 301!
 /app/*  https://app.ecocart.io/:splat 200
+/api/* https://shop.ecocart.io/api:splat 200

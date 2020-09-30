@@ -18,4 +18,5 @@
 /api/merchants https://shop.ecocart.io/api/merchants 200
 /api/messages https://shop.ecocart.io/api/messages 200
 /api/profile https://shop.ecocart.io/api/profile 200
+/api/redeem https://shop.ecocart.io/api/redeem 200
 /activate https://shop.ecocart.io/activate 200

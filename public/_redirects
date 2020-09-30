@@ -5,7 +5,7 @@
 /our-projects/* /app/our-projects/
 /how-it-works /app/how-it-works/
 /chrome https://ecocart.io/ 301!
-/wp-content/uploads/2020/09/Questions-3.png https://app.ecocart.io/wp-content/uploads/2020/09/Questions-3.png 200
+/wp-content/* https://app.ecocart.io/wp-content/:splat 200
 /project/tri-city-forest-project-3/ /app/project/tri-city-forest-project-3/ 301!
 /login  https://shop.ecocart.io/login 200
 /success  https://shop.ecocart.io/success 200

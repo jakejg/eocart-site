@@ -1,3 +1,10 @@
+/project/forest-protection /app/project/forest-protection
+/project/water-purification /app/project/water-purification
+/project/wind-energy /app/project/wind-energy
+/our-projects /app/our-projects
+/how-it-works /app/how-it-works
+/chrome https://ecocart.io/ 301!
+/project/tri-city-forest-project-3/ /app/project/tri-city-forest-project-3/ 301!
 /login  https://shop.ecocart.io/login 200
 /success  https://shop.ecocart.io/success 200
 /register  https://shop.ecocart.io/register 200
@@ -5,7 +12,8 @@
 /reset_password https://shop.ecocart.io/reset_password 200
 /reset_password/success https://shop.ecocart.io/reset_password/success 200
 /terms-of-services /terms-of-services-us 301!
-/app/*  https://app.ecocart.io/:splat 200
+/app/  https://app.ecocart.io/ 200
+/app/faq  https://app.ecocart.io/faq 200
 /logout https://shop.ecocart.io/logout 200
 /api/projects https://shop.ecocart.io/api/projects 200
 /api/merchants https://shop.ecocart.io/api/merchants 200

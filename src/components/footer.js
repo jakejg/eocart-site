@@ -23,7 +23,7 @@ const Footer = () => {
                   <h2>EcoCart</h2>
                   <Link to="/about">About Us</Link>
                   <a
-                    href="https://ecocart.io/app/blog/"
+                    href="https://ecocart.io/blog/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

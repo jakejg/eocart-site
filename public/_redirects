@@ -5,6 +5,19 @@
 /our-projects/* /app/our-projects/
 /how-it-works /app/how-it-works/
 /contact-us /app/contact-us/
+/4-ways-to-reduce-your-carbon-footprint https://app.ecocart.io/4-ways-to-reduce-your-carbon-footprint/ 200
+/blog/page/2 https://app.ecocart.io/blog/page/2 200
+/climate-change-and-e-commerce https://app.ecocart.io/climate-change-and-e-commerce/ 200
+/ecocart-is-the-offset-plugin-shopify-stores-need-heres-why /app/ecocart-is-the-offset-plugin-shopify-stores-need-heres-why/
+/how-covid-19-has-impacted-ecommerce /app/how-covid-19-has-impacted-ecommerce/
+/how-to-become-a-more-sustainable-business /app/how-to-become-a-more-sustainable-business/
+/offset-your-e-commerce-footprint-strengthen-your-business /app/offset-your-e-commerce-footprint-strengthen-your-business/
+/the-hidden-carbon-footprint-of-the-internet https://app.ecocart.io/the-hidden-carbon-footprint-of-the-internet/ 200
+/whats-the-impact-of-the-coronavirus-on-climate-change https://app.ecocart.io/whats-the-impact-of-the-coronavirus-on-climate-change/ 200
+/why-carbon-offsetting-matters https://app.ecocart.io/why-carbon-offsetting-matters/ 200
+/about-us /app/about-us/
+/faq /app/faq/
+/terms-of-service /app/terms-of-service/
 /blog https://app.ecocart.io/blog/ 200
 /chrome https://ecocart.io/ 301!
 /wp-content/* https://app.ecocart.io/wp-content/:splat 200

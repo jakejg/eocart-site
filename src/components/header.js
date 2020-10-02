@@ -83,7 +83,7 @@ const Header = () => {
               <h2>EcoCart</h2>
               <Link to="/about">About Us</Link>
               <a
-                href="https://app.ecocart.io/blog/"
+                href="https://ecocart.io/blog/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -97,7 +97,7 @@ const Header = () => {
             <div className="sidebar-menu__businesses">
               <h2>For Businesses</h2>
               <a
-                href="https://app.ecocart.io"
+                href="https://ecocart.io/app"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -22,7 +22,7 @@
 /blog/* https://app.ecocart.io/blog/:splat 200
 /chrome https://ecocart.io/ 301!
 /wp-content/* https://app.ecocart.io/wp-content/:splat 200
-/project/tri-city-forest-project-3/ /app/project/tri-city-forest-project-3/
+/project/tri-city-forest-project-3/ /app/project/forest-protection/
 /login  https://shop.ecocart.io/login 200
 /success  https://shop.ecocart.io/success 200
 /register  https://shop.ecocart.io/register 200

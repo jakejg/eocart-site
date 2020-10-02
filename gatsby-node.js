@@ -29,6 +29,12 @@ exports.createPages = async ({ graphql, actions }) => {
                 sourceUrl(size: THUMBNAIL)
               }
             }
+            categories {
+              nodes {
+                name
+              }
+            }
+            modified
           }
         }
       }
@@ -66,6 +72,8 @@ exports.createPages = async ({ graphql, actions }) => {
         content: post.content,
         featuredImage: post.featuredImage.node.sourceUrl,
         id: post.id,
+        categories: post.categories,
+        date: post.modified,
       },
     });
   });

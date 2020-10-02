@@ -47,32 +47,30 @@ const Blog = () => {
           <div className="blog-page__grid">
             {wpPosts.wordpress.posts.edges.map((post, index) => (
               <div className="blog-page__post">
-                <Link
-                  to={`/posts/${post.node.slug}`}
-                  className="blog-page__post-img"
-                >
-                  <img
-                    alt="featured"
-                    src={post.node.featuredImage.node.sourceUrl}
-                  />
+                <Link to={`/posts/${post.node.slug}`}>
+                  <div className="blog-page__post-img">
+                    <img
+                      alt="featured"
+                      src={post.node.featuredImage.node.sourceUrl}
+                    />
+                  </div>
+                  <div className="blog-page__post___inner">
+                    <div className="blog-page__post-categories">
+                      {post.node.categories.edges.map((category, i) => (
+                        <span key={i}>{category.node.name}</span>
+                      ))}
+                    </div>
+                    <div className="blog-page__post-title">
+                      <h2>{post.node.title}</h2>
+                    </div>
+                    <div
+                      className="blog-page__post-excerpt"
+                      dangerouslySetInnerHTML={{
+                        __html: post.node.excerpt,
+                      }}
+                    ></div>
+                  </div>
                 </Link>
-                <div className="blog-page__post-categories">
-                  {post.node.categories.edges.map((category, i) => (
-                    <span key={i}>{category.node.name}</span>
-                  ))}
-                </div>
-                <Link
-                  className="blog-page__post-title"
-                  to={`/posts/${post.node.slug}`}
-                >
-                  <h2>{post.node.title}</h2>
-                </Link>
-                <div
-                  className="blog-page__post-excerpt"
-                  dangerouslySetInnerHTML={{
-                    __html: post.node.excerpt,
-                  }}
-                ></div>
               </div>
             ))}
           </div>

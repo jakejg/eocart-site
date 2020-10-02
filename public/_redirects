@@ -17,6 +17,8 @@
 /about-us /app/about-us/
 /faq /app/faq/
 /terms-of-service /app/terms-of-service/
+/easily-offset-your-carbon-footprint https://app.ecocart.io/easily-offset-your-carbon-footprint/ 200
+/easily-offset-your-carbon-footprint https://app.ecocart.io/easily-offset-your-carbon-footprint/ 200
 /blog/* https://app.ecocart.io/blog/:splat 200
 /chrome https://ecocart.io/ 301!
 /wp-content/* https://app.ecocart.io/wp-content/:splat 200

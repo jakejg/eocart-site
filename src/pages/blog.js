@@ -3,6 +3,7 @@ import { graphql, Link, useStaticQuery } from "gatsby";
 import { Col, Container, Row } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import CTA from "../components/About/cta";
 
 const Blog = () => {
   const wpPosts = useStaticQuery(graphql`
@@ -76,6 +77,7 @@ const Blog = () => {
           </div>
         </Container>
       </div>
+      <CTA />
     </Layout>
   );
 };

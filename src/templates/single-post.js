@@ -4,6 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { FaArrowLeft } from "react-icons/fa";
+import CTA from "../components/About/cta";
 
 const Post = (props) => {
   const {
@@ -106,6 +107,7 @@ const Post = (props) => {
           </Row>
         </Container>
       </div>
+      <CTA />
     </Layout>
   );
 };

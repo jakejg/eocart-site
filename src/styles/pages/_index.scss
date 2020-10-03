@@ -101,11 +101,39 @@
 
 .faqs-homepage {
   padding: 8rem 0;
+
+  .faq {
+    border: 0px !important;
+    border-top: 1px solid #ccc !important;
+    &:first-child {
+      border: 0px !important;
+      border-top: 1px solid #ccc !important;
+    }
+    &:last-child {
+      border: 0px !important;
+      border-bottom: 1px solid #ccc !important;
+    }
+  }
   h1 {
     font-size: 5rem;
     font-weight: bold;
     color: #0d3c2a;
     margin-bottom: 5rem;
+  }
+  .faq_title {
+    color: #0d3c2a !important;
+    padding: 10px 0;
+  }
+  .faqs:first-child .faq {
+    border-top: 1px solid #ccc !important;
+  }
+  .faqs .faq:hover {
+    .faq_title {
+      color: #00b04f !important;
+    }
+  }
+  .faq_body.card-body {
+    padding: 0;
   }
 }
 

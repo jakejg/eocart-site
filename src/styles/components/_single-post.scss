@@ -1,0 +1,121 @@
+.single-post {
+  padding: 10rem 0;
+  &__back {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
+    color: #00b04f !important;
+    text-decoration: none;
+    font-weight: 500;
+
+    span {
+      margin-right: 1rem;
+      margin-top: -11px;
+    }
+  }
+  .page-heading {
+    margin: 2rem 0;
+    text-align: left;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+
+    h2 {
+      font-size: 3.6rem;
+      background: transparent !important;
+      padding: 0;
+      @media (max-width: 600px) {
+        font-size: 2.8rem;
+      }
+    }
+  }
+  &__img {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  &__info {
+    text-align: left;
+    display: flex;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 1rem 0 0 0;
+    &___category {
+      margin-right: 1rem;
+    }
+    &___date {
+      margin-left: 1rem;
+    }
+  }
+  &__content {
+    text-align: left;
+    font-size: 16px;
+    transition: all 0.3s;
+    padding: 2rem 0;
+    @media (max-width: 600px) {
+      font-size: 14px;
+      padding: 2rem 0;
+    }
+    img {
+      width: 100%;
+    }
+    a {
+      color: #00b04f !important;
+    }
+  }
+}
+.recent-posts {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #f0f0f0;
+  @media(max-width:767px){
+    border: 0px;
+    padding: 3rem 0;
+  }
+
+  &__title {
+    text-align: left;
+    color: #00b04f !important;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+  .recent-post {
+    transition: all 0.3s;
+    &:hover {
+      box-shadow: 0 0 1.3rem 0 rgba(0, 0, 0, 0.2);
+      img {
+        transform: scale(1.1) !important;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    a {
+      text-decoration: none;
+      color: #212529;
+    }
+    &__img {
+      border-radius: 0.5rem;
+      overflow: hidden;
+      img {
+        width: 100%;
+        transition: all 0.3s;
+      }
+    }
+    h2 {
+      font-size: 16px;
+      text-align: left;
+      margin: 1rem;
+    }
+  }
+}

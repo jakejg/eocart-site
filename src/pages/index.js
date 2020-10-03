@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card, Accordion, Button } from "react-bootstrap";
 
 // COMPONENT IMPORTS
 import Landing from "../components/Landing";
@@ -12,6 +12,8 @@ import Video from "../components/Landing/Video";
 import ProjectBox from "../components/Landing/ProjectBox";
 import StarIcon from "mdi-react/StarIcon";
 import Cta from "../components/About/cta";
+
+import { FaChevronDown } from "react-icons/fa";
 
 //MEDIA IMPORTS
 import howItWorks from "../videos/how-it-works.mp4";
@@ -157,9 +159,7 @@ const IndexPage = () => (
         <Testimonial reviews={reviews}></Testimonial>
       </Container>
     </section>
-
-    {/* Frequently asked questions section */}
-    <section id="questions">
+    <section className="faqs_section faqs-homepage">
       <Container>
         <Row className="justify-content-center">
           <Col xs>
@@ -167,7 +167,26 @@ const IndexPage = () => (
           </Col>
         </Row>
         <Row>
-          <FaqBox faqs={faqs}></FaqBox>
+          {faqs.map((faq, index) => (
+            <Col lg={12} md={12} sm={12} className="faqs" key={index}>
+              <Accordion className="faq">
+                <Accordion.Toggle
+                  className="faq_title"
+                  as={Button}
+                  variant="link"
+                  eventKey={faq.id}
+                >
+                  {faq.title}
+                  <FaChevronDown />
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey={faq.id}>
+                  <Card.Body className="faq_body">
+                    <p>{faq.content}</p>
+                  </Card.Body>
+                </Accordion.Collapse>
+              </Accordion>
+            </Col>
+          ))}
         </Row>
         <Row className="justify-content-center mt-5">
           <Col sm>
@@ -178,17 +197,6 @@ const IndexPage = () => (
         </Row>
       </Container>
     </section>
-
-    {/* <section id="bottom">
-      <Container>
-        <h1 style={{ marginBottom: "3vh" }}>
-          Ready to start <br></br> shopping sustainably?
-        </h1>
-        <Button className="add-button" size="lg">
-          <b>Add to Chrome</b> — It's Free!
-        </Button>
-      </Container>
-    </section> */}
     <Cta />
   </Layout>
 );

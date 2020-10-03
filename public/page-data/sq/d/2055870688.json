@@ -1,0 +1,1 @@
+{"errors":[{"message":"request to https://app.ecocart.io/graphql failed, reason: getaddrinfo ENOTFOUND app.ecocart.io","locations":[{"line":3,"column":5}],"path":["wordpress","posts"]}],"data":{"wordpress":{"posts":null}}}

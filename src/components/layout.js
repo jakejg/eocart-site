@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
       >
         EcoCart uses cookies to bring you the best experience possible. In order
         to use this website, you agree to our{" "}
-        <Link to="/terms-of-services-us">Terms of Use</Link>.
+        <Link to="/privacy-policy">Privacy Policy</Link>.
       </CookieConsent>
     </>
   );

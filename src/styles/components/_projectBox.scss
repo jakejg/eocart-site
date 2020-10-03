@@ -129,3 +129,24 @@ img[alt~="/static/gold-standard-99b0e4e73bad882238b9accef2ef7435.png"] {
     }
   }
 }
+@media (min-width: 1200px) {
+  .project-boxes .row .panel-group:last-child {
+    .project-images {
+      margin-bottom: 3rem;
+      margin-top: 2.5rem;
+    }
+  }
+}
+@media (min-width: 1700px) {
+  .project-boxes .row .panel-group:last-child {
+    .project-images {
+      margin-bottom: 25px;
+      margin-top: 2rem;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .verification-image {
+    height: auto !important;
+  }
+}

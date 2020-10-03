@@ -1,5 +1,5 @@
 import Kenneth from "../images/testimonials/Jay.png";
-import Jay  from "../images/testimonials/Kenneth.jpg";
+import Jay from "../images/testimonials/Kenneth.jpg";
 import Mariah from "../images/testimonials/Mariah.png";
 import Rebecca from "../images/testimonials/Rebecca.jpg";
 import Sarah from "../images/testimonials/Sarah.png";
@@ -16,13 +16,13 @@ const reviews = [
     avatar: Jay,
     quote:
       "Love this app! I don’t have to do anything and EcoCart offsets the environmental impact of my orders.",
-    author: "Jay",
+    author: "Kenneth",
   },
   {
     avatar: Kenneth,
     quote:
       "I’ve already earned $30 of Amazon gift cards, just for buying makeup at Glossier and ULTA.",
-    author: "Kenneth",
+    author: "Jay",
   },
   {
     avatar: Eli,

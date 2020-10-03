@@ -18,6 +18,25 @@ exports.createPages = async ({ graphql, actions }) => {
             content
           }
         }
+        posts(first: 100) {
+          nodes {
+            id
+            slug
+            content
+            title
+            featuredImage {
+              node {
+                sourceUrl(size: THUMBNAIL)
+              }
+            }
+            categories {
+              nodes {
+                name
+              }
+            }
+            modified
+          }
+        }
       }
     }
   `);
@@ -40,6 +59,21 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: faq.slug,
         title: faq.title,
         content: faq.content,
+      },
+    });
+  });
+  data.wordpress.posts.nodes.forEach((post) => {
+    createPage({
+      path: `/posts/${post.slug}`,
+      component: path.resolve(`./src/templates/single-post.js`),
+      context: {
+        slug: post.slug,
+        postTitle: post.title,
+        content: post.content,
+        featuredImage: post.featuredImage.node.sourceUrl,
+        id: post.id,
+        categories: post.categories,
+        date: post.modified,
       },
     });
   });

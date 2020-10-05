@@ -76,13 +76,16 @@
     ol {
       list-style-image: none;
       margin-left: 1.8rem;
-      li {
-        font-size: 14px;
-      }
     }
     @media (max-width: 600px) {
       font-size: 14px;
       padding: 2rem 0;
+      ul,
+      ol {
+        li{
+          font-size: 14px;
+        }
+      }
     }
     img {
       width: 100%;

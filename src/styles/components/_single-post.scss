@@ -49,6 +49,9 @@
     border-top: 1px solid #f0f0f0;
     border-bottom: 1px solid #f0f0f0;
     padding: 1rem 0 0 0.5rem;
+    @media (max-width: 600px) {
+      font-size: 15px !important;
+    }
     &___categories {
       margin-right: 1rem;
       display: flex;

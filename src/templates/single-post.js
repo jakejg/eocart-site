@@ -40,7 +40,8 @@ const Post = (props) => {
     let date = getDate[0];
     let parts = date.split("-");
     var mydate = new Date(parts[0], parts[1] - 1, parts[2]);
-    return mydate.toDateString();
+
+    return mydate.toDateString().replace(/^\S+\s/,'');
   };
 
   const data = useStaticQuery(graphql`

@@ -15,26 +15,32 @@ const Post = (props) => {
     categories,
   } = props.pageContext;
   const getDate = (d) => {
-    const date = Date.parse(d);
-    let monthNames = [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
-    ];
-    const postDate = new Date(date).getDate().toString();
-    const postMonth = new Date(date).getMonth().toString();
-    const monthName = monthNames[postMonth];
-    const postYear = new Date(date).getFullYear().toString();
-    return monthName + " " + postDate + ", " + postYear;
+    // const date = Date.parse(d);
+    // let monthNames = [
+    //   "Jan",
+    //   "Feb",
+    //   "Mar",
+    //   "Apr",
+    //   "May",
+    //   "Jun",
+    //   "Jul",
+    //   "Aug",
+    //   "Sep",
+    //   "Oct",
+    //   "Nov",
+    //   "Dec",
+    // ];
+    // const postDate = new Date(date).getDate().toString();
+    // const postMonth = new Date(date).getMonth().toString();
+    // const monthName = monthNames[postMonth];
+    // const postYear = new Date(date).getFullYear().toString();
+    // return monthName + " " + postDate + ", " + postYear;
+
+    let getDate = d.split(/[T ]/);
+    let date = getDate[0];
+    let parts = date.split("-");
+    var mydate = new Date(parts[0], parts[1] - 1, parts[2]);
+    return mydate.toDateString();
   };
 
   const data = useStaticQuery(graphql`

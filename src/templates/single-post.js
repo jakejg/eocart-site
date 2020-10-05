@@ -14,7 +14,8 @@ const Post = (props) => {
     date,
     categories,
   } = props.pageContext;
-  const getDate = (date) => {
+  const getDate = (d) => {
+    const date = Date.parse(d);
     let monthNames = [
       "Jan",
       "Feb",

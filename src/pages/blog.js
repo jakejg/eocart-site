@@ -36,7 +36,7 @@ const Blog = () => {
   return (
     <Layout>
       <SEO title="Best Practices for Being a Sustainable Business" />
-      <div className="blog-page">
+      <div className="blog-page" id="blog">
         <Container>
           <Row>
             <Col lg>
@@ -58,7 +58,10 @@ const Blog = () => {
                   <div className="blog-page__post___inner">
                     <div className="blog-page__post-categories">
                       {post.node.categories.edges.map((category, i) => (
-                        <span key={i}>{category.node.name}</span>
+                        <p key={i}>
+                          {category.node.name}
+                          <span>&#44;&nbsp;</span>
+                        </p>
                       ))}
                     </div>
                     <div className="blog-page__post-title">
@@ -76,8 +79,8 @@ const Blog = () => {
             ))}
           </div>
         </Container>
+        <CTA />
       </div>
-      <CTA />
     </Layout>
   );
 };

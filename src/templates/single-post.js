@@ -14,6 +14,27 @@ const Post = (props) => {
     date,
     categories,
   } = props.pageContext;
+  const getDate = (date) => {
+    let monthNames = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+    const postDate = new Date(date).getDate();
+    const postMonth = new Date(date).getMonth();
+    const monthName = monthNames[postMonth];
+    const postYear = new Date(date).getFullYear();
+    return monthName + " " + postDate + ", " + postYear;
+  };
 
   const data = useStaticQuery(graphql`
     query {
@@ -39,7 +60,7 @@ const Post = (props) => {
   return (
     <Layout>
       <SEO title={postTitle} />
-      <div class="single-post">
+      <div class="single-post" id="blog">
         <Container>
           <Row>
             <Col md={8}>
@@ -66,12 +87,19 @@ const Post = (props) => {
               <Row>
                 <Col>
                   <div className="single-post__info">
-                    {categories.nodes.map((cat, index) => (
-                      <p className="single-post__info___category" key={index}>
-                        {cat.name}
-                      </p>
-                    ))}{" "}
-                    | <p className="single-post__info___date">{date}</p>
+                    <div className="single-post__info___categories">
+                      {categories.nodes.map((cat, index) => (
+                        <p
+                          className="single-post__info___categories-category"
+                          key={index}
+                        >
+                          {cat.name}
+                          <span>&#44;&nbsp;</span>
+                        </p>
+                      ))}
+                    </div>
+                    |{" "}
+                    <p className="single-post__info___date">{getDate(date)}</p>
                   </div>
                 </Col>
               </Row>
@@ -106,8 +134,8 @@ const Post = (props) => {
             </Col>
           </Row>
         </Container>
+        <CTA />
       </div>
-      <CTA />
     </Layout>
   );
 };

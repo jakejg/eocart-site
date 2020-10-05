@@ -29,10 +29,10 @@ const Post = (props) => {
       "Nov",
       "Dec",
     ];
-    const postDate = new Date(date).getDate();
-    const postMonth = new Date(date).getMonth();
+    const postDate = new Date(date).getDate().toString();
+    const postMonth = new Date(date).getMonth().toString();
     const monthName = monthNames[postMonth];
-    const postYear = new Date(date).getFullYear();
+    const postYear = new Date(date).getFullYear().toString();
     return monthName + " " + postDate + ", " + postYear;
   };
 

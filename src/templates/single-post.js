@@ -8,6 +8,7 @@ import CTA from "../components/About/cta";
 
 const Post = (props) => {
   const {
+    id,
     postTitle,
     content,
     featuredImage,
@@ -41,13 +42,13 @@ const Post = (props) => {
     let parts = date.split("-");
     var mydate = new Date(parts[0], parts[1] - 1, parts[2]);
 
-    return mydate.toDateString().replace(/^\S+\s/,'');
+    return mydate.toDateString().replace(/^\S+\s/, "");
   };
 
   const data = useStaticQuery(graphql`
     query {
       recentPosts: wordpress {
-        posts(last: 5) {
+        posts(first: 6) {
           edges {
             node {
               title
@@ -125,19 +126,27 @@ const Post = (props) => {
             <Col md={4}>
               <div className="recent-posts">
                 <h2 className="recent-posts__title">Recent Posts</h2>
-                {data.recentPosts.posts.edges.map((post, index) => (
-                  <div key={index} className="recent-post">
-                    <Link to={`/posts/${post.node.slug}`}>
-                      <div className="recent-post__img">
-                        <img
-                          alt="recent post"
-                          src={post.node.featuredImage.node.sourceUrl}
-                        />
+                {data.recentPosts.posts.edges.map((post, index) => {
+                  if (id === post.node.id) {
+                    return null;
+                  } else {
+                    return (
+                      <div key={index} className="recent-post">
+                        <Link to={`/posts/${post.node.slug}`}>
+                          <div className="recent-post__img">
+                            <img
+                              alt="recent post"
+                              src={post.node.featuredImage.node.sourceUrl}
+                            />
+                          </div>
+                          <h2 className="recent-post__title">
+                            {post.node.title}
+                          </h2>
+                        </Link>
                       </div>
-                      <h2 className="recent-post__title">{post.node.title}</h2>
-                    </Link>
-                  </div>
-                ))}
+                    );
+                  }
+                })}
               </div>
             </Col>
           </Row>

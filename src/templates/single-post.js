@@ -127,7 +127,7 @@ const Post = (props) => {
               <div className="recent-posts">
                 <h2 className="recent-posts__title">Recent Posts</h2>
                 {data.recentPosts.posts.edges.map((post, index) => {
-                  if (id === post.node.id) {
+                  if (post.node.id === id) {
                     return null;
                   } else {
                     return (

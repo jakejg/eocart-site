@@ -47,7 +47,7 @@ const Blog = () => {
           </Row>
           <div className="blog-page__grid">
             {wpPosts.wordpress.posts.edges.map((post, index) => (
-              <div className="blog-page__post">
+              <div key={index} className="blog-page__post">
                 <Link to={`/posts/${post.node.slug}`}>
                   <div className="blog-page__post-img">
                     <img

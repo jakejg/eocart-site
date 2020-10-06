@@ -1,11 +1,11 @@
 var plugins = [{
-      plugin: require('/Users/apple/Desktop/playground/ecocart/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/apple/Downloads/projects/eocart-site/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/apple/Desktop/playground/ecocart/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/Users/apple/Downloads/projects/eocart-site/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"ecocart-app","short_name":"ecoCart","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/plane.svg","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"2585b2a66d2a44f9bc5fa04cee83864c"},
     },{
-      plugin: require('/Users/apple/Desktop/playground/ecocart/gatsby-ssr'),
+      plugin: require('/Users/apple/Downloads/projects/eocart-site/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

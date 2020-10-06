@@ -1,5 +1,5 @@
 .blog-page {
-  padding: 10rem 0;
+  padding-top: 10rem;
   .page-heading {
     margin-bottom: 4rem;
     @media (max-width: 600px) {
@@ -15,6 +15,11 @@
       background: transparent !important;
       padding: 0;
       @media (max-width: 600px) {
+        font-size: 3.2rem;
+        display: block;
+        text-align: center;
+      }
+      @media (min-width: 1780px) {
         font-size: 3.8rem;
       }
     }
@@ -63,6 +68,9 @@
           height: 40rem;
           margin-bottom: 0;
           flex: 1;
+          @media (min-width: 1780px) {
+            height: 100%;
+          }
         }
         .blog-page__post___inner {
           padding: 2rem;
@@ -98,10 +106,16 @@
       }
     }
     &-categories {
-      span {
+      display: flex;
+      p {
         font-size: 14px;
         font-weight: 500;
         color: #212529;
+        &:last-child {
+          span {
+            display: none;
+          }
+        }
       }
       margin-bottom: 0.5rem;
     }

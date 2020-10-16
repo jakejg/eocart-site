@@ -14,6 +14,13 @@ const Cta = () => {
           target: "#hubspotForm2",
         });
       }
+      if (window.hbspt) {
+        window.hbspt.forms.create({
+          portalId: "7682224",
+          formId: "32756575-d700-41e5-92a8-c8a1eeb94114",
+          target: "#hubspotForm2",
+        });
+      }
     });
   }, []);
   return (

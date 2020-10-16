@@ -58,7 +58,29 @@ const IndexPage = () => (
         ></Video>
       </Container>
     </section>
-    <Cta />
+    <section className="cta">
+      <Container>
+        <Row>
+          <Col sm>
+            <h2>
+              Ready to start
+              <br />
+              shopping sustainably?
+            </h2>
+            <a
+              className="btn navbar-button"
+              size="small"
+              href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>Add to Chrome</strong> — It's Free!
+            </a>
+          </Col>
+        </Row>
+        <div id="hubspotForm2"></div>
+      </Container>
+    </section>
     <WhyEcocart />
 
     {/* Impact section */}
@@ -198,29 +220,7 @@ const IndexPage = () => (
         </Row>
       </Container>
     </section>
-    <section className="cta">
-      <Container>
-        <Row>
-          <Col sm>
-            <h2>
-              Ready to start
-              <br />
-              shopping sustainably?
-            </h2>
-            <a
-              className="btn navbar-button"
-              size="small"
-              href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <strong>Add to Chrome</strong> — It's Free!
-            </a>
-          </Col>
-        </Row>
-        <div id="hubspotForm2"></div>
-      </Container>
-    </section>
+    <Cta />
   </Layout>
 );
 

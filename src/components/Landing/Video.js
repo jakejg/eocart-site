@@ -166,9 +166,9 @@ export default class Video extends Component {
                 className="reason-icon"
                 alt="reason icon"
               ></img>
-              <h3 className="reason-title">Add in Seconds</h3>
+              <h3 className="reason-title">Add to desktop</h3>
               <p className="reason-description">
-                It's free and just takes 2 clicks.
+                Just put in your email and we'll send you a link to install for free.
               </p>
             </Col>
             <Col className="mb-4 withArrows" md={12} lg={4}>

@@ -58,6 +58,7 @@ const IndexPage = () => (
         ></Video>
       </Container>
     </section>
+    <Cta />
     <WhyEcocart />
 
     {/* Impact section */}

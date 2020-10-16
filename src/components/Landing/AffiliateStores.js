@@ -4,7 +4,7 @@ import React from "react";
 import foot_locker from "../../images/affiliate-images/foot_locker.png";
 import freshly from "../../images/affiliate-images/freshly.png";
 import glossier from "../../images/affiliate-images/glossier.png";
-import casper from "../../images/affiliate-images/casper.png";
+import ugg from "../../images/affiliate-images/ugg_logo.png";
 import kohls from "../../images/affiliate-images/kohls.png";
 import levis from "../../images/affiliate-images/levis.png";
 import nixon from "../../images/affiliate-images/nixon.png";
@@ -45,9 +45,9 @@ const AffiliateStores = () => {
       ></img>
       <img
         className="store-lg"
-        id="casper"
-        src={casper}
-        alt="casper logo"
+        id="ugg"
+        src={ugg}
+        alt="ugg logo"
       ></img>
       <img className="store-md" id="kohls" src={kohls} alt="kohls logo"></img>
       <img className="store-lg" id="levis" src={levis} alt="levis logo"></img>

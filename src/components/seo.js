@@ -26,14 +26,13 @@ function SEO({ description, lang, meta, title, image }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-
+  const metaImage = image || "/440x280.png"
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
       title={title}
-      image={image == "" ? "/440x280.png":image}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
@@ -50,7 +49,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:image`,
-          content: image,
+          content: metaImage,
         },
         {
           property: `og:type`,

@@ -71,7 +71,15 @@ const Post = (props) => {
 
   return (
     <Layout>
-      <SEO title={postTitle} description={data.recentPosts.posts.edges.map((post, index) => {return post.node.seo.metaDesc }} />
+      <SEO title={postTitle} description={data.recentPosts.posts.edges.map((post, index) => {
+        if (post.node.id === id) {
+          return null;
+        } else {
+          return (
+            post.node.seo.metaDesc
+          );
+        }
+      })} />
       <div class="single-post" id="blog">
         <Container>
           <Row>

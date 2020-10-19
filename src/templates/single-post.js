@@ -54,6 +54,9 @@ const Post = (props) => {
               title
               id
               slug
+              seo {
+                metaDesc
+              }
               featuredImage {
                 node {
                   sourceUrl(size: THUMBNAIL)
@@ -68,7 +71,7 @@ const Post = (props) => {
 
   return (
     <Layout>
-      <SEO title={postTitle} />
+      <SEO title={postTitle} description={data.recentPosts.posts.edges.map((post, index) => {return post.node.seo.metaDesc } />
       <div class="single-post" id="blog">
         <Container>
           <Row>

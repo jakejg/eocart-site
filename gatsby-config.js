@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `EcoCart`,
-    description: `A free and simple way to show your customers you care about the environment as much as they do.`,
+    description: `EcoCart is a Chrome extension that automatically calculates and offsets the carbon footprint of your order. Earn EcoPoints and redeem rewards when you shop like normal at over 10,000 of your favorite sites!`,
     author: `zeeshan junaid`,
   },
   plugins: [

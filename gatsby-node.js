@@ -26,9 +26,6 @@ exports.createPages = async ({ graphql, actions }) => {
             title
             seo {
               metaDesc
-              opengraphImage {
-                sourceUrl
-              }
             }
             featuredImage {
               node {
@@ -80,7 +77,7 @@ exports.createPages = async ({ graphql, actions }) => {
         id: post.id,
         categories: post.categories,
         description: post.seo.metaDesc,
-        image: post.seo.opengraphImage.sourceUrl,
+        image: post.featuredImage.node.sourceUrl,
         date: post.modified,
       },
     });

@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, image = "" }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -46,6 +46,10 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:description`,
           content: (metaDescription == "A free and simple way to show your customers you care about the environment as much as they do." ? "EcoCart is a Chrome extension that automatically calculates and offsets the carbon footprint of your order. Earn EcoPoints and redeem rewards when you shop like normal at over 10,000 of your favorite sites!" : metaDescription),
+        },
+        {
+          property: `og:image`,
+          content: (image == "" ? "/440x280.png" : image,
         },
         {
           property: `og:type`,

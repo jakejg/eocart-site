@@ -14,6 +14,7 @@ const Post = (props) => {
     featuredImage,
     date,
     description,
+    image,
     categories,
   } = props.pageContext;
   const getDate = (d) => {
@@ -69,7 +70,7 @@ const Post = (props) => {
 
   return (
     <Layout>
-      <SEO title={postTitle} description={description} />
+      <SEO title={postTitle} description={description} image = {image} />
       <div class="single-post" id="blog">
         <Container>
           <Row>

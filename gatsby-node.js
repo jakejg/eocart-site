@@ -24,6 +24,9 @@ exports.createPages = async ({ graphql, actions }) => {
             slug
             content
             title
+            seo {
+              metaDesc
+            }
             featuredImage {
               node {
                 sourceUrl(size: THUMBNAIL)
@@ -73,6 +76,7 @@ exports.createPages = async ({ graphql, actions }) => {
         featuredImage: post.featuredImage.node.sourceUrl,
         id: post.id,
         categories: post.categories,
+        description: post.seo.metaDesc,
         date: post.modified,
       },
     });

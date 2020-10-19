@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, title, image }) {
         lang,
       }}
       title={title}
-      image={image || "/440x280.png"}
+      image={image == null ? "/440x280.png":image}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {

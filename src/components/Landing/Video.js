@@ -112,8 +112,7 @@ export default class Video extends Component {
                     <strong>2. Shop like Normal</strong>
                   </h3>
                   <p>
-                    We'll find the carbon emissions <br></br> of your unique
-                    order.
+                    EcoCart will pop up automatically <br></br> at participating stores.
                   </p>
                 </div>
               </div>
@@ -136,8 +135,7 @@ export default class Video extends Component {
                     <strong>3. Save the Planet</strong>
                   </h3>
                   <p>
-                    At no cost to you, we'll make sure your <br></br> orders are
-                    completely carbon neutral.
+                    Click the button to make your order <br></br> carbon neutral—for free!
                   </p>
                 </div>
               </div>

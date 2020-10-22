@@ -26,7 +26,7 @@ function SEO({ description, lang, meta, title, image }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const metaImage = image || "/440x280.png"
+  const metaImage = image || "https://ecocart.io/440x280.png"
   return (
     <Helmet
       htmlAttributes={{

@@ -45,7 +45,7 @@ import { Link } from "gatsby";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Carbon Neutral Shopping" />
     <Landing logo={logo} />
     <AffiliateStores />
     <section id="how-it-works">

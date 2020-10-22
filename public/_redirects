@@ -53,3 +53,4 @@
 /email-confirm/* https://shop.ecocart.io/email-confirm/:splat 200
 /referral/* https://shop.ecocart.io/referral/:splat 200
 /refInstall/* https://shop.ecocart.io/refInstall/:splat 200
+/share/* https://shop.ecocart.io/share/:splat 200

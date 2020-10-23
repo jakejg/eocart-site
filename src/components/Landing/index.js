@@ -9,8 +9,7 @@ const Landing = React.forwardRef((props, ref) => {
         <div id="content">
           <h1>Click Button. Save Planet.</h1>
           <h3>
-            EcoCart instantly makes your online orders carbon neutral at no cost
-            to you
+            The free Chrome Extension that automatically plants trees while you shop
           </h3>
           <div className="landing__btn">
             <a

@@ -31,20 +31,17 @@ $back-button-color: #BFBFBF;
     flex-direction: column;
     justify-content: center;
     height: 50%;
-    border: solid black 1px;
 }
 
 .uninstall-options-form {
     width: 50%;
     margin: auto;
-    border: solid 1px black;
 }
 
 @media (max-width: 400px){
     .uninstall-options-form {
         width: 100%;
         margin: auto;
-        border: solid 1px black;
     }
 }
 
@@ -60,11 +57,16 @@ $back-button-color: #BFBFBF;
     cursor: pointer;
     margin-bottom: 5px;
     padding: 10px;
+   
 }
 
 .options-selected {
     border: 2px solid green;
     background-color:  #e2f0d9;
+}
+
+.u-input:focus {
+        outline: none;
 }
 
 .uninstall-buttons {
@@ -75,7 +77,10 @@ $back-button-color: #BFBFBF;
         font-size: 1.6rem;
         padding: 1rem 2rem;
         margin-left: auto;
-        margin-top: 20px;
+}
+
+.submit-button {
+    margin-top: 20px;
 }
 
 .uninstall-buttons:hover,

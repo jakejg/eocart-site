@@ -44,7 +44,7 @@ const Uninstall = () => {
                 <a
                     className="btn uninstall-buttons"
                     size="small"
-                    href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/  oiafedhhdhinjnianpfeaenmchnknchi"
+                    href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -58,8 +58,8 @@ const Uninstall = () => {
                         {options.map(option => {
                             return <div className={selected === option.id ? "options options-selected" : "options"} id={option.id} value={option.text} onClick={handleSelect}>{option.text}</div>
                         })}
-                        <input placeholder="Other (write in)" id={4} onClick={handleSelect} value={customInput} onChange={handleChange} className={selected === 4 ? "options options-selected" : "options"}/>
-                        <div className=" btn uninstall-buttons" onClick={handleSubmit}>Submit</div>
+                        <input placeholder="Other (write in)" id={4} onClick={handleSelect} value={customInput} onChange={handleChange} className={selected === 4 ? "options u-input options-selected" : "options u-input"}/>
+                        <div className=" btn uninstall-buttons submit-button" onClick={handleSubmit}>Submit</div>
                     </form>
                     }
                     {showThanks &&

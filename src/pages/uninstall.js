@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
 import Footer from "../components/footer";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import SEO from "../components/seo";
 import '../styles/pages/_uninstall.scss';
 import daneSmile from '../images/dane-smile.png';
@@ -15,21 +15,38 @@ const Uninstall = () => {
     const [selected, setSelected] = useState();
     const [customInput, setCustomInput] = useState('');
 
+    // submit form if a selction has been made
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (formSelection){
+            setShowThanks(true);
+            console.log(formSelection);
+        }
+    }
+
+    // Submit form if enter is pressed
+    useEffect(() => {
+        const listener = (e) => {
+          if (e.code === "Enter" || e.code === "NumpadEnter") {
+              handleSubmit(e)
+          }
+        };
+        document.addEventListener("keydown", listener);
+        return () => {
+          document.removeEventListener("keydown", listener);
+        };
+      }, [handleSubmit]);
+
     const options = [
         {id: 1, text: "I don’t understand how EcoCart works"},
         {id: 2, text: "I’m using another shopping extension"},
         {id: 3, text: "I accidentally installed"}
     ];
-
-    const handleSubmit = () => {
-        setShowThanks(true);
-        console.log(formSelection)
-    }
-
+  
     const handleSelect = (e) => {
         const { innerText } = e.target;
         setFormSelection(innerText);
-        setSelected(+e.target.id)
+        setSelected(+e.target.id);
     }
 
     const handleChange = (e) => {
@@ -43,9 +60,9 @@ const Uninstall = () => {
           <SEO title="Uninstall" />
           <div className="uninstall">
                 <section className="uninstall-section-1">
-                <Link className="logo-link" to="/">
-              <img src={logo} alt="logo" className="navbar--logo u-logo" />
-            </Link>
+                    <Link className="logo-link" to="/">
+                        <img src={logo} alt="logo" className="navbar--logo u-logo" />
+                    </Link>
                     <div className="top-space"></div>
                     <Container >
                         <h1 className="uninstall-title"> We’re sorry to see you go <img className="sad-icon" src={sadFaceIcon} alt="Sad icon" /></h1>
@@ -65,13 +82,13 @@ const Uninstall = () => {
 
                     <Container className="uninstall-container">
                         {!showThanks &&
-                          <form className="uninstall-options-form">
+                          <form className="uninstall-options-form" onSubmit={handleSubmit}>
                               <h2 className="uninstall-options-form-header">Let us know why you’re leaving so we can do better</h2>
                               {options.map(option => {
                                   return <div key={option.id} className={selected === option.id ? "options options-selected" : "options"} id={option.id} value={option.text} onClick={handleSelect}>{option.text}</div>
                               })}
                               <input placeholder="Other (write in)" id={4} onClick={handleSelect} value={customInput} onChange={handleChange} className={selected === 4 ? "options u-input options-selected" : "options u-input"}/>
-                              <div className=" btn uninstall-buttons submit-button" onClick={handleSubmit}>Submit</div>
+                              <button className=" btn uninstall-buttons submit-button" onClick={handleSubmit} >Submit</button>
                           </form>
                           }
                         {showThanks &&
@@ -95,6 +112,29 @@ const Uninstall = () => {
                             <img className="dane-signature" src={daneSignature} alt="Dane's signature" />
                         </div>
                     </div>
+                </section>
+                <section className="cta">
+                    <Container>
+                      <Row>
+                        <Col sm>
+                          <h2>
+                          Are you sure you want to stop
+                            <br />
+                            shopping sustainably?
+                          </h2>
+                          <a
+                            className="btn navbar-button"
+                            size="small"
+                            href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <strong>Add to Chrome</strong> — It's Free!
+                          </a>
+                        </Col>
+                      </Row>
+                      <div id="hubspotForm2"></div>
+                    </Container>
                 </section>
             </div>
             <Footer />

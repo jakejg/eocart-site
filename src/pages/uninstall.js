@@ -48,9 +48,9 @@ const Uninstall = () => {
             </Link>
                     <div className="top-space"></div>
                     <Container >
-                        <h1 className="uninstall-title"> We’re sorry to see you go <img className="sad-icon" src={sadFaceIcon} /></h1>
+                        <h1 className="uninstall-title"> We’re sorry to see you go <img className="sad-icon" src={sadFaceIcon} alt="Sad icon" /></h1>
                         <Container className="re-install">
-                            <h3>Didn’t mean to uninstall?</h3>
+                            <h2 className="re-install-text">Didn’t mean to uninstall?</h2>
                             <a
                                 className="btn uninstall-buttons"
                                 size="small"
@@ -61,36 +61,38 @@ const Uninstall = () => {
                                 <strong>Re-Install EcoCart to Chrome</strong>
                               </a>
                             </Container>
-                      </Container>
+                    </Container>
 
-                      <Container className="uninstall-container">
-                          {!showThanks &&
+                    <Container className="uninstall-container">
+                        {!showThanks &&
                           <form className="uninstall-options-form">
                               <h2 className="uninstall-options-form-header">Let us know why you’re leaving so we can do better</h2>
                               {options.map(option => {
-                                  return <div className={selected === option.id ? "options options-selected" : "options"} id={option.id} value={option.text} onClick={handleSelect}>{option.text}</div>
+                                  return <div key={option.id} className={selected === option.id ? "options options-selected" : "options"} id={option.id} value={option.text} onClick={handleSelect}>{option.text}</div>
                               })}
                               <input placeholder="Other (write in)" id={4} onClick={handleSelect} value={customInput} onChange={handleChange} className={selected === 4 ? "options u-input options-selected" : "options u-input"}/>
                               <div className=" btn uninstall-buttons submit-button" onClick={handleSubmit}>Submit</div>
                           </form>
                           }
-                          {showThanks &&
-                          <div className="uninstall-thank-you">Thank you for your feedback! We’re always just 2 clicks away if you change your mind.
-                          </div>
-                          }
-                      </Container>
+                        {showThanks &&
+                            <div className="uninstall-thank-you">
+                                <div>Thank you for your feedback!</div>
+                                <div>We’re always just 2 clicks away if you change your mind.</div>
+                            </div>
+                        }
+                    </Container>
                 </section>
                 <section className="uninstall-section-2">
                     <div className="uninstall-dane">
-                        <img className="dane-smile" src={daneSmile} />
+                        <img className="dane-smile" src={daneSmile} alt="Dane"/>
                         <div className="dane-text">
                             <p>
-                                <span class="green-bold"> Hi, I’m Dane.</span> We sincerely appreciate you trying out EcoCart, and I would love to hear more about how we could have kept you on board. Please contact me personally at <a class="dane-link" href="mailto:dane@ecocart.io" target="_blank">dane@ecocart.io</a> with any feedback you can provide.
+                                <span className="green-bold"> Hi, I’m Dane.</span> We sincerely appreciate you trying out EcoCart, and I would love to hear more about how we could have kept you on board. Please contact me personally at <a className="dane-link" href="mailto:dane@ecocart.io" target="_blank" rel="noreferrer" >dane@ecocart.io</a> with any feedback you can provide.
                             </p>
                             <p>
                                 We hope you continue to make choices that positively impact the planet and we’re just 2 clicks away if you would like to give us another shot.
                             </p>
-                            <img className="dane-signature" src={daneSignature} />
+                            <img className="dane-signature" src={daneSignature} alt="Dane's signature" />
                         </div>
                     </div>
                 </section>

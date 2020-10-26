@@ -42,11 +42,15 @@ $back-button-color: #BFBFBF;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 70%;
+    height: 50%;
 }
 
 .re-install {
     margin-top: 50px;
+
+    .re-install-text {
+        margin-bottom: 10px;
+    }
 }
 
 .uninstall-options-form {
@@ -86,6 +90,9 @@ $back-button-color: #BFBFBF;
 .u-input:focus {
         outline: none;
 }
+.u-input:focus::placeholder {
+    color: transparent;
+  }
 
 .uninstall-buttons {
         color: white;
@@ -99,6 +106,7 @@ $back-button-color: #BFBFBF;
 
 .submit-button {
     margin-top: 20px;
+    font-weight: bold;
 }
 
 .uninstall-buttons:hover,

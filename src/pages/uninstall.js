@@ -129,7 +129,7 @@ const Uninstall = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <strong>Add to Chrome</strong> — It's Free!
+                            <strong>Re-Install EcoCart to Chrome</strong>
                           </a>
                         </Col>
                       </Row>

@@ -24,7 +24,7 @@ $back-button-color: #BFBFBF;
 
 .sad-icon {
     display:inline;
-    width: 30px;
+    width: 37px;
 }
 .uninstall-title {
     margin-bottom: 20px;
@@ -42,7 +42,7 @@ $back-button-color: #BFBFBF;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 50%;
+    height: 500px;
 }
 
 .re-install {
@@ -54,7 +54,7 @@ $back-button-color: #BFBFBF;
 }
 
 .uninstall-options-form {
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 
@@ -66,6 +66,7 @@ $back-button-color: #BFBFBF;
 }
 .uninstall-options-form-header {
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 .options {
     width: 100%;

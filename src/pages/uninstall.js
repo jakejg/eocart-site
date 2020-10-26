@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import Layout from "../components/layout";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Link } from "gatsby";
+import Footer from "../components/footer";
+import { Container } from "react-bootstrap";
 import SEO from "../components/seo";
 import '../styles/pages/_uninstall.scss';
 import uninstallDane from '../images/uninstall-dane.png';
 import sadFaceIcon from '../images/disappointed-face.png';
+import logo from "../images/logo.svg";
 
 const Uninstall = () => {
     const [showThanks, setShowThanks] = useState(false);
@@ -36,29 +38,34 @@ const Uninstall = () => {
     }
 
     return (
-        <Layout>
+        <>
           <SEO title="Uninstall" />
           <div className="uninstall">
                 <section className="uninstall-section-1">
+                <Link className="logo-link" to="/">
+              <img src={logo} alt="logo" className="navbar--logo u-logo" />
+            </Link>
                     <div className="top-space"></div>
-                    <Container className="uninstall-title">
+                    <Container >
                         <h1 className="uninstall-title"> We’re sorry to see you go <img className="sad-icon" src={sadFaceIcon} /></h1>
-                        <h3>Didn’t mean to uninstall?</h3>
-                        <a
-                            className="btn uninstall-buttons"
-                            size="small"
-                            href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <strong>Re-Install EcoCart to Chrome</strong>
-                          </a>
+                        <Container className="re-install">
+                            <h3>Didn’t mean to uninstall?</h3>
+                            <a
+                                className="btn uninstall-buttons"
+                                size="small"
+                                href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <strong>Re-Install EcoCart to Chrome</strong>
+                              </a>
+                            </Container>
                       </Container>
 
                       <Container className="uninstall-container">
                           {!showThanks &&
                           <form className="uninstall-options-form">
-                              <h2>Let us know why you’re leaving so we can do better</h2>
+                              <h2 className="uninstall-options-form-header">Let us know why you’re leaving so we can do better</h2>
                               {options.map(option => {
                                   return <div className={selected === option.id ? "options options-selected" : "options"} id={option.id} value={option.text} onClick={handleSelect}>{option.text}</div>
                               })}
@@ -76,7 +83,8 @@ const Uninstall = () => {
                         <img className="uninstall-dane" src={uninstallDane} />
                 </section>
             </div>
-        </Layout>
+            <Footer />
+        </>
     );
 };
 

@@ -10,11 +10,16 @@ $back-button-color: #BFBFBF;
     url("../../images/background-hills.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 900px;
 }
 
 .top-space {
-    height: 100px;
+    height: 80px;
+}
+
+.u-logo {
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 .sad-icon {
@@ -23,6 +28,9 @@ $back-button-color: #BFBFBF;
 }
 .uninstall-title {
     margin-bottom: 20px;
+    font-size: 6.4rem;
+    font-weight: bold;
+    color: #0d3c2a;
 }
 
 .uninstall-thank-you {
@@ -34,7 +42,11 @@ $back-button-color: #BFBFBF;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 50%;
+    height: 70%;
+}
+
+.re-install {
+    margin-top: 50px;
 }
 
 .uninstall-options-form {
@@ -48,7 +60,9 @@ $back-button-color: #BFBFBF;
         margin: auto;
     }
 }
-
+.uninstall-options-form-header {
+    margin-bottom: 20px;
+}
 .options {
     width: 100%;
     text-align: center;
@@ -59,7 +73,7 @@ $back-button-color: #BFBFBF;
     user-select: none;
     border-radius: 8px;
     cursor: pointer;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     padding: 10px;
    
 }
@@ -94,7 +108,15 @@ $back-button-color: #BFBFBF;
   color: #00b04f;
 }
 
+.uninstall-section-2 {
+    background-color: white;
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .uninstall-dane {
-    max-width: 100%;
+    max-width: 85%;
     height: auto;
 }

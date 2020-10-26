@@ -39,6 +39,7 @@
 /api/messages https://shop.ecocart.io/api/messages 200
 /api/profile https://shop.ecocart.io/api/profile 200
 /api/redeem https://shop.ecocart.io/api/redeem 200
+/api/email-link https://shop.ecocart.io/api/email-link 200
 /activate https://shop.ecocart.io/activate 200
 /change_password https://shop.ecocart.io/change_password 200
 /change_password_success https://shop.ecocart.io/change_password_success 200

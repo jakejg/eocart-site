@@ -5,18 +5,22 @@ $option-fill-selected: #e2f0d9;
 $option-aside: #595959;
 $back-button-color: #BFBFBF;
 
-.uninstall {
+.uninstall-section-1 {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
     url("../../images/background-hills.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 800px;
 }
 
 .top-space {
     height: 100px;
 }
 
+.sad-icon {
+    display:inline;
+    width: 30px;
+}
 .uninstall-title {
     margin-bottom: 20px;
 }
@@ -88,4 +92,9 @@ $back-button-color: #BFBFBF;
   background-color: #ffffff;
   border-color: #00b04f;
   color: #00b04f;
+}
+
+.uninstall-dane {
+    max-width: 100%;
+    height: auto;
 }

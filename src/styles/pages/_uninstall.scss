@@ -28,7 +28,7 @@ $back-button-color: #BFBFBF;
 }
 .uninstall-title {
     margin-bottom: 20px;
-    font-size: 6.4rem;
+    font-size: 5rem;
     font-weight: bold;
     color: #0d3c2a;
 }
@@ -115,8 +115,37 @@ $back-button-color: #BFBFBF;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.uninstall-dane {
-    max-width: 85%;
-    height: auto;
+
+    .uninstall-dane {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+
+        .dane-smile {
+            border-radius: 100%;
+            width: 200px;
+            height: 200px;
+            margin-right: 50px;
+            margin-top: 20px;
+        }  
+        
+        .dane-text {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: rgb(80, 79, 79);
+
+            .green-bold {
+                color: #00b04f;
+                font-weight: 600;
+            }
+
+            .dane-link {
+                color:  #00b04f;
+            }
+        }
+    
+        .dane-signature {
+            width: 300px;
+        }
+    }
 }

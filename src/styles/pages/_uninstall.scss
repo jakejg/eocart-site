@@ -1,0 +1,154 @@
+
+.uninstall-section-1 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url("../../images/background-hills.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+.top-space {
+    height: 80px;
+}
+
+.u-logo {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.sad-icon {
+    display:inline;
+    width: 37px;
+}
+.uninstall-title {
+    margin-bottom: 20px;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #0d3c2a;
+}
+
+.uninstall-thank-you {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.uninstall-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+}
+
+.re-install {
+    margin-top: 50px;
+
+    .re-install-text {
+        margin-bottom: 10px;
+    }
+}
+
+.uninstall-options-form {
+    width: 60%;
+    margin: auto;
+}
+
+@media (max-width: 400px){
+    .uninstall-options-form {
+        width: 100%;
+        margin: auto;
+    }
+}
+.uninstall-options-form-header {
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+.options {
+    width: 100%;
+    text-align: center;
+    border: 2px solid;
+    background-color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    user-select: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding: 10px;
+   
+}
+
+.options-selected {
+    border: 2px solid green;
+    background-color:  #e2f0d9;
+}
+
+.u-input:focus {
+        outline: none;
+}
+.u-input:focus::placeholder {
+    color: transparent;
+  }
+
+.uninstall-buttons {
+        color: white;
+        text-decoration: none;
+        background-color: #00b04f;
+        border-color: #00b04f;
+        font-size: 1.6rem;
+        padding: 1rem 2rem;
+        margin-left: auto;
+}
+
+.submit-button {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.uninstall-buttons:hover,
+.uninstall-buttons:focus {
+  background-color: #ffffff;
+  border-color: #00b04f;
+  color: #00b04f;
+}
+
+.uninstall-section-2 {
+    background-color: white;
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .uninstall-dane {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+
+        .dane-smile {
+            border-radius: 100%;
+            width: 200px;
+            height: 200px;
+            margin-right: 50px;
+            margin-top: 20px;
+        }  
+        
+        .dane-text {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: rgb(80, 79, 79);
+
+            .green-bold {
+                color: #00b04f;
+                font-weight: 600;
+            }
+
+            .dane-link {
+                color:  #00b04f;
+            }
+        }
+    
+        .dane-signature {
+            width: 300px;
+        }
+    }
+}

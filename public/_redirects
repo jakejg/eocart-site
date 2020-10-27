@@ -37,6 +37,7 @@
 /api/projects https://shop.ecocart.io/api/projects 200
 /api/merchants https://shop.ecocart.io/api/merchants 200
 /api/messages https://shop.ecocart.io/api/messages 200
+/api/messages/* https://shop.ecocart.io/api/messages/:splat 200
 /api/profile https://shop.ecocart.io/api/profile 200
 /api/redeem https://shop.ecocart.io/api/redeem 200
 /api/email-link https://shop.ecocart.io/api/email-link 200

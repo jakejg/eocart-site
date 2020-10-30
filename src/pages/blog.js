@@ -41,7 +41,7 @@ const Blog = () => {
           <Row>
             <Col lg>
               <div class="page-heading">
-                <img src="https://ecocart.io/favicon.svg?v=2585b2a66d2a44f9bc5fa04cee83864c" style="height: 5rem;margin-bottom: 2.75rem;margin-right: 0.75rem;">
+                <img src="https://ecocart.io/favicon.svg?v=2585b2a66d2a44f9bc5fa04cee83864c" style="height: 5rem;margin-bottom: 2.75rem;margin-right: 0.75rem;" />
                 <h2>Sustainability News, Tips, and Strategies</h2>
               </div>
             </Col>

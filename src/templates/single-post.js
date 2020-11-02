@@ -70,6 +70,7 @@ const Post = (props) => {
 
   return (
     <Layout>
+      <base target="_blank" />
       <SEO title={postTitle} description={description} image = {image} />
       <div class="single-post" id="blog">
         <Container>

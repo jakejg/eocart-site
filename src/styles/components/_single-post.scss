@@ -113,6 +113,26 @@
     p {
       padding-left: 0px!important;
     }
+    p button {
+      color: #fff;
+      text-decoration: none;
+      background-color: #00b04f;
+      border: none;
+      padding: 1.4rem 5rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+
+    p button:hover {
+      color: #00b04f;
+      text-decoration: none;
+      background-color: #fff;
+      border: 1px solid #00b04f;
+      padding: 1.4rem 5rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
     blockquote {
       margin: 0 auto!important;
     }

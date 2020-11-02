@@ -58,3 +58,4 @@
 /share/* https://shop.ecocart.io/share/:splat 200
 /email-confirm-share/* https://shop.ecocart.io/email-confirm-share/:splat 200
 /invite https://shop.ecocart.io/invite 200
+/help/category/ecopoints /what-are-ecopoints 301!

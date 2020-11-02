@@ -90,11 +90,31 @@
     img {
       width: 100%;
     }
+    h2 {
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      padding-left: 0px!important;
+    }
+    span {
+      line-height: 1.75;
+      font-weight: 450!important;
+    }
     a {
       color: #00b04f !important;
     }
-    h2 {
-      font-weight: 600;
+    a span {
+      color: #00b04f !important;
+      font-weight: 600!important;
+    }
+    hr {
+      color: #00b04f!important;
+      border: 1px solid #00b04f!important;
+    }
+    p {
+      padding-left: 0px!important;
+    }
+    blockquote {
+      margin: 0 auto!important;
     }
   }
 }

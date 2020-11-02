@@ -101,7 +101,9 @@ const Uninstall = () => {
                 </section>
                 <section className="uninstall-section-2">
                     <div className="uninstall-dane">
-                        <img className="dane-smile" src={daneSmile} alt="Dane"/>
+                        <div>
+                          <img className="dane-smile" src={daneSmile} alt="Dane"/>
+                        </div>
                         <div className="dane-text">
                             <p>
                                 <span className="green-bold"> Hi, I’m Dane.</span> We sincerely appreciate you trying out EcoCart, and I would love to hear more about how we could have kept you on board. Please contact me personally at <a className="dane-link" href="mailto:dane@ecocart.io" target="_blank" rel="noreferrer" >dane@ecocart.io</a> with any feedback you can provide.

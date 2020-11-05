@@ -89,12 +89,21 @@
     }
     img {
       width: 100%;
+      height: auto;
     }
     h2 {
       font-weight: 600;
       margin-bottom: 1rem;
       padding-left: 0px!important;
+      color: #222222;
     }
+
+    @media only screen and (max-width: 600px) {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+
     span {
       line-height: 1.75;
       font-weight: 450!important;
@@ -117,12 +126,12 @@
       margin-bottom: 2rem;
     }
     p button {
-      border-radius: 15px;
+      border-radius: 6px;
       color: #fff;
       text-decoration: none;
       background-color: #00b04f;
       border: none;
-      padding: 1.4rem 5rem;
+      padding: 1.4rem 2rem;
       font-size: 1.6rem;
       font-weight: 600;
     }
@@ -132,7 +141,7 @@
       text-decoration: none;
       background-color: #fff;
       border: 1px solid #00b04f;
-      padding: 1.4rem 5rem;
+      padding: 1.4rem 2rem;
       font-size: 1.6rem;
       font-weight: 600;
       transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;

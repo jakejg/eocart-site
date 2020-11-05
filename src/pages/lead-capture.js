@@ -6,9 +6,9 @@ import '../styles/pages/_leadcapture.scss';
 import logo from "../images/logo.svg";
 import carbonNeutral from "../images/lead-capture/Carbon-Neutral-Orders.png";
 import InstallCustomize from "../images/lead-capture/Install-and-customize.png";
-import TrackShare from "../images/lead-capture/Track-and-share.png";
+import TrackShare from "../images/lead-capture/track-and-share.png";
 import customerLogos from "../images/lead-capture/Customer-Logos.png";
-import savePlanet from "../images/lead-capture/Save-the-planet.png";
+import savePlanet from "../images/lead-capture/save-the-planet.png";
 import positiveExperience from "../images/lead-capture/create-positive-experiences.png";
 import enhanceBrand from "../images/lead-capture/Enhance-your-brand.png";
 

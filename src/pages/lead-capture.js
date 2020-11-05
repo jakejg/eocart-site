@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import { Container, Row, Col, FormGroup, Button, Form, FormControl, ProgressBar } from "react-bootstrap";
 import SEO from "../components/seo";
@@ -12,22 +12,19 @@ import savePlanet from "../images/lead-capture/Save-the-planet.png";
 import positiveExperience from "../images/lead-capture/create-positive-experiences.png";
 import enhanceBrand from "../images/lead-capture/Enhance-your-brand.png";
 
-const leadCapture = () => {
-    // const [showThanks, setShowThanks] = useState(false);
-    // const [formSelection, setFormSelection] = useState('');
-    // const [selected, setSelected] = useState();
-    // const [customInput, setCustomInput] = useState('');
+const LeadCapture = () => {
+    const [showThanks, setShowThanks] = useState(false);
+    const [form, setForm] = useState({url: '', email: ''});
 
-    // // submit form if a selction has been made
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     if (formSelection){
-    //         setShowThanks(true);
-    //         console.log(formSelection);
-    //     }
-    // }
+    const handleSubmit = (e) => {
 
-    // // Submit form if enter is pressed
+        if (form.url && form.email){
+            setShowThanks(true);
+            console.log(form);
+        }
+    }
+
+    // Submit form if enter is pressed
     // useEffect(() => {
     //     const listener = (e) => {
     //       if (e.code === "Enter" || e.code === "NumpadEnter") {
@@ -40,23 +37,10 @@ const leadCapture = () => {
     //     };
     //   }, [handleSubmit]);
 
-    // const options = [
-    //     {id: 1, text: "I don’t understand how EcoCart works"},
-    //     {id: 2, text: "I’m using another shopping extension"},
-    //     {id: 3, text: "I accidentally installed"}
-    // ];
-  
-    // const handleSelect = (e) => {
-    //     const { innerText } = e.target;
-    //     setFormSelection(innerText);
-    //     setSelected(+e.target.id);
-    // }
-
-    // const handleChange = (e) => {
-    //     const { value } = e.target;
-    //     setCustomInput(value);
-    //     setFormSelection(value);
-    // }
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setForm(form => ({...form, [name]: value}));
+    }
 
     return (
         <>
@@ -74,15 +58,26 @@ const leadCapture = () => {
                                 <h2 className="lead-capture-subtext">Attract and retain the next generation of eco-conscious consumers by offering them carbon neutral orders. And did we mention it’s completely free </h2>
                                 <Form className="lead-capture-form">
                                     <FormGroup>
-                                        <FormControl className="lead-capture-input" type="email" placeholder="Work Email" />
+                                        <FormControl className="lead-capture-input" 
+                                                    type="email" 
+                                                    placeholder="Work Email"
+                                                    name="email"
+                                                    onChange={handleChange}
+                                                    value={form.email}
+                                                   />
                                     </FormGroup>
                                     <FormGroup>
-                                        <FormControl className="lead-capture-input" type="text" placeholder="Your ecommerce store URL" />
+                                        <FormControl className="lead-capture-input" 
+                                                    type="text" 
+                                                    placeholder="Your ecommerce store URL"
+                                                    name="url"
+                                                    onChange={handleChange} 
+                                                    value={form.url}
+                                                />
                                     </FormGroup>
                                     <div className="btn-container">
-                                        <Button className="quick-start-btn">Quick Start</Button>
+                                        <Button onClick={handleSubmit} className="quick-start-btn">Quick Start</Button>
                                     </div>
-                                   
                                 </Form>
                             </Col>
                             <Col sm="7">
@@ -202,13 +197,23 @@ const leadCapture = () => {
                     <h2 className="lead-capture-subtext">Attract and retain the next generation of eco-conscious consumers by offering them carbon neutral orders. And did we mention it’s completely free </h2>
                     <Form className="lead-capture-form">
                         <FormGroup>
-                            <FormControl className="lead-capture-input" type="email" placeholder="Work Email" />
+                            <FormControl  className="lead-capture-input" 
+                                        type="email" 
+                                        placeholder="Work Email"
+                                        name="email"
+                                        onChange={handleChange} 
+                                        value={form.email} />
                         </FormGroup>
                         <FormGroup>
-                            <FormControl className="lead-capture-input" type="text" placeholder="Your ecommerce store URL" />
+                            <FormControl className="lead-capture-input" 
+                                        type="text" 
+                                        placeholder="Your ecommerce store URL" 
+                                        name="url"
+                                        onChange={handleChange} 
+                                        value={form.url}/>
                         </FormGroup>
                         <div className="btn-container">
-                            <Button className="quick-start-btn">Quick Start</Button>
+                            <Button onClick={handleSubmit} className="quick-start-btn">Quick Start</Button>
                         </div>
                        
                     </Form>
@@ -219,4 +224,4 @@ const leadCapture = () => {
     );
 };
 
-export default leadCapture;
+export default LeadCapture;

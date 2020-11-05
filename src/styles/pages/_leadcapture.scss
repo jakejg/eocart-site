@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
 
 .lead-capture {
     font-family: 'Titillium Web',sans-serif;
 
+    .lead-capture-header {
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .top-space {
+        height: 50px;
+    } 
+
     .lead-capture-title{
-        font-size: 4rem;
+        font-size: 6rem;
         text-align: left;
         font-weight: bolder;
         margin-bottom: 20px;
@@ -12,8 +23,8 @@
     
     .lead-capture-subtext {
         text-align: left;
-        font-size: 2rem;
-        font-weight: 0;
+        font-size: 20px;
+        line-height: 30px;
     }
 
     .lead-capture-form {
@@ -22,9 +33,10 @@
 
     .lead-capture-input {
         border-radius: 10px;
-        font-size: 2rem;
+        font-size: 1.2rem;
         height: 50px;
     }
+
 
     .btn-container {
         text-align: left;
@@ -39,15 +51,20 @@
         border-color: #00b04f;
         font-size: 1.6rem;
         padding: 1rem 4rem;
-        font-weight: 500;
-        border-radius: 0.3rem;
+        font-weight: bold;
+        border-radius: 0.3rem; 
     }
+
+    .quick-start-btn:hover {
+        background-color: #ffffff;
+        border-color: #00b04f;
+        color: #00b04f;
+}
 
 
     .lead-capture-section-1 {
         background-color: #FAFAFA;
-        margin-bottom: 100px;
-        padding: 30px 0px;
+        padding: 30px 0px 100px;
 
         .ecocart-video {
             width: 600px;
@@ -66,32 +83,34 @@
                 margin-top: 40px;
             }
         }
-
-        .top-space {
-            height: 80px;
-        } 
     }
     
     .lead-capture-section-2 {
+        background:linear-gradient(180deg,  #FAFAFA 50%, white 50%);
+        
+        .lead-capture-benefits-container {
         background-color: #FAFAFA;
         width: 80%;
         margin: auto;
         padding: 40px;
         box-shadow: 0 0 1em .2em #ccc;
-        border-radius: 20px;
+        border-radius: 25px;
+
+        }
     
        .phone-box {
            text-align:center;
+           margin-bottom: 20px;
        }
     
        .benefits-header {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             text-align: center;
-            font-weight: bold;
+            font-weight: bolder;
        }
     
        .benefits-text {
-           font-size: 2rem;
+           font-size: 20px;
            width: 80%;
            margin: auto;
            margin-top: 20px;
@@ -104,15 +123,21 @@
         padding: 40px;
         margin-top: 100px;
         .stats-header {
-            font-size: 4rem;
+            font-size: 50px;
             text-align: center;
-            font-weight: bold;  
+            font-weight: bolder;  
+            margin-right: 10px;
        }
 
        .stats-box {
            display: flex;
            align-items: center;
 
+       }
+
+       .progress-bar{
+           background-color: rgb(1, 100, 1);
+           border-radius: 50px;
        }
        
        .stats-muted {
@@ -131,18 +156,20 @@
     
 
        .stats-quote {
-           font-size: 2.1rem;
-           margin: 10px auto 0px;
+           font-size: 18px;
+           margin: 50px auto 0px;
        }
     }
     
     .lead-capture-section-4{
-        background: rgb(116, 177, 247);
-        height: 250px;
+        background:  #eaf6fa;
+        height: fit-content;
+        padding-bottom: 50px;
     
         .customers-header {
             font-weight: bold;
             text-align: center;
+            font-size: 30px;
             padding-top: 30px;
         }
     
@@ -160,6 +187,10 @@
         width: 80%;
         margin: auto;
         margin-top: 50px;
+
+        .benefits2-row {
+            margin-bottom: 80px;
+        }
         .benefits2-img-container {
             text-align: center;
         }
@@ -199,10 +230,10 @@
 
     .cost-header {
         font-weight: bolder;
-        font-size: 5rem;
+        font-size: 60px;
         line-height: 60px;
         text-align: center;
-        padding-top: 120px;
+        padding-top: 80px;
         padding-bottom: 20px;
     }
     .cost-row {
@@ -212,7 +243,7 @@
 
         .cost-header2{
             font-weight: 600;
-            font-size: 3rem;
+            font-size: 40px;
             color: black
         }
 
@@ -220,6 +251,10 @@
             font-weight: bold;
             font-size: 3rem;
             margin-top: 20px;
+        }
+
+        .zero {
+            font-size: 50px;
         }
     }
 

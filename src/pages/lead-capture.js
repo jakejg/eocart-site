@@ -13,6 +13,7 @@ import positiveExperience from "../images/lead-capture/create-positive-experienc
 import enhanceBrand from "../images/lead-capture/Enhance-your-brand.png";
 import shopifyReview from "../images/lead-capture/shopify-review.png";
 import shopifyLogo from "../images/lead-capture/shopify-logo.png";
+import knowLogo from "../images/lead-capture/know-logo.png";
 
 const LeadCapture = () => {
     const [showSubmitScreen, setShowSubmitScreen] = useState(false);
@@ -144,8 +145,11 @@ const LeadCapture = () => {
                                     <ProgressBar now={87} />
                                 <div>
                                     <p className="stats-quote">“Since installing EcoCart, the majority of our buyers have been adding the Carbon Neutral option to cart, and we've had great feedback from folks that love that we have this option available to them.” 
-                                    - Julia McCraken, Co-founder, Know Headphones [logo]
+                                    - Julia McCraken, Co-founder, Know Headphones  
                                     </p>
+                                </div>
+                                <div>
+                                <img width="60px" src={knowLogo}/>
                                 </div>
                             </div>
                         </Col>

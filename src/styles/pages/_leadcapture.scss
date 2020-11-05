@@ -29,23 +29,43 @@
     .btn-container {
         text-align: left;
         margin-top: 30px;
+     
+    }
 
-        .quick-start-btn {
-            color: white;
-            text-decoration: none;
-            background-color: #00b04f;
-            border-color: #00b04f;
-            font-size: 1.6rem;
-            padding: 1rem 4rem;
-            font-weight: 500;
-            border-radius: 0.3rem;
-        }
+    .quick-start-btn {
+        color: white;
+        text-decoration: none;
+        background-color: #00b04f;
+        border-color: #00b04f;
+        font-size: 1.6rem;
+        padding: 1rem 4rem;
+        font-weight: 500;
+        border-radius: 0.3rem;
     }
 
 
     .lead-capture-section-1 {
         background-color: #FAFAFA;
         margin-bottom: 100px;
+        padding: 30px 0px;
+
+        .ecocart-video {
+            width: 600px;
+            margin: auto;
+            height: 315px;
+        }
+        @media (max-width: 1000px){
+            .ecocart-video {
+                width: 400px;
+            }
+        }
+
+        @media (max-width: 500px){
+            .ecocart-video {
+                width: 90%;
+                margin-top: 40px;
+            }
+        }
 
         .top-space {
             height: 80px;
@@ -86,7 +106,19 @@
         .stats-header {
             font-size: 4rem;
             text-align: center;
-            font-weight: bold;    
+            font-weight: bold;  
+       }
+
+       .stats-box {
+           display: flex;
+           align-items: center;
+
+       }
+       
+       .stats-muted {
+        font-size: 1.5rem;
+        color: grey;
+        margin-left: 5px;
        }
     
        .stats-text {
@@ -94,28 +126,33 @@
            text-align: center;
            margin-top: 30px;
            margin-bottom: 30px;
+           
        }
     
-       .stats-muted {
-           font-size: 1.3rem;
-           color: grey;
+
+       .stats-quote {
+           font-size: 2.1rem;
+           margin: 10px auto;
        }
     }
     
     .lead-capture-section-4{
         background: rgb(116, 177, 247);
-        height: 200px;
+        height: 250px;
     
         .customers-header {
             font-weight: bold;
             text-align: center;
-            
-            padding: 30px;
+            padding-top: 30px;
         }
     
         .customers-logo-container {
             width: 80%;
             margin: auto;
+        }
+        .shopify-logo-container {
+            text-align: center;
+            margin-bottom: 30px;
         }
     }
     
@@ -141,6 +178,15 @@
                 margin-top: 10px;
             }
         }
+
+        @media (max-width: 500px){
+            .middle-benefit {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+        }
+    
        
     }
 
@@ -185,6 +231,40 @@
             margin: auto;
             padding: 100px;
         }
+
+        @media (max-width: 500px){
+            .form-bottom {
+                width: 90%;
+                padding: 20px;
+
+            }
+        }
     }
+
+    .happy-customers {
+        height: 500px;
+        background-color: #FAFAFA;
+        padding: 30px 0px;
+        text-align: center;
+    }
+
+    .happy-customers-header {
+        font-weight: bolder;
+        font-size: 4rem;
+        width: 400px;
+        margin: auto;
+    }
+
+    .happy-customers-text {
+        font-size: 2rem;
+        margin-top: 10px;
+        width: 400px;
+        margin: auto;
+    }
+
+    .shopify-logo{
+        width: 200px;
+    }
+
     
 }

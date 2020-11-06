@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import { Container, Row, Col, FormGroup, Button, Form, FormControl, ProgressBar } from "react-bootstrap";
 import SEO from "../components/seo";
 import '../styles/pages/_leadcapture.scss';
@@ -12,33 +12,19 @@ import savePlanet from "../images/lead-capture/save-the-planet.png";
 import positiveExperience from "../images/lead-capture/create-positive-experiences.png";
 import enhanceBrand from "../images/lead-capture/Enhance-your-brand.png";
 import shopifyReview from "../images/lead-capture/shopify-review.png";
-import shopifyLogo from "../images/lead-capture/shopify-logo.png";
 import knowLogo from "../images/lead-capture/know-logo.png";
+import ecocartVideo from "../images/lead-capture/ecocart-shopify-demo.mp4";
 
 const LeadCapture = () => {
-    const [showSubmitScreen, setShowSubmitScreen] = useState(false);
     const [form, setForm] = useState({url: '', email: ''});
 
     const handleSubmit = (e) => {
 
         if (form.url && form.email){
-            setShowSubmitScreen(true);
             console.log(form);
+            navigate('/lead-capture-submission')
         }
     }
-
-    // Submit form if enter is pressed
-    // useEffect(() => {
-    //     const listener = (e) => {
-    //       if (e.code === "Enter" || e.code === "NumpadEnter") {
-    //           handleSubmit(e)
-    //       }
-    //     };
-    //     document.addEventListener("keydown", listener);
-    //     return () => {
-    //       document.removeEventListener("keydown", listener);
-    //     };
-    //   }, [handleSubmit]);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -50,26 +36,24 @@ const LeadCapture = () => {
           <SEO title="leadCapture" />
           <div className="lead-capture">
               <div className="lead-capture-header">
-              <Link className="logo-link" to="/">
-                        <img src={logo} alt="logo" className="navbar--logo u-logo" />
-                </Link>
-                <div className="top-space"></div>
+                <div className="logo-link">
+                    <Link to="/">
+                        <img src={logo} alt="logo" className="lead-capture-logo" />
+                    </Link>
+                </div>
               </div>
-                
-                {!showSubmitScreen && 
-                <>
                 <section className="lead-capture-section-1">
                     
                     <Container >
                         <Row>
                             <Col sm="5">
                                 <h1 className="lead-capture-title">Get started with EcoCart</h1>
-                                <h2 className="lead-capture-subtext">Attract and retain the next generation of eco-conscious consumers by offering them carbon neutral orders. And did we mention it’s completely free </h2>
+                                <h2 className="lead-capture-subtext">Add carbon neutral orders to your online store to attract and retain the next generation of eco-conscious consumers - all at no cost to you</h2>
                                 <Form className="lead-capture-form">
                                     <FormGroup>
                                         <FormControl className="lead-capture-input" 
                                                     type="email" 
-                                                    placeholder="Work Email"
+                                                    placeholder="Email"
                                                     name="email"
                                                     onChange={handleChange}
                                                     value={form.email}
@@ -90,8 +74,7 @@ const LeadCapture = () => {
                                 </Form>
                             </Col>
                             <Col sm="7">
-                                    <iframe title="ecocart-video" className="ecocart-video" src="https://www.youtube.com/embed/nsk9e9ZWRe8?start=77&end=92">
-                                    </iframe>
+                                <video className="ecocart-video" src={ecocartVideo} preload="auto" autoPlay muted controls ></video>
                             </Col>
                         </Row>
                     </Container>
@@ -99,17 +82,17 @@ const LeadCapture = () => {
                 <section className="lead-capture-section-2">
                         <Row className="lead-capture-benefits-container">
                             <Col className="phone-box">
-                                <img width="280px" src={carbonNeutral} />
+                                <img width="280px" src={carbonNeutral} alt="phone"/>
                                 <h2 className="benefits-header">Install & Customize</h2>
                                 <p className="benefits-text">Simply install the EcoCart Shopify app in one click. We know how important brand look & feel is. So sit back and let us design and configure EcoCart for you to match your brand - all at no additional cost. </p>
                             </Col>
                             <Col className="phone-box">
-                                <img width="280px" src={InstallCustomize} />
+                                <img width="280px" src={InstallCustomize} alt="phone" />
                                 <h2 className="benefits-header">Carbon Neutral Orders </h2>
                                 <p className="benefits-text">EcoCart’s algorithm will calculate the carbon footprint of each of your orders and make them carbon neutral by directing the funds to certified carbon offset projects like planting trees or building wind farms. </p>
                             </Col>
                             <Col className="phone-box">
-                                <img width="280px" src={TrackShare} />
+                                <img width="280px" src={TrackShare} alt="phone"/>
                                 <h2 className="benefits-header">Track & Share</h2>
                                 <p className="benefits-text" >Track your impact using easily-digestible sustainability metrics and data visualizations within your personalized analytics dashboard, then share using our content marketing templates and certified sustainability badges.</p>
                             </Col>
@@ -148,12 +131,12 @@ const LeadCapture = () => {
                                 </div>
                                     <ProgressBar now={87} />
                                 <div>
-                                    <p className="stats-quote">“Since installing EcoCart, the majority of our buyers have been adding the Carbon Neutral option to cart, and we've had great feedback from folks that love that we have this option available to them.” 
-                                    - Julia McCraken, Co-founder, Know Headphones  
+                                    <p className="stats-quote">“Since installing EcoCart, the majority of our buyers have been adding the Carbon Neutral option to cart, and we've had great feedback from folks that love that we have this option.” 
+                                    - Julia McCraken, Co-founder
                                     </p>
                                 </div>
                                 <div>
-                                <img width="60px" src={knowLogo}/>
+                                <img width="85px" src={knowLogo} alt="logo"/>
                                 </div>
                             </div>
                         </Col>
@@ -162,17 +145,17 @@ const LeadCapture = () => {
                 <section className="lead-capture-section-4">
                     <h1 className="customers-header">200+ happy customers</h1>
                     <div className="shopify-logo-container">
-                        <img width="400px" src={shopifyReview} />
+                        <img width="400px" src={shopifyReview} alt="logo"/>
                     </div>
                     <div className="customers-logo-container">
-                        <img width="100%" className="customers-logo" src={customerLogos} />
+                        <img width="100%" className="customers-logo" src={customerLogos} alt="logos"/>
                     </div>
                 </section>
 
                 <section className="lead-capture-section-5">
                     <Row className="benefits2-row">
                         <Col xs="12" sm="7" className="benefits2-img-container">
-                            <img width="300px"  src={enhanceBrand} />
+                            <img width="350px"  src={enhanceBrand} alt="phone"/>
                         </Col>
                         <Col xs="12" sm="5" className="benefits2-desc-container">
                             <h1 className="benefits2-header">Enhance your brand</h1>
@@ -185,12 +168,12 @@ const LeadCapture = () => {
                             <p className="benefits2-text">Your customers will see you care about the planet at the most important step in their shopping experience. You’ll see increased retention and lower cart abandonment.</p>
                         </Col>
                         <Col xs="12" sm="7" className="benefits2-img-container">
-                            <img width="300px" src={positiveExperience} />
+                            <img width="350px" src={positiveExperience} alt="phone"/>
                         </Col>
                     </Row>
                     <Row className="benefits2-row">
                         <Col xs="12" sm="7" className="benefits2-img-container">
-                            <img width="300px" src={savePlanet} />
+                            <img width="450px" src={savePlanet} alt="screenshot"/>
                         </Col>
                         <Col xs="12" sm="5" className="benefits2-desc-container">
                             <h1 className="benefits2-header">Save the planet</h1>
@@ -239,22 +222,6 @@ const LeadCapture = () => {
                     </Form>
                 </div>
                 </section>
-            </>
-            }
-            {showSubmitScreen &&
-                <div className="happy-customers">
-                    <div>
-                        <h1 className="happy-customers-header">Happier customers are 10 minutes away</h1>
-                        <p className="happy-customers-text">We’ll reach out to help you set up EcoCart. You can also click install to add the EcoCart app to Shopify and start onboarding now.</p>
-                    </div>
-                    <div className="shopfiy-container">
-                        <img className="shopify-logo" src={shopifyLogo}></img>
-                    </div>
-                    <div style={{textAlign: 'center'}}>
-                        <a href="https://apps.shopify.com/ecocart?surface_detail=ecocart&surface_inter_position=1&surface_intra_position=2&surface_type=search" className="quick-start-btn btn">INSTALL</a>
-                    </div>
-               </div>
-            }
            </div>      
         </>
     );

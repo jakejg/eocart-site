@@ -22,6 +22,7 @@ const LeadCapture = () => {
 
         if (form.url && form.email){
             console.log(form);
+            // need to save from data to wordpress here
             navigate('/lead-capture-submission')
         }
     }
@@ -173,7 +174,7 @@ const LeadCapture = () => {
                     </Row>
                     <Row className="benefits2-row">
                         <Col xs="12" sm="7" className="benefits2-img-container">
-                            <img width="450px" src={savePlanet} alt="screenshot"/>
+                            <img width="500px" src={savePlanet} alt="screenshot"/>
                         </Col>
                         <Col xs="12" sm="5" className="benefits2-desc-container">
                             <h1 className="benefits2-header">Save the planet</h1>
@@ -197,7 +198,7 @@ const LeadCapture = () => {
                 <section className="lead-capture-section-7">
                 <div className="form-bottom">
                     <h1 className="lead-capture-title">Get started with EcoCart</h1>
-                    <h2 className="lead-capture-subtext">Attract and retain the next generation of eco-conscious consumers by offering them carbon neutral orders. And did we mention it’s completely free </h2>
+                    <h2 className="lead-capture-subtext">Add carbon neutral orders to your online store to attract and retain the next generation of eco-conscious consumers - all at no cost to you!</h2>
                     <Form className="lead-capture-form">
                         <FormGroup>
                             <FormControl  className="lead-capture-input" 

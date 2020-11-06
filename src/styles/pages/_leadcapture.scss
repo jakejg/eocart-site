@@ -5,7 +5,7 @@
 
     .logo-link {
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     .lead-capture-logo {
@@ -110,6 +110,8 @@
        .phone-box {
            text-align:center;
            margin-bottom: 20px;
+           padding: 0px;
+           width: 100px;
        }
     
        .benefits-header {
@@ -119,9 +121,9 @@
        }
     
        .benefits-text {
-           font-size: 20px;
+           font-size: 18px;
            font-weight: 450;
-           width: 80%;
+           width: 85%;
            margin: auto;
            margin-top: 20px;
        }
@@ -142,6 +144,7 @@
        .stats-box {
            display: flex;
            align-items: center;
+           margin: 13px auto 0px;
 
        }
 
@@ -154,6 +157,7 @@
         font-size: 1.5rem;
         color: grey;
         margin-left: 5px;
+        font-weight: 450;
        }
     
        .stats-text {
@@ -176,6 +180,7 @@
         background:  #eaf6fa;
         height: fit-content;
         padding-bottom: 50px;
+        margin-top: 100px;
     
         .customers-header {
             font-weight: bold;
@@ -208,13 +213,17 @@
     .lead-capture-section-5 {
         width: 80%;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 130px;
 
         .benefits2-row {
             margin-bottom: 80px;
         }
         .benefits2-img-container {
             text-align: center;
+        }
+
+        .save-planet {
+            text-align: left;
         }
         .benefits2-desc-container {
             display: flex;
@@ -229,7 +238,7 @@
             .benefits2-text {
                 font-size: 20px;
                 font-weight: 500;
-                margin-top: 10px;
+                margin-top: 40px;
             }
         }
 

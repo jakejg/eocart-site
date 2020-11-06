@@ -75,7 +75,7 @@ const LeadCapture = () => {
                                 </Form>
                             </Col>
                             <Col sm="7">
-                                <video className="ecocart-video" src={ecocartVideo} preload="auto" autoPlay muted controls ></video>
+                                <video className="ecocart-video" src={ecocartVideo} preload="auto" autoPlay muted></video>
                             </Col>
                         </Row>
                     </Container>
@@ -83,18 +83,18 @@ const LeadCapture = () => {
                 <section className="lead-capture-section-2">
                         <Row className="lead-capture-benefits-container">
                             <Col className="phone-box">
-                                <img width="280px" src={carbonNeutral} alt="phone"/>
+                                <img width="300px" src={carbonNeutral} alt="phone"/>
                                 <h2 className="benefits-header">Install & Customize</h2>
                                 <p className="benefits-text">Simply install the EcoCart Shopify app in one click. We know how important brand look & feel is. So sit back and let us design and configure EcoCart for you to match your brand - all at no additional cost. </p>
                             </Col>
                             <Col className="phone-box">
-                                <img width="280px" src={InstallCustomize} alt="phone" />
+                                <img width="300px" src={InstallCustomize} alt="phone" />
                                 <h2 className="benefits-header">Carbon Neutral Orders </h2>
                                 <p className="benefits-text">EcoCart’s algorithm will calculate the carbon footprint of each of your orders and make them carbon neutral by directing the funds to certified carbon offset projects like planting trees or building wind farms. </p>
                             </Col>
                             <Col className="phone-box">
-                                <img width="280px" src={TrackShare} alt="phone"/>
-                                <h2 className="benefits-header">Track & Share</h2>
+                                <img width="300px" src={TrackShare} alt="phone"/>
+                                <h2 className="benefits-header">Track & Share Impact</h2>
                                 <p className="benefits-text" >Track your impact using easily-digestible sustainability metrics and data visualizations within your personalized analytics dashboard, then share using our content marketing templates and certified sustainability badges.</p>
                             </Col>
                         </Row>
@@ -119,10 +119,10 @@ const LeadCapture = () => {
                                     <div className="stats-header">92%  </div>
                                     <div className="stats-muted">Are more likely to trust a company that supports environmental causes</div>
                                 </div>
-                                    <ProgressBar variant="custom" now={92} />
+                                    <ProgressBar now={92} />
                                 <div className="stats-box">
                                     <div className="stats-header">88%  </div>
-                                    <div className="stats-muted">Will be more loyal to a company that supports environmental causes</div>
+                                    <div className="stats-muted"> Are more loyal to a company that supports environmental causes</div>
                                 </div>
                                     <ProgressBar now={88} />
                                 
@@ -133,7 +133,7 @@ const LeadCapture = () => {
                                     <ProgressBar now={87} />
                                 <div>
                                     <p className="stats-quote">“Since installing EcoCart, the majority of our buyers have been adding the Carbon Neutral option to cart, and we've had great feedback from folks that love that we have this option.” 
-                                    - Julia McCraken, Co-founder
+                                    — Julia McCraken, Co-founder
                                     </p>
                                 </div>
                                 <div>
@@ -173,7 +173,7 @@ const LeadCapture = () => {
                         </Col>
                     </Row>
                     <Row className="benefits2-row">
-                        <Col xs="12" sm="7" className="benefits2-img-container">
+                        <Col xs="12" sm="7" className="benefits2-img-container save-planet">
                             <img width="500px" src={savePlanet} alt="screenshot"/>
                         </Col>
                         <Col xs="12" sm="5" className="benefits2-desc-container">

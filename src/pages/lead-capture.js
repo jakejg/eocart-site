@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, navigate } from "gatsby";
 import { Container, Row, Col, FormGroup, Button, Form, FormControl, ProgressBar } from "react-bootstrap";
 import SEO from "../components/seo";
@@ -14,6 +14,8 @@ import enhanceBrand from "../images/lead-capture/Enhance-your-brand.png";
 import shopifyReview from "../images/lead-capture/shopify-review.png";
 import knowLogo from "../images/lead-capture/know-logo.png";
 import ecocartVideo from "../images/lead-capture/ecocart-shopify-demo.mp4";
+import phoneVideo from "../images/lead-capture/phone-video.mp4";
+
 
 const LeadCapture = () => {
     const [form, setForm] = useState({url: '', email: ''});
@@ -26,6 +28,19 @@ const LeadCapture = () => {
             navigate('/lead-capture-submission')
         }
     }
+
+    // Submit form if enter is pressed
+    useEffect(() => {
+        const listener = (e) => {
+          if (e.code === "Enter" || e.code === "NumpadEnter") {
+              handleSubmit(e)
+          }
+        };
+        document.addEventListener("keydown", listener);
+        return () => {
+          document.removeEventListener("keydown", listener);
+        };
+      }, [handleSubmit]);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -84,7 +99,7 @@ const LeadCapture = () => {
                         <Row className="lead-capture-benefits-container">
                             <Col className="phone-box">
                                 <img width="300px" src={carbonNeutral} alt="phone"/>
-                                <h2 className="benefits-header">Install & Customize</h2>
+                                <h2 className="benefits-header">Install & <br></br>Customize</h2>
                                 <p className="benefits-text">Simply install the EcoCart Shopify app in one click. We know how important brand look & feel is. So sit back and let us design and configure EcoCart for you to match your brand - all at no additional cost. </p>
                             </Col>
                             <Col className="phone-box">
@@ -104,16 +119,15 @@ const LeadCapture = () => {
                     <h1 className="stats-header">The new checkout standard</h1>
                     <p className="stats-text">Today’s eco-conscious consumers demand a way to shop without harming the planet. EcoCart aligns your values with your customers’, and leads to increases in brand loyalty and cart conversion.</p>
                     <Row>
-                        <Col >
-                        {/* <video  height="540"
-                                width="400"
-                                autoPlay
-                                loop>
-                            <source src={aplPhone} type="video/mp4" />
-                                Your browser does not support the video tag.
-                        </video> */}
+                        <Col xs="5" className="phone-video-column">
+                            <video  height="540"
+                                    width="400"
+                                    autoPlay
+                                    loop src={phoneVideo}
+                                    className="phone-video">
+                            </video>
                         </Col>
-                        <Col >
+                        <Col xs="7" >
                             <div className="stats">
                                 <div className="stats-box">
                                     <div className="stats-header">92%  </div>

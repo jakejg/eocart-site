@@ -32,7 +32,7 @@
 /terms-of-services /terms-of-services-us 301!
 /app/install https://apps.shopify.com/ecocart 301!
 /app/video https://www.youtube.com/watch?v=nsk9e9ZWRe8 301!
-/app/getstarted https://ecocart.io/lead-capture 200!
+/app https://ecocart.io/ 200!
 /app/about-us https://app.ecocart.io/about-us/ 200!
 /app/contact-us https://app.ecocart.io/contact-us/ 200!
 /app/eu-terms-of-service-chrome https://app.ecocart.io/eu-terms-of-service-chrome/ 200!

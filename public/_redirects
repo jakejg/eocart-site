@@ -32,7 +32,7 @@
 /terms-of-services /terms-of-services-us 301!
 /app/install https://apps.shopify.com/ecocart 301!
 /app/video https://www.youtube.com/watch?v=nsk9e9ZWRe8 301!
-/app/getstarted /lead-capture/index.html 200
+/app/getstarted /lead-capture/index.html 200!
 /app/*  https://app.ecocart.io/:splat 200
 /logout https://shop.ecocart.io/logout 200
 /api/projects https://shop.ecocart.io/api/projects 200

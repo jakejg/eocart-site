@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, navigate } from "gatsby";
+import { Link } from "gatsby";
 import { Container, Row, Col, FormGroup, Button, Form, FormControl, ProgressBar } from "react-bootstrap";
 import SEO from "../../components/seo";
 import '../../styles/pages/_leadcapture.scss';

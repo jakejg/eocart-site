@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import { Container, Row, Col, FormGroup, Button, Form, FormControl, ProgressBar } from "react-bootstrap";
 import SEO from "../../components/seo";
 import '../../styles/pages/_leadcapture.scss';
@@ -25,22 +25,22 @@ const LeadCapture = () => {
         if (form.url && form.email){
             console.log(form);
             // need to save from data to wordpress here
-            // navigate('/getstarted/signup')
+            navigate('/getstarted/signup')
         }
     }
 
     // Submit form if enter is pressed
-    useEffect(() => {
-        const listener = (e) => {
-          if (e.code === "Enter" || e.code === "NumpadEnter") {
-              handleSubmit(e)
-          }
-        };
-        document.addEventListener("keydown", listener);
-        return () => {
-          document.removeEventListener("keydown", listener);
-        };
-      }, [handleSubmit]);
+    // useEffect(() => {
+    //     const listener = (e) => {
+    //       if (e.code === "Enter" || e.code === "NumpadEnter") {
+    //           handleSubmit(e)
+    //       }
+    //     };
+    //     document.addEventListener("keydown", listener);
+    //     return () => {
+    //       document.removeEventListener("keydown", listener);
+    //     };
+    //   }, [handleSubmit]);
 
     const handleChange = (e) => {
         const { name, value } = e.target;

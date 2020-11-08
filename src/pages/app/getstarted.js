@@ -30,17 +30,17 @@ const LeadCapture = () => {
     }
 
     // Submit form if enter is pressed
-    // useEffect(() => {
-    //     const listener = (e) => {
-    //       if (e.code === "Enter" || e.code === "NumpadEnter") {
-    //           handleSubmit(e)
-    //       }
-    //     };
-    //     document.addEventListener("keydown", listener);
-    //     return () => {
-    //       document.removeEventListener("keydown", listener);
-    //     };
-    //   }, [handleSubmit]);
+    useEffect(() => {
+        const listener = (e) => {
+          if (e.code === "Enter" || e.code === "NumpadEnter") {
+              handleSubmit(e)
+          }
+        };
+        document.addEventListener("keydown", listener);
+        return () => {
+          document.removeEventListener("keydown", listener);
+        };
+      }, [handleSubmit]);
 
     const handleChange = (e) => {
         const { name, value } = e.target;

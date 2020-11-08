@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "gatsby";
-import SEO from "../components/seo";
-import '../styles/pages/_leadcapturesubmission.scss';
-import logo from "../images/logo.svg";
-import shopifyLogo from "../images/lead-capture/shopify-logo.png";
+import SEO from "../../components/seo";
+import '../../styles/pages/_leadcapturesubmission.scss';
+import logo from "../../images/logo.svg";
+import shopifyLogo from "../../images/lead-capture/shopify-logo.png";
 
 
 const LeadCaptureSubmission = () => {
-    
+
     return (
         <>
           <SEO title="leadCaptureSubmission" />
@@ -32,7 +32,7 @@ const LeadCaptureSubmission = () => {
                         target="#">INSTALL</a>
                     </div>
                </div>
-           </div>      
+           </div>
         </>
     );
 };

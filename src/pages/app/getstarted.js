@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { Link, navigate } from "gatsby";
 import { Container, Row, Col, FormGroup, Button, Form, FormControl, ProgressBar } from "react-bootstrap";
-import SEO from "../components/seo";
-import '../styles/pages/_leadcapture.scss';
-import logo from "../images/logo.svg";
-import carbonNeutral from "../images/lead-capture/Carbon-Neutral-Orders.png";
-import InstallCustomize from "../images/lead-capture/Install-and-customize.png";
-import TrackShare from "../images/lead-capture/track-and-share.png";
-import customerLogos from "../images/lead-capture/Customer-Logos.png";
-import savePlanet from "../images/lead-capture/save-the-planet.png";
-import positiveExperience from "../images/lead-capture/create-positive-experiences.png";
-import enhanceBrand from "../images/lead-capture/Enhance-your-brand.png";
-import shopifyReview from "../images/lead-capture/shopify-review.png";
-import knowLogo from "../images/lead-capture/know-logo.png";
-import ecocartVideo from "../images/lead-capture/ecocart-shopify-demo.mp4";
-import phoneVideo from "../images/lead-capture/phone-video.mp4";
+import SEO from "../../components/seo";
+import '../../styles/pages/_leadcapture.scss';
+import logo from "../../images/logo.svg";
+import carbonNeutral from "../../images/lead-capture/Carbon-Neutral-Orders.png";
+import InstallCustomize from "../../images/lead-capture/Install-and-customize.png";
+import TrackShare from "../../images/lead-capture/track-and-share.png";
+import customerLogos from "../../images/lead-capture/Customer-Logos.png";
+import savePlanet from "../../images/lead-capture/save-the-planet.png";
+import positiveExperience from "../../images/lead-capture/create-positive-experiences.png";
+import enhanceBrand from "../../images/lead-capture/Enhance-your-brand.png";
+import shopifyReview from "../../images/lead-capture/shopify-review.png";
+import knowLogo from "../../images/lead-capture/know-logo.png";
+import ecocartVideo from "../../images/lead-capture/ecocart-shopify-demo.mp4";
+import phoneVideo from "../../images/lead-capture/phone-video.mp4";
 
 
 const LeadCapture = () => {
@@ -59,7 +59,7 @@ const LeadCapture = () => {
                 </div>
               </div>
                 <section className="lead-capture-section-1">
-                    
+
                     <Container >
                         <Row>
                             <Col sm="5">
@@ -67,8 +67,8 @@ const LeadCapture = () => {
                                 <h2 className="lead-capture-subtext">Add carbon neutral orders to your online store to attract and retain the next generation of eco-conscious consumers - all at no cost to you</h2>
                                 <Form className="lead-capture-form">
                                     <FormGroup>
-                                        <FormControl className="lead-capture-input" 
-                                                    type="email" 
+                                        <FormControl className="lead-capture-input"
+                                                    type="email"
                                                     placeholder="Email"
                                                     name="email"
                                                     onChange={handleChange}
@@ -76,11 +76,11 @@ const LeadCapture = () => {
                                                    />
                                     </FormGroup>
                                     <FormGroup>
-                                        <FormControl className="lead-capture-input" 
-                                                    type="text" 
+                                        <FormControl className="lead-capture-input"
+                                                    type="text"
                                                     placeholder="Your ecommerce store URL"
                                                     name="url"
-                                                    onChange={handleChange} 
+                                                    onChange={handleChange}
                                                     value={form.url}
                                                 />
                                     </FormGroup>
@@ -113,7 +113,7 @@ const LeadCapture = () => {
                                 <p className="benefits-text" >Track your impact using easily-digestible sustainability metrics and data visualizations within your personalized analytics dashboard, then share using our content marketing templates and certified sustainability badges.</p>
                             </Col>
                         </Row>
-                 
+
                 </section>
                 <section className="lead-capture-section-3">
                     <h1 className="stats-header">The new checkout standard</h1>
@@ -139,14 +139,14 @@ const LeadCapture = () => {
                                     <div className="stats-muted"> Are more loyal to a company that supports environmental causes</div>
                                 </div>
                                     <ProgressBar now={88} />
-                                
+
                                 <div className="stats-box">
                                     <div className="stats-header">77%  </div>
                                     <div className="stats-muted">Have a positive image of a company that supports environmental causes</div>
                                 </div>
                                     <ProgressBar now={87} />
                                 <div>
-                                    <p className="stats-quote">“Since installing EcoCart, the majority of our buyers have been adding the Carbon Neutral option to cart, and we've had great feedback from folks that love that we have this option.” 
+                                    <p className="stats-quote">“Since installing EcoCart, the majority of our buyers have been adding the Carbon Neutral option to cart, and we've had great feedback from folks that love that we have this option.”
                                     — Julia McCraken, Co-founder
                                     </p>
                                 </div>
@@ -215,29 +215,29 @@ const LeadCapture = () => {
                     <h2 className="lead-capture-subtext">Add carbon neutral orders to your online store to attract and retain the next generation of eco-conscious consumers - all at no cost to you!</h2>
                     <Form className="lead-capture-form">
                         <FormGroup>
-                            <FormControl  className="lead-capture-input" 
-                                        type="email" 
+                            <FormControl  className="lead-capture-input"
+                                        type="email"
                                         placeholder="Work Email"
                                         name="email"
-                                        onChange={handleChange} 
+                                        onChange={handleChange}
                                         value={form.email} />
                         </FormGroup>
                         <FormGroup>
-                            <FormControl className="lead-capture-input" 
-                                        type="text" 
-                                        placeholder="Your ecommerce store URL" 
+                            <FormControl className="lead-capture-input"
+                                        type="text"
+                                        placeholder="Your ecommerce store URL"
                                         name="url"
-                                        onChange={handleChange} 
+                                        onChange={handleChange}
                                         value={form.url}/>
                         </FormGroup>
                         <div className="btn-container">
                             <Button onClick={handleSubmit} className="quick-start-btn">Quick Start</Button>
                         </div>
-                       
+
                     </Form>
                 </div>
                 </section>
-           </div>      
+           </div>
         </>
     );
 };

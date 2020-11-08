@@ -4,11 +4,7 @@ import { withPrefix } from 'gatsby'
 
 export const onRenderBody = ({ setPostBodyComponents }) => {
 	setPostBodyComponents([
-		<script>
-    window.onload = () => {
-      window.history.replaceState({}, '', '/')
-    }
-    </script>
+		<script src={withPrefix('js/replace.js')} key="replaceURL" />
 	])
 }
 

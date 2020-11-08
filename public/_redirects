@@ -30,6 +30,7 @@
 /reset_password https://shop.ecocart.io/reset_password 200
 /reset_password/success https://shop.ecocart.io/reset_password/success 200
 /terms-of-services /terms-of-services-us 301!
+/app/getstarted /app/getstarted/
 /app/install https://apps.shopify.com/ecocart 301!
 /app/video https://www.youtube.com/watch?v=nsk9e9ZWRe8 301!
 /app https://ecocart.io/ 200!

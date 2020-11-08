@@ -25,7 +25,7 @@ const LeadCapture = () => {
         if (form.url && form.email){
             console.log(form);
             // need to save from data to wordpress here
-            navigate('/getstarted/lead-capture-submission')
+            navigate('/getstarted/signup')
         }
     }
 

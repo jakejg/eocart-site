@@ -15,9 +15,12 @@ import shopifyReview from "../../images/lead-capture/shopify-review.png";
 import knowLogo from "../../images/lead-capture/know-logo.png";
 import ecocartVideo from "../../images/lead-capture/ecocart-shopify-demo.mp4";
 import phoneVideo from "../../images/lead-capture/phone-video.mp4";
+import{ init } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 
 const LeadCapture = () => {
+    init("user_BqeINgMWL2XI09ExMRiks");
     const [form, setForm] = useState({url: '', email: ''});
 
     const handleSubmit = (e) => {
@@ -25,7 +28,7 @@ const LeadCapture = () => {
         if (form.url && form.email){
             console.log(form);
             // need to save form data to wordpress here
-
+            emailjs.send("service_a5iwdg8","template_23hcp75",{email:form.email,store_url:form.url});
             navigate('/app/getstarted/signup')
         }
     }
@@ -91,10 +94,10 @@ const LeadCapture = () => {
                                 </Form>
                             </Col>
                             <Col sm="7">
-                                <video className="ecocart-video" 
-                                        src={ecocartVideo} 
-                                        preload="auto" 
-                                        autoPlay 
+                                <video className="ecocart-video"
+                                        src={ecocartVideo}
+                                        preload="auto"
+                                        autoPlay
                                         loop
                                         muted></video>
                             </Col>
@@ -128,7 +131,7 @@ const LeadCapture = () => {
                             <video  height="600"
                                     width="550"
                                     autoPlay
-                                    loop 
+                                    loop
                                     src={phoneVideo}
                                     className="phone-video">
                             </video>

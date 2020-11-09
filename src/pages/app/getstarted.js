@@ -50,13 +50,13 @@ const LeadCapture = () => {
 
     return (
         <>
-          <SEO title="leadCapture" />
+          <SEO title="Get Started" />
           <div className="lead-capture">
               <div className="lead-capture-header">
                 <div className="logo-link">
-                    <Link to="/">
+                    <a href="https://ecocart.io/app">
                         <img src={logo} alt="logo" className="lead-capture-logo" />
-                    </Link>
+                    </a>
                 </div>
               </div>
                 <section className="lead-capture-section-1">
@@ -91,44 +91,49 @@ const LeadCapture = () => {
                                 </Form>
                             </Col>
                             <Col sm="7">
-                                <video className="ecocart-video" src={ecocartVideo} preload="auto" autoPlay muted></video>
+                                <video className="ecocart-video" 
+                                        src={ecocartVideo} 
+                                        preload="auto" 
+                                        autoPlay 
+                                        loop
+                                        muted></video>
                             </Col>
                         </Row>
                     </Container>
                 </section>
                 <section className="lead-capture-section-2">
                         <Row className="lead-capture-benefits-container">
-                            <Col className="phone-box">
-                                <img width="300px" src={carbonNeutral} alt="phone"/>
+                            <Col xs="12" sm="4" className="phone-box">
+                                <img width="300px" src={InstallCustomize} alt="phone"/>
                                 <h2 className="benefits-header">Install & <br></br>Customize</h2>
                                 <p className="benefits-text">Simply install the EcoCart Shopify app in one click. We know how important brand look & feel is. So sit back and let us design and configure EcoCart for you to match your brand - all at no additional cost. </p>
                             </Col>
-                            <Col className="phone-box">
-                                <img width="300px" src={InstallCustomize} alt="phone" />
+                            <Col xs="12" sm="4" className="phone-box">
+                                <img width="300px" src={carbonNeutral} alt="phone" />
                                 <h2 className="benefits-header">Carbon Neutral Orders </h2>
                                 <p className="benefits-text">EcoCart’s algorithm will calculate the carbon footprint of each of your orders and make them carbon neutral by directing the funds to certified carbon offset projects like planting trees or building wind farms. </p>
                             </Col>
-                            <Col className="phone-box">
+                            <Col xs="12" sm="4" className="phone-box">
                                 <img width="300px" src={TrackShare} alt="phone"/>
                                 <h2 className="benefits-header">Track & Share Impact</h2>
                                 <p className="benefits-text" >Track your impact using easily-digestible sustainability metrics and data visualizations within your personalized analytics dashboard, then share using our content marketing templates and certified sustainability badges.</p>
                             </Col>
                         </Row>
-
                 </section>
                 <section className="lead-capture-section-3">
                     <h1 className="stats-header">The new checkout standard</h1>
                     <p className="stats-text">Today’s eco-conscious consumers demand a way to shop without harming the planet. EcoCart aligns your values with your customers’, and leads to increases in brand loyalty and cart conversion.</p>
                     <Row>
-                        <Col xs="5" className="phone-video-column">
-                            <video  height="540"
-                                    width="400"
+                        <Col xs="12" sm="5" className="phone-video-column">
+                            <video  height="600"
+                                    width="550"
                                     autoPlay
-                                    loop src={phoneVideo}
+                                    loop 
+                                    src={phoneVideo}
                                     className="phone-video">
                             </video>
                         </Col>
-                        <Col xs="7" >
+                        <Col xs="12" sm="7" >
                             <div className="stats">
                                 <div className="stats-box">
                                     <div className="stats-header">92%  </div>
@@ -189,11 +194,11 @@ const LeadCapture = () => {
                     </Row>
                     <Row className="benefits2-row">
                         <Col xs="12" sm="7" className="benefits2-img-container save-planet">
-                            <img width="500px" src={savePlanet} alt="screenshot"/>
+                            <img className="save-planet" src={savePlanet} alt="screenshot"/>
                         </Col>
                         <Col xs="12" sm="5" className="benefits2-desc-container">
                             <h1 className="benefits2-header">Save the planet</h1>
-                            <p className="benefits2-text">Do good in the world by doing well in business. Combat climate change by contributing to alternative energy, forestry, and other carbon offset projects</p>
+                            <p className="benefits2-text">Do good in the world by doing well in business. Combat climate change by contributing to alternative energy, forestry, and other carbon offset projects.</p>
                         </Col>
                     </Row>
                 </section>

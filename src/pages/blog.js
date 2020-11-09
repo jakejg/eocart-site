@@ -9,7 +9,7 @@ const Blog = () => {
   const wpPosts = useStaticQuery(graphql`
     query {
       wordpress {
-        posts(first: 100) {
+        posts(first: 100,where: {tagId: "30"}) {
           edges {
             node {
               title

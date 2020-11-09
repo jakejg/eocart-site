@@ -50,7 +50,7 @@ const Post = (props) => {
   const data = useStaticQuery(graphql`
     query {
       recentPosts: wordpress {
-        posts(first: 6) {
+        posts(first: 6,where: {tagId: "30"}) {
           edges {
             node {
               title

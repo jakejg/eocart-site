@@ -79,21 +79,20 @@ html,body
         padding: 30px 0px 100px;
 
         .ecocart-video {
-            width: 600px;
+            width: 800px;
             margin: auto;
-            margin-top: 100px;
-            height: 315px;
+            height: 515px;
+            margin-left: -50px;
         }
-        @media (max-width: 1000px){
+        @media (max-width: 1100px){
             .ecocart-video {
-                width: 400px;
+                width: 600px;
             }
         }
 
         @media (max-width: 500px){
             .ecocart-video {
-                width: 90%;
-                margin-top: 40px;
+                width: 380px;
             }
         }
     }
@@ -148,7 +147,8 @@ html,body
             width: 100%;
         }
         .phone-video {
-            margin-left: -50px;
+            margin-left: -100px;
+            margin-top: -20px;
         }
         .stats-header {
             font-size: 50px;

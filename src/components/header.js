@@ -141,6 +141,13 @@ const Header = () => {
               >
                 Twitter
               </a>
+              <a
+                href="https://www.crunchbase.com/organization/ecocart"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Crunchbase
+              </a>
             </div>
           </div>
         </div>

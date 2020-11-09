@@ -2,6 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import logo from "../images/logo.svg";
+import crunchbaseLogo from '../images/crunchbase_logo.png';
 
 const Footer = () => {
   return (
@@ -88,6 +89,18 @@ const Footer = () => {
                   <img
                     src="https://app.ecocart.io/wp-content/themes/ecocart/images/twitter_logo.svg"
                     alt="twitter logo"
+                  ></img>
+                </a>
+                
+                <a
+                  href="https://www.crunchbase.com/organization/ecocart"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={crunchbaseLogo}
+                    width="45px"
+                    alt="crunch base logo"
                   ></img>
                 </a>
               </Col>

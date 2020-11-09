@@ -1,4 +1,7 @@
-
+html,body
+{
+    overflow-x: hidden; 
+}
 
 .lead-capture {
     font-family: 'Montserrat',sans-serif;
@@ -99,13 +102,18 @@
         background:linear-gradient(180deg,  #FAFAFA 50%, white 50%);
         
         .lead-capture-benefits-container {
-        background-color: #FAFAFA;
-        width: 1200px;
-        margin: auto;
-        padding: 40px;
-        box-shadow: 0 0 1em .2em #ccc;
-        border-radius: 25px;
+            background-color: #FAFAFA;
+            width: 1200px;
+            margin: auto;
+            padding: 40px;
+            box-shadow: 0 0 1em .2em #ccc;
+            border-radius: 25px;
+        }
 
+        @media (max-width: 560px){
+            .lead-capture-benefits-container {
+                width: 350px;
+            } 
         }
     
        .phone-box {
@@ -231,8 +239,15 @@
         }
 
         .save-planet {
-            text-align: left;
+            width: 500px;
         }
+
+        @media (max-width: 560px) {
+            .save-planet {
+                width: 350px;
+            }
+        }
+
         .benefits2-desc-container {
             display: flex;
             flex-direction: column;
@@ -255,17 +270,16 @@
                 display: flex;
                 flex-direction: column-reverse;
             }
-
         }
-    
-       
     }
 
     .lead-capture-section-6 {
-        height: 400px;
+        height: fit-content;
         background: linear-gradient(90deg, #3552d3, #23cde4);
         color: white;
         margin-top: 100px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 
     .cost-header {
@@ -273,7 +287,6 @@
         font-size: 60px;
         line-height: 60px;
         text-align: center;
-        padding-top: 80px;
         padding-bottom: 20px;
     }
     .cost-row {

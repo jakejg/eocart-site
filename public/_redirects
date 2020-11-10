@@ -41,6 +41,7 @@
 /app/our-projects https://app.ecocart.io/our-projects/ 200!
 /app/privacy-policy https://app.ecocart.io/privacy-policy/ 200!
 /app/terms-of-service https://app.ecocart.io/terms-of-service/ 200!
+/app/project/forest-protection https://app.ecocart.io/project/forest-protection/ 200!
 /logout https://shop.ecocart.io/logout 200
 /api/projects https://shop.ecocart.io/api/projects 200
 /api/merchants https://shop.ecocart.io/api/merchants 200

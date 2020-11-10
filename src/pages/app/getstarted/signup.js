@@ -10,7 +10,7 @@ const LeadCaptureSubmission = () => {
 
     return (
         <>
-          <SEO title="leadCaptureSubmission" />
+          <SEO title="Form Success" />
           <div className="lead-capture">
               <div className="lead-capture-header">
                 <div className="logo-link">

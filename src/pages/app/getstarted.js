@@ -60,12 +60,11 @@ const LeadCapture = () => {
                 </div>
               </div>
                 <section className="lead-capture-section-1">
-
                     <Container >
                         <Row>
                             <Col sm="5">
                                 <h1 className="lead-capture-title">Get started with EcoCart</h1>
-                                <h2 className="lead-capture-subtext">Add carbon neutral orders to your online store to attract and retain the next generation of eco-conscious consumers - all at no cost to you</h2>
+                                <h2 className="lead-capture-subtext">Add carbon neutral orders to your online store to attract and retain the next generation of eco-conscious consumers - all at no cost to you!</h2>
                                 <Form className="lead-capture-form">
                                     <FormGroup>
                                         <FormControl className="lead-capture-input"

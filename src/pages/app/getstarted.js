@@ -53,7 +53,7 @@ const LeadCapture = () => {
 
     return (
         <>
-          <SEO title="Get Started" />
+          <SEO title="Get Started" description="Add carbon neutral orders to your online store to attract and retain the next generation of eco-conscious consumers - all at no cost to you!" />
           <div className="lead-capture">
               <div className="lead-capture-header">
                 <div className="logo-link">

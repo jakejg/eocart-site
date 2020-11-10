@@ -15,9 +15,12 @@ import shopifyReview from "../../images/lead-capture/shopify-review.png";
 import knowLogo from "../../images/lead-capture/know-logo.png";
 import ecocartVideo from "../../images/lead-capture/ecocart-shopify-demo.mp4";
 import phoneVideo from "../../images/lead-capture/phone-video.mp4";
+import{ init } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 
 const LeadCapture = () => {
+    init("user_BqeINgMWL2XI09ExMRiks");
     const [form, setForm] = useState({url: '', email: ''});
 
     const handleSubmit = (e) => {
@@ -25,7 +28,7 @@ const LeadCapture = () => {
         if (form.url && form.email){
             console.log(form);
             // need to save form data to wordpress here
-
+            emailjs.send("service_a5iwdg8","template_23hcp75",{email:form.email,store_url:form.url});
             navigate('/app/getstarted/signup')
         }
     }
@@ -50,7 +53,7 @@ const LeadCapture = () => {
 
     return (
         <>
-          <SEO title="Get Started" />
+          <SEO title="Get Started" description="Add carbon neutral orders to your online store to attract and retain the next generation of eco-conscious consumers - all at no cost to you!" />
           <div className="lead-capture">
               <div className="lead-capture-header">
                 <div className="logo-link">
@@ -60,12 +63,11 @@ const LeadCapture = () => {
                 </div>
               </div>
                 <section className="lead-capture-section-1">
-
                     <Container >
                         <Row>
                             <Col sm="5">
                                 <h1 className="lead-capture-title">Get started with EcoCart</h1>
-                                <h2 className="lead-capture-subtext">Add carbon neutral orders to your online store to attract and retain the next generation of eco-conscious consumers - all at no cost to you</h2>
+                                <h2 className="lead-capture-subtext">Add carbon neutral orders to your online store to attract and retain the next generation of eco-conscious consumers - all at no cost to you!</h2>
                                 <Form className="lead-capture-form">
                                     <FormGroup>
                                         <FormControl className="lead-capture-input"
@@ -91,10 +93,10 @@ const LeadCapture = () => {
                                 </Form>
                             </Col>
                             <Col sm="7">
-                                <video className="ecocart-video" 
-                                        src={ecocartVideo} 
-                                        preload="auto" 
-                                        autoPlay 
+                                <video className="ecocart-video"
+                                        src={ecocartVideo}
+                                        preload="auto"
+                                        autoPlay
                                         loop
                                         muted></video>
                             </Col>
@@ -128,7 +130,7 @@ const LeadCapture = () => {
                             <video  height="600"
                                     width="550"
                                     autoPlay
-                                    loop 
+                                    loop
                                     src={phoneVideo}
                                     className="phone-video">
                             </video>

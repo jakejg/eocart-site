@@ -50,4 +50,4 @@ const CtaTree = () => {
   );
 };
 
-export default Cta;
+export default CtaTree;

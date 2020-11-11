@@ -11,7 +11,6 @@ import customerLogos from "../../images/lead-capture/Customer-Logos.png";
 import savePlanet from "../../images/lead-capture/save-the-planet.png";
 import positiveExperience from "../../images/lead-capture/create-positive-experiences.png";
 import enhanceBrand from "../../images/lead-capture/Enhance-your-brand.png";
-// import shopifyReview from ;
 import knowLogo from "../../images/lead-capture/know-logo.png";
 import ecocartVideo from "../../images/lead-capture/ecocart-shopify-demo.mp4";
 import phoneVideo from "../../images/lead-capture/phone-video.mp4";
@@ -136,7 +135,9 @@ const LeadCapture = () => {
                         <Col xs="12" sm="5" className="phone-video-column">
                             <video  height="600"
                                     width="550"
+                                    preload="auto"
                                     autoPlay
+                                    muted
                                     loop
                                     src={phoneVideo}
                                     className="phone-video">

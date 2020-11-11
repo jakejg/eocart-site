@@ -61,7 +61,7 @@
 /video https://www.youtube.com/watch?v=M8JLUu8Ziak 301!
 /install https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi 301!
 /api/email-share/* https://shop.ecocart.io/api/email-share/:splat 200
-/email-success https://shop.ecocart.io/email-success/ 200
+/email-success https://shop.ecocart.io/email-success 200
 /email-confirm/* https://shop.ecocart.io/email-confirm/:splat 200
 /referral/* https://shop.ecocart.io/referral/:splat 200
 /refInstall/* https://shop.ecocart.io/refInstall/:splat 200

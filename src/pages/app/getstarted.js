@@ -11,13 +11,12 @@ import customerLogos from "../../images/lead-capture/Customer-Logos.png";
 import savePlanet from "../../images/lead-capture/save-the-planet.png";
 import positiveExperience from "../../images/lead-capture/create-positive-experiences.png";
 import enhanceBrand from "../../images/lead-capture/Enhance-your-brand.png";
-import shopifyReview from "../../images/lead-capture/shopify-review.png";
+// import shopifyReview from ;
 import knowLogo from "../../images/lead-capture/know-logo.png";
 import ecocartVideo from "../../images/lead-capture/ecocart-shopify-demo.mp4";
 import phoneVideo from "../../images/lead-capture/phone-video.mp4";
 import{ init } from 'emailjs-com';
 import emailjs from 'emailjs-com';
-
 
 const LeadCapture = () => {
     init("user_BqeINgMWL2XI09ExMRiks");
@@ -104,6 +103,14 @@ const LeadCapture = () => {
                     </Container>
                 </section>
                 <section className="lead-capture-section-2">
+                    <div className="shopify-logo-container">
+                        <img width="500px" src={require(`../../images/lead-capture/shopify-review.svg`)}/>
+                    </div>
+                    <div className="customers-logo-container">
+                        <img width="100%" className="customers-logo" src={customerLogos} alt="logos"/>
+                    </div>
+                </section>
+                <section className="lead-capture-section-3">
                         <Row className="lead-capture-benefits-container">
                             <Col xs="12" sm="4" className="phone-box">
                                 <img width="300px" src={InstallCustomize} alt="phone"/>
@@ -122,7 +129,7 @@ const LeadCapture = () => {
                             </Col>
                         </Row>
                 </section>
-                <section className="lead-capture-section-3">
+                <section className="lead-capture-section-4">
                     <h1 className="stats-header">The new checkout standard</h1>
                     <p className="stats-text">Today’s eco-conscious consumers demand a way to shop without harming the planet. EcoCart aligns your values with your customers’, and leads to increases in brand loyalty and cart conversion.</p>
                     <Row>
@@ -164,15 +171,6 @@ const LeadCapture = () => {
                             </div>
                         </Col>
                     </Row>
-                </section>
-                <section className="lead-capture-section-4">
-                    <h1 className="customers-header">200+ happy customers</h1>
-                    <div className="shopify-logo-container">
-                        <img width="400px" src={shopifyReview} alt="logo"/>
-                    </div>
-                    <div className="customers-logo-container">
-                        <img width="100%" className="customers-logo" src={customerLogos} alt="logos"/>
-                    </div>
                 </section>
 
                 <section className="lead-capture-section-5">

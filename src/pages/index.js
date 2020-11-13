@@ -54,6 +54,8 @@ fetch("https://ecocart.io/api/profile",{method: "GET",
 .then(response => response.json())
 .then(data => console.log(data));
 
+console.log(data);
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Carbon Neutral Shopping" />

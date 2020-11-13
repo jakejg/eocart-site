@@ -58,6 +58,7 @@ fetch("https://ecocart.io/api/profile",{method: "GET",
 
 var IndexPage;
 if(typeof profileData != "undefined") {
+  console.log(profileData);
   IndexPage = () => (
     <Layout>
       <SEO title="Carbon Neutral Shopping" />
@@ -239,6 +240,7 @@ if(typeof profileData != "undefined") {
     </Layout>
   );
 } else {
+  console.log("no data");
   IndexPage = () => (
     <Layout>
       <SEO title="Carbon Neutral Shopping" />

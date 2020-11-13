@@ -62,7 +62,7 @@ const Landing = React.forwardRef((props, ref) => {
               type="text"
               readonly=""
               id="refLink"
-              value={"Ecocart.io/share/"+ refLink}
+              value={"Ecocart.io/share/"}
               style={inviteTextBox}/>
               <button style={copyButton} id="copyBtn" onClick={copyText}>Copy</button>
               <p class = "or-gap">

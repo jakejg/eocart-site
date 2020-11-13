@@ -61,7 +61,7 @@ if(profileData) {
   IndexPage = () => (
     <Layout>
       <SEO title="Carbon Neutral Shopping" />
-      <LandingSharing refLink = {profileData['ref_link']} logo={logo} />
+      <LandingSharing logo={logo} />
       <AffiliateStores />
       <section id="how-it-works">
         <Container fluid>

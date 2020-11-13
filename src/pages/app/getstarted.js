@@ -11,7 +11,6 @@ import customerLogos from "../../images/lead-capture/Customer-Logos.png";
 import savePlanet from "../../images/lead-capture/save-the-planet.png";
 import positiveExperience from "../../images/lead-capture/create-positive-experiences.png";
 import enhanceBrand from "../../images/lead-capture/Enhance-your-brand.png";
-// import shopifyReview from ;
 import knowLogo from "../../images/lead-capture/know-logo.png";
 import ecocartVideo from "../../images/lead-capture/ecocart-shopify-demo.mp4";
 import phoneVideo from "../../images/lead-capture/phone-video.mp4";
@@ -119,7 +118,7 @@ const LeadCapture = () => {
                             <Col xs="12" sm="4" className="phone-box">
                                 <img width="300px" src={InstallCustomize} alt="phone"/>
                                 <h2 className="benefits-header">Install & <br></br>Customize</h2>
-                                <p className="benefits-text">Simply install the EcoCart Shopify app in one click. We know how important brand look & feel is. So sit back and let us design and configure EcoCart for you to match your brand - all at no additional cost. </p>
+                                <p className="benefits-text">EcoCart’s flexible integration makes installing a breeze. We know how important brand look & feel is. So sit back and let us design and configure EcoCart for you to match your brand - all at no additional cost. </p>
                             </Col>
                             <Col xs="12" sm="4" className="phone-box">
                                 <img width="300px" src={carbonNeutral} alt="phone" />
@@ -140,7 +139,9 @@ const LeadCapture = () => {
                         <Col xs="12" sm="5" className="phone-video-column">
                             <video  height="600"
                                     width="550"
+                                    preload="auto"
                                     autoPlay
+                                    muted
                                     loop
                                     src={phoneVideo}
                                     className="phone-video">
@@ -165,7 +166,8 @@ const LeadCapture = () => {
                                 </div>
                                     <ProgressBar now={87} />
                                 <div>
-                                    <p className="stats-quote">“Since installing EcoCart, the majority of our buyers have been adding the Carbon Neutral option to cart, and we've had great feedback from folks that love that we have this option.”
+
+                                    <p className="stats-quote">“Since installing EcoCart, the <strong>majority of our buyers have been adding the Carbon Neutral option</strong> to cart, and we've had great feedback from folks that love that we have this option.”
                                     — Julia McCraken, Co-founder
                                     </p>
                                 </div>

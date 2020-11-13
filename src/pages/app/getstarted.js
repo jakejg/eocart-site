@@ -114,7 +114,7 @@ const LeadCapture = () => {
                             <Col xs="12" sm="4" className="phone-box">
                                 <img width="300px" src={InstallCustomize} alt="phone"/>
                                 <h2 className="benefits-header">Install & <br></br>Customize</h2>
-                                <p className="benefits-text">Simply install the EcoCart Shopify app in one click. We know how important brand look & feel is. So sit back and let us design and configure EcoCart for you to match your brand - all at no additional cost. </p>
+                                <p className="benefits-text">EcoCart’s flexible integration makes installing a breeze. We know how important brand look & feel is. So sit back and let us design and configure EcoCart for you to match your brand - all at no additional cost. </p>
                             </Col>
                             <Col xs="12" sm="4" className="phone-box">
                                 <img width="300px" src={carbonNeutral} alt="phone" />
@@ -162,7 +162,8 @@ const LeadCapture = () => {
                                 </div>
                                     <ProgressBar now={87} />
                                 <div>
-                                    <p className="stats-quote">“Since installing EcoCart, the majority of our buyers have been adding the Carbon Neutral option to cart, and we've had great feedback from folks that love that we have this option.”
+
+                                    <p className="stats-quote">“Since installing EcoCart, the <strong>majority of our buyers have been adding the Carbon Neutral option</strong> to cart, and we've had great feedback from folks that love that we have this option.”
                                     — Julia McCraken, Co-founder
                                     </p>
                                 </div>

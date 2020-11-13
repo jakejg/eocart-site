@@ -128,13 +128,13 @@ html,body
         // background:linear-gradient(180deg,  #FAFAFA 50%, white 50%);
         
         .lead-capture-benefits-container {
-            background-color: #FAFAFA;
+            // background-color: #FAFAFA;
             width: 1200px;
             margin: auto;
             margin-top: 100px;
             padding: 40px;
-            box-shadow: 0 0 1em .2em #ccc;
-            border-radius: 25px;
+            // box-shadow: 0 0 1em .2em #ccc;
+            // border-radius: 25px;
         }
 
         @media (max-width: 560px){
@@ -166,7 +166,7 @@ html,body
     }
     
     .lead-capture-section-4 {
-        max-width: 900px;
+        max-width: 1200px;
         margin: auto;
         padding: 40px;
         margin-top: 100px;
@@ -178,7 +178,6 @@ html,body
             width: 100%;
         }
         .phone-video {
-            margin-left: -100px;
             margin-top: -20px;
         }
         .stats-header {

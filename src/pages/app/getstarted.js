@@ -26,8 +26,12 @@ const LeadCapture = () => {
         if (form.url && form.email){
             console.log(form);
             // need to save form data to wordpress here
-            emailjs.send("service_a5iwdg8","template_23hcp75",{email:form.email,store_url:form.url});
-            navigate('/app/getstarted/signup')
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if(re.test(String(form.email).toLowerCase())) {
+              e.preventDefault();
+              emailjs.send("service_a5iwdg8","template_23hcp75",{email:form.email,store_url:form.url});
+              navigate('/app/getstarted/signup')
+            }
         }
     }
 
@@ -86,7 +90,7 @@ const LeadCapture = () => {
                                                 />
                                     </FormGroup>
                                     <div className="btn-container">
-                                        <Button onClick={handleSubmit} className="quick-start-btn">Quick Start</Button>
+                                        <Button onClick={handleSubmit} type="submit" className="quick-start-btn">Quick Start</Button>
                                     </div>
                                 </Form>
                             </Col>

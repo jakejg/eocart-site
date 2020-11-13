@@ -43,6 +43,17 @@ import faqs from "../static/faqs";
 import Layout from "../components/layout";
 import { Link } from "gatsby";
 
+fetch("https://ecocart.io/api/profile",{method: "GET",
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+    'Cache': 'no-cache',
+    'Access-Control-Allow-Credentials':'true'
+  },
+  credentials: 'same-origin'})
+.then(response => response.json())
+.then(data => console.log(data));
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Carbon Neutral Shopping" />

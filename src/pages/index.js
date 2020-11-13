@@ -57,7 +57,7 @@ fetch("https://ecocart.io/api/profile",{method: "GET",
 .then(data => profileData = data);
 
 var IndexPage;
-if(typeof profileData != "undefined") {
+if(profileData['email']) {
   console.log(profileData);
   IndexPage = () => (
     <Layout>
@@ -244,7 +244,7 @@ if(typeof profileData != "undefined") {
   IndexPage = () => (
     <Layout>
       <SEO title="Carbon Neutral Shopping" />
-      // <Landing logo={logo} />
+      <Landing logo={logo} />
       <AffiliateStores />
       <section id="how-it-works">
         <Container fluid>

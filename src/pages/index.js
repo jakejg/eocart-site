@@ -57,11 +57,11 @@ fetch("https://ecocart.io/api/profile",{method: "GET",
 .then(data => profileData = data);
 
 var IndexPage;
-if(!profileData) {
+if(profileData) {
   IndexPage = () => (
     <Layout>
       <SEO title="Carbon Neutral Shopping" />
-      <Landing logo={logo} />
+      <LandingSharing refLink = {profileData['ref_link']} logo={logo} />
       <AffiliateStores />
       <section id="how-it-works">
         <Container fluid>

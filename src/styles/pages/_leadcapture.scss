@@ -13,6 +13,10 @@
         margin: 15px auto;
     }
 
+    .lead-capture-logo-container {
+        margin-left: 30px;
+    }
+
     .lead-capture-header {
         width: 100%;
         background-color: white;
@@ -84,10 +88,10 @@
 
         .ecocart-video {
             padding: 0px;
-            width: 1000px;
+            width: 900px;
             margin: auto;
             height: 515px;
-            margin-left: -120px;
+            margin-left: -100px;
             margin-top: -30px;
         }
         @media (max-width: 1100px){

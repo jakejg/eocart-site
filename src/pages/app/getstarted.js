@@ -58,7 +58,7 @@ const LeadCapture = () => {
           <SEO title="Get Started" description="Add carbon neutral orders to your online store to attract and retain the next generation of eco-conscious consumers - all at no cost to you!" />
           <div className="lead-capture">
               <div className="lead-capture-header">
-                <div className="logo-link">
+                <div className="lead-capture-logo-container">
                     <a href="https://ecocart.io/app">
                         <img src={logo} alt="logo" className="lead-capture-logo" />
                     </a>

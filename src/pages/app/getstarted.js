@@ -147,7 +147,7 @@ const LeadCapture = () => {
                                     className="phone-video">
                             </video>
                         </Col>
-                        <Col xs="12" sm="7" >
+                        <Col xs="12" sm="6" >
                             <div className="stats">
                                 <div className="stats-box">
                                     <div className="stats-header">92%  </div>
@@ -167,7 +167,7 @@ const LeadCapture = () => {
                                     <ProgressBar now={87} />
                                 <div>
 
-                                    <p className="stats-quote">“Since installing EcoCart, the <strong>majority of our buyers have been adding the Carbon Neutral option</strong> to cart, and we've had great feedback from folks that love that we have this option.”
+                                    <p className="stats-quote">“Since installing EcoCart, the <strong>majority of our buyers have been adding the Carbon Neutral option</strong> to cart, and we've had great feedback from folks that love that we have this option.” <br></br>
                                     — Julia McCraken, Co-founder
                                     </p>
                                 </div>

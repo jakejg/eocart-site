@@ -129,13 +129,13 @@
         // background:linear-gradient(180deg,  #FAFAFA 50%, white 50%);
         
         .lead-capture-benefits-container {
-            background-color: #FAFAFA;
+            // background-color: #FAFAFA;
             width: 1200px;
             margin: auto;
             margin-top: 100px;
             padding: 40px;
-            box-shadow: 0 0 1em .2em #ccc;
-            border-radius: 25px;
+            // box-shadow: 0 0 1em .2em #ccc;
+            // border-radius: 25px;
         }
 
         @media (max-width: 560px){
@@ -167,18 +167,23 @@
     }
     
     .lead-capture-section-4 {
-        max-width: 900px;
+        max-width: 1200px;
         margin: auto;
         padding: 40px;
+        background: white;
         margin-top: 100px;
+        box-shadow: 0 0 1em .2em #ccc;
+        border-radius: 25px;
 
         .stats {
             width: 100%;
         }
-        .phone-video {
-            margin-left: -100px;
-            margin-top: -20px;
+
+        .phone-video-column {
+            display: flex;
+            justify-content: left;
         }
+   
         .stats-header {
             font-size: 50px;
             text-align: center;
@@ -195,6 +200,10 @@
 
        .progress-bar{
            background-color:#00914A;
+           border-radius: 50px;
+       }
+
+       .progress {
            border-radius: 50px;
        }
        
@@ -214,10 +223,10 @@
            
        }
     
-
        .stats-quote {
            font-size: 18px;
            margin: 50px auto 0px;
+           line-height: 1.8;
        }
     }
     

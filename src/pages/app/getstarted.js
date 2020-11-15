@@ -100,14 +100,16 @@ const LeadCapture = () => {
                                         preload="auto"
                                         autoPlay
                                         loop
-                                        muted></video>
+                                        muted>
+                                    Demo of EcoCart Shopify app for carbon neutral shipping
+                                </video>
                             </Col>
                         </Row>
                     </Container>
                 </section>
                 <section className="lead-capture-section-2">
                     <div className="shopify-logo-container">
-                        <img width="500px" src={require(`../../images/lead-capture/shopify-review.svg`)}/>
+                        <img width="500px" src={require(`../../images/lead-capture/shopify-review.svg`)} alt="shopify app store plugin"/>
                     </div>
                     <div className="customers-logo-container">
                         <img width="100%" className="customers-logo" src={customerLogos} alt="logos"/>
@@ -116,17 +118,17 @@ const LeadCapture = () => {
                 <section className="lead-capture-section-3">
                         <Row className="lead-capture-benefits-container">
                             <Col xs="12" sm="4" className="phone-box">
-                                <img width="300px" src={InstallCustomize} alt="phone"/>
+                                <img width="300px" src={InstallCustomize} alt="Amavara added EcoCart Shopify plugin to its e-commerce store"/>
                                 <h2 className="benefits-header">Install & <br></br>Customize</h2>
                                 <p className="benefits-text">EcoCart’s flexible integration makes installing a breeze. We know how important brand look & feel is. So sit back and let us design and configure EcoCart for you to match your brand - all at no additional cost. </p>
                             </Col>
                             <Col xs="12" sm="4" className="phone-box">
-                                <img width="300px" src={carbonNeutral} alt="phone" />
+                                <img width="300px" src={carbonNeutral} alt="EcoCart website with information about the Tri City Forest Project, a carbon sequestration project" />
                                 <h2 className="benefits-header">Carbon Neutral Orders </h2>
                                 <p className="benefits-text">EcoCart’s algorithm will calculate the carbon footprint of each of your orders and make them carbon neutral by directing the funds to certified carbon offset projects like planting trees or building wind farms. </p>
                             </Col>
                             <Col xs="12" sm="4" className="phone-box">
-                                <img width="300px" src={TrackShare} alt="phone"/>
+                                <img width="300px" src={TrackShare} alt="EcoCart Shopify app with sustainability metrics dashboard that helps businesses become more sustainable"/>
                                 <h2 className="benefits-header">Track & Share Impact</h2>
                                 <p className="benefits-text" >Track your impact using easily-digestible sustainability metrics and data visualizations within your personalized analytics dashboard, then share using our content marketing templates and certified sustainability badges.</p>
                             </Col>
@@ -145,6 +147,7 @@ const LeadCapture = () => {
                                     loop
                                     src={phoneVideo}
                                     className="phone-video">
+                                Sustainable business APL e-commerce website checkout page with EcoCart carbon neutral shipping option
                             </video>
                         </Col>
                         <Col xs="12" sm="7" >
@@ -182,7 +185,7 @@ const LeadCapture = () => {
                 <section className="lead-capture-section-5">
                     <Row className="benefits2-row">
                         <Col xs="12" sm="7" className="benefits2-img-container">
-                            <img width="350px"  src={enhanceBrand} alt="phone"/>
+                            <img width="350px"  src={enhanceBrand} alt="EcoCart tells e-commerce user that their order has been made carbon neutral at checkout"/>
                         </Col>
                         <Col xs="12" sm="5" className="benefits2-desc-container">
                             <h1 className="benefits2-header">Enhance your brand</h1>
@@ -195,12 +198,12 @@ const LeadCapture = () => {
                             <p className="benefits2-text">Your customers will see you care about the planet at the most important step in their shopping experience. You’ll see increased retention and lower cart abandonment.</p>
                         </Col>
                         <Col xs="12" sm="7" className="benefits2-img-container">
-                            <img width="350px" src={positiveExperience} alt="phone"/>
+                            <img width="350px" src={positiveExperience} alt="Siete foods uses EcoCart to donate to a forest protection project through environmentally friendly shipping"/>
                         </Col>
                     </Row>
                     <Row className="benefits2-row">
                         <Col xs="12" sm="7" className="benefits2-img-container save-planet">
-                            <img className="save-planet" src={savePlanet} alt="screenshot"/>
+                            <img className="save-planet" src={savePlanet} alt="EcoCart, an app available on the Shopify app store, has a donation project to prevent pollution"/>
                         </Col>
                         <Col xs="12" sm="5" className="benefits2-desc-container">
                             <h1 className="benefits2-header">Save the planet</h1>

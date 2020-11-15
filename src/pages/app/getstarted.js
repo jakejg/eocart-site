@@ -120,7 +120,7 @@ const LeadCapture = () => {
                             <Col xs="12" sm="4" className="phone-box">
                                 <img width="300px" src={InstallCustomize} alt="Amavara added EcoCart Shopify plugin to its e-commerce store"/>
                                 <h2 className="benefits-header">Install & <br></br>Customize</h2>
-                                <p className="benefits-text">EcoCart’s flexible integration makes installing a breeze. We know how important brand look & feel is. So sit back and let us design and configure EcoCart for you to match your brand - all at no additional cost. </p>
+                                <p className="benefits-text">Install the EcoCart Shopify app in minutes with just one click. We know how important brand look & feel is. So sit back and let us design and configure EcoCart for you to match your brand - all at no additional cost. </p>
                             </Col>
                             <Col xs="12" sm="4" className="phone-box">
                                 <img width="300px" src={carbonNeutral} alt="EcoCart website with information about the Tri City Forest Project, a carbon sequestration project" />
@@ -207,7 +207,7 @@ const LeadCapture = () => {
                         </Col>
                         <Col xs="12" sm="5" className="benefits2-desc-container">
                             <h1 className="benefits2-header">Save the planet</h1>
-                            <p className="benefits2-text">Do good in the world by doing well in business. Combat climate change by contributing to alternative energy, forestry, and other carbon offset projects.</p>
+                            <p className="benefits2-text">Become a sustainable business in minutes. Combat climate change by contributing to alternative energy, forestry, and other carbon offset projects.</p>
                         </Col>
                     </Row>
                 </section>

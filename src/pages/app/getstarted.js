@@ -112,7 +112,10 @@ const LeadCapture = () => {
                         <img width="500px" src={require(`../../images/lead-capture/shopify-review.svg`)} alt="shopify app store plugin"/>
                     </div>
                     <div className="customers-logo-container">
-                        <img width="100%" className="customers-logo" src={customerLogos} alt="logos"/>
+                        <img width="100%" 
+                            className="customers-logo" 
+                            src={customerLogos} 
+                            alt="the little market uses EcoCart Shopify plugin for eco friendly shipping, Modkat uses EcoCart Shopify plugin for carbon neutral shipping, Athletic Propulsion Labs (APL) uses EcoCart Shopify plugin for eco friendly shipping, Siete foods ships with the EcoCart Shopify app for carbon neutral shipping, Christy Dawn uses EcoCart Shopify app for environmentally friendly shipping, Wildway uses EcoCart Shopify app for sustainable carbon neutral shipping"/>
                     </div>
                 </section>
                 <section className="lead-capture-section-3">

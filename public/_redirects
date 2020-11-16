@@ -38,10 +38,12 @@
 /app/eu-terms-of-service-chrome https://app.ecocart.io/eu-terms-of-service-chrome/ 200!
 /app/faq https://app.ecocart.io/faq/ 200!
 /app/how-it-works https://app.ecocart.io/how-it-works/ 200!
+/app/project/water-purification https://app.ecocart.io/project/water-purification/ 200!
 /app/our-projects https://app.ecocart.io/our-projects/ 200!
 /app/privacy-policy https://app.ecocart.io/privacy-policy/ 200!
 /app/terms-of-service https://app.ecocart.io/terms-of-service/ 200!
 /app/project/forest-protection https://app.ecocart.io/project/forest-protection/ 200!
+/app/project/wind-energy https://app.ecocart.io/project/wind-energy 200!
 /logout https://shop.ecocart.io/logout 200
 /api/projects https://shop.ecocart.io/api/projects 200
 /api/merchants https://shop.ecocart.io/api/merchants 200

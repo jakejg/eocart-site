@@ -5,31 +5,40 @@ import MailWidget from "../General/mailWidget";
 const Landing = React.forwardRef((props, ref) => {
   return (
     <section id="landing">
-      <div ref={ref}>
         <div id="content">
-          <h1>Click Button. Save Planet.</h1>
-          <h3>
-            The free Chrome Extension that automatically plants trees while you shop
-          </h3>
-          <div className="landing__btn">
-            <a
-              className="btn add-button"
-              size="lg"
-              href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <b>Add to Chrome</b> — It's Free!
-            </a>
-            <img alt="arrowicon" src={require("../../images/arrowicon.svg")} />
-          </div>
-          <MailWidget formId="hubspotForm" />
+            <div id = "text-content">
+              <h1>Sustainable shopping, simplified</h1>
+              <h3>
+              With one click, EcoCart automatically calculates and eliminates the carbon footprint of your online orders at 10,000+ stores – all at no extra cost.
+
+              </h3>
+              <div className="landing__btn">
+                <a
+                  className="btn add-button"
+                  size="lg"
+                  href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <b>Add to Chrome</b> — It's Free!
+                </a>
+
+              </div>
+              <MailWidget formId="hubspotForm" />
+              <img class="chrome-image" alt="Chrome review" src={require("../../images/chrome-review.png")} />
+              <img class="product-review" alt="Product review" src={require("../../images/PH-review.png")} />
+            </div>
+            <div id = "content" style={{paddingTop:0}}>
+              <div id = "image-content">
+                <img alt="splash-image" src={require("../../images/hero-1.png")} />
+              </div>
+            </div>
         </div>
+
         <div
           onClick={() => scrollTo("#how-it-works")}
           className="scroll-down"
         ></div>
-      </div>
     </section>
   );
 });

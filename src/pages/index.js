@@ -63,7 +63,6 @@ if(profileData['email']) {
     <Layout>
       <SEO title="Carbon Neutral Shopping" />
       <LandingSharing logo={logo} />
-      <AffiliateStores />
       <section id="how-it-works">
         <Container fluid>
           <Video
@@ -74,6 +73,7 @@ if(profileData['email']) {
           ></Video>
         </Container>
       </section>
+      <AffiliateStores />
       <Cta />
       <WhyEcocart />
 
@@ -245,7 +245,6 @@ if(profileData['email']) {
     <Layout>
       <SEO title="Carbon Neutral Shopping" />
       <Landing logo={logo} />
-      <AffiliateStores />
       <section id="how-it-works">
         <Container fluid>
           <Video
@@ -256,6 +255,7 @@ if(profileData['email']) {
           ></Video>
         </Container>
       </section>
+      <AffiliateStores />
       <Cta />
       <WhyEcocart />
 

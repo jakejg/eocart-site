@@ -35,10 +35,7 @@ const Landing = React.forwardRef((props, ref) => {
             </div>
         </div>
 
-        <div
-          onClick={() => scrollTo("#how-it-works")}
-          className="scroll-down"
-        ></div>
+        
     </section>
   );
 });

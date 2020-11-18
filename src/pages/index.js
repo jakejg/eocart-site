@@ -43,7 +43,7 @@ import faqs from "../static/faqs";
 
 import Layout from "../components/layout";
 import { Link } from "gatsby";
-
+import {BrowserView, MobileView} from 'react-device-detect';
 var profileData = "";
 fetch("https://ecocart.io/api/profile",{method: "GET",
   headers: {
@@ -245,17 +245,32 @@ if(profileData['email']) {
     <Layout>
       <SEO title="Carbon Neutral Shopping" />
       <Landing logo={logo} />
-      <section id="how-it-works">
-        <Container fluid>
-          <Video
-            video={howItWorks}
-            stepOne="1"
-            stepTwo="5"
-            stepThree="14"
-          ></Video>
-        </Container>
-      </section>
-      <AffiliateStores />
+      <MobileView>
+        <section id="how-it-works">
+          <Container fluid>
+            <Video
+              video={howItWorks}
+              stepOne="1"
+              stepTwo="5"
+              stepThree="14"
+            ></Video>
+          </Container>
+        </section>
+        <AffiliateStores />
+      </MobileView>
+      <BrowserView>
+        <AffiliateStores />
+        <section id="how-it-works">
+          <Container fluid>
+            <Video
+              video={howItWorks}
+              stepOne="1"
+              stepTwo="5"
+              stepThree="14"
+            ></Video>
+          </Container>
+        </section>
+      </BrowserView>
       <Cta />
       <WhyEcocart />
 

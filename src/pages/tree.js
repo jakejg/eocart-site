@@ -43,12 +43,28 @@ import faqs from "../static/faqs";
 import Layout from "../components/layout";
 import { Link } from "gatsby";
 
+function getWindowDimensions() {
+  if(window) {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height
+    };
+  }
+  else {
+    width = 0;
+    height = 0;
+    return {width,height};
+  }
+}
+
+const { height, width } = getWindowDimensions();
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Carbon Neutral Shopping" />
     <Landing logo={logo} />
-    <AffiliateStores />
-    <section id="how-it-works">
+    {width < 780 ? <><section id="how-it-works">
       <Container fluid>
         <Video
           video={howItWorks}
@@ -58,6 +74,16 @@ const IndexPage = () => (
         ></Video>
       </Container>
     </section>
+    <AffiliateStores /> </>:<><AffiliateStores /><section id="how-it-works">
+      <Container fluid>
+        <Video
+          video={howItWorks}
+          stepOne="1"
+          stepTwo="5"
+          stepThree="14"
+        ></Video>
+      </Container>
+    </section></>}
     <CtaTree />
     <WhyEcocart />
 

@@ -24,6 +24,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `react-device-detect`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-manifest`,

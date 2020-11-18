@@ -52,8 +52,8 @@ function getWindowDimensions() {
     };
   }
   else {
-    width = 0;
-    height = 0;
+    const width = 0;
+    const height = 0;
     return {width,height};
   }
 }

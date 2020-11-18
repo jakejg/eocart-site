@@ -56,6 +56,15 @@ fetch("https://ecocart.io/api/profile",{method: "GET",
 .then(response => response.json())
 .then(data => profileData = data);
 
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+}
+
+const { height, width } = getWindowDimensions();
 var IndexPage;
 if(profileData['email']) {
   console.log(profileData);
@@ -245,32 +254,29 @@ if(profileData['email']) {
     <Layout>
       <SEO title="Carbon Neutral Shopping" />
       <Landing logo={logo} />
-      <MobileView>
-        <section id="how-it-works">
-          <Container fluid>
-            <Video
-              video={howItWorks}
-              stepOne="1"
-              stepTwo="5"
-              stepThree="14"
-            ></Video>
-          </Container>
-        </section>
-        <AffiliateStores />
-      </MobileView>
-      <BrowserView>
-        <AffiliateStores />
-        <section id="how-it-works">
-          <Container fluid>
-            <Video
-              video={howItWorks}
-              stepOne="1"
-              stepTwo="5"
-              stepThree="14"
-            ></Video>
-          </Container>
-        </section>
-      </BrowserView>
+
+      {width < 780 ? <><section id="how-it-works">
+        <Container fluid>
+          <Video
+            video={howItWorks}
+            stepOne="1"
+            stepTwo="5"
+            stepThree="14"
+          ></Video>
+        </Container>
+      </section>
+      <AffiliateStores /> </>:<><AffiliateStores /><section id="how-it-works">
+        <Container fluid>
+          <Video
+            video={howItWorks}
+            stepOne="1"
+            stepTwo="5"
+            stepThree="14"
+          ></Video>
+        </Container>
+      </section></>}
+
+
       <Cta />
       <WhyEcocart />
 

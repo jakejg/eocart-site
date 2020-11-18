@@ -25,10 +25,10 @@ const Landing = React.forwardRef((props, ref) => {
 
               </div>
               <MailWidget formId="hubspotForm" />
+              <img class="chrome-product-combined" alt="chrome store product hunt reviews" src={require("../../images/chrome-store-product-hunt-reviews.svg")} />
               <img class="chrome-image" alt="Chrome review" src={require("../../images/chrome-review.png")} />
-              <img class="product-review" alt="Product review" src={require("../../images/PH-review.png")} />
             </div>
-            <div id = "content" style={{paddingTop:0}}>
+            <div id = "content" style={{paddingTop:0,zIndex:-1}}>
               <div id = "image-content">
                 <img alt="splash-image" src={require("../../images/hero-1.png")} />
               </div>

@@ -25,11 +25,11 @@
   }
 
   h3 {
-    font-size: 2.0rem;
+    font-size: 1.75rem;
     line-height: 1.7;
-    margin-top:1rem;
-    margin-bottom: 1rem;
-    width: 110%;
+    margin-top:1.5rem;
+    margin-bottom: 1.5rem;
+    width: 90%;
     @media (max-width: 450px) {
       margin-top: 3rem;
       line-height: 1.4;
@@ -76,12 +76,25 @@
 
   .chrome-image {
     margin-top: 16px;
+    display: none;
+    width: 49%;
+    @media (max-width: 450px) {
+      margin-top: 3px;
+      margin: 0 auto;
+      width: 60%;
+      display: block;
+    }
+  }
+
+  .chrome-product-combined {
+    margin-top: 16px;
     display: block;
     width: 49%;
     @media (max-width: 450px) {
       margin-top: 3px;
       margin: 0 auto;
       width: 60%;
+      display: none;
     }
   }
 

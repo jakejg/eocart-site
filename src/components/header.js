@@ -14,13 +14,16 @@ const Header = () => {
   const location = useLocation();
   const dispatch = useGlobalDispatchContext();
   const [sticky, setSticky] = useState(false);
+  const [showResults, setShowResults] = useState(false);
   useEffect(() => {
     dispatch({ type: "MENU_OPENED", openedMenu: false });
     const handleScroll = () => {
       if (window.scrollY > 800) {
         setSticky(true);
+        setShowResults(true);
       } else {
         setSticky(false);
+        setShowResults(false);
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -39,26 +42,30 @@ const Header = () => {
             <Link className="logo-link" to="/">
               <img src={logo} alt="logo" className="navbar--logo" />
             </Link>
-            <>
-              <a
-                className="btn navbar-button"
-                size="small"
-                href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <strong>Add to Chrome</strong> — It's Free!
-              </a>
-              <span
-                tabIndex={0}
-                role="button"
-                className="hamburger"
-                onClick={handleMenuToggle}
-                onKeyDown={handleMenuToggle}
-              >
-                <FaBars />
-              </span>
-            </>
+
+              {showResults ? (
+                <>
+                <a
+                  className="btn navbar-button"
+                  size="small"
+                  href="https://chrome.google.com/webstore/detail/ecocart-carbon-neutral-sh/oiafedhhdhinjnianpfeaenmchnknchi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong>Add to Chrome</strong> — It's Free!
+                </a>
+                <span
+                  tabIndex={0}
+                  role="button"
+                  className="hamburger"
+                  onClick={handleMenuToggle}
+                  onKeyDown={handleMenuToggle}
+                >
+                  <FaBars />
+                </span>
+                </>
+              ) : (<div></div>)}
+
           </div>
         </div>
       </nav>

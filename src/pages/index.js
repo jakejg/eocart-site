@@ -56,22 +56,7 @@ fetch("https://ecocart.io/api/profile",{method: "GET",
 .then(response => response.json())
 .then(data => profileData = data);
 
-function getWindowDimensions() {
-  if(typeof window != "undefined") {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-      width,
-      height
-    };
-  }
-  else {
-    const width = 0;
-    const height = 0;
-    return {width,height};
-  }
-}
 
-const { height, width } = getWindowDimensions();
 var IndexPage;
 if(profileData['email']) {
   console.log(profileData);
@@ -262,7 +247,7 @@ if(profileData['email']) {
       <SEO title="Carbon Neutral Shopping" />
       <Landing logo={logo} />
 
-      {width < 780 ? <><section id="how-it-works">
+      <section id="how-it-works">
         <Container fluid>
           <Video
             video={howItWorks}
@@ -272,16 +257,7 @@ if(profileData['email']) {
           ></Video>
         </Container>
       </section>
-      <AffiliateStores /> </>:<><AffiliateStores /><section id="how-it-works">
-        <Container fluid>
-          <Video
-            video={howItWorks}
-            stepOne="1"
-            stepTwo="5"
-            stepThree="14"
-          ></Video>
-        </Container>
-      </section></>}
+      <AffiliateStores />
 
 
       <Cta />

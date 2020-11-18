@@ -57,7 +57,7 @@ fetch("https://ecocart.io/api/profile",{method: "GET",
 .then(data => profileData = data);
 
 function getWindowDimensions() {
-  if(window) {
+  if(typeof window != "undefined") {
     const { innerWidth: width, innerHeight: height } = window;
     return {
       width,

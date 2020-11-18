@@ -44,7 +44,7 @@ import Layout from "../components/layout";
 import { Link } from "gatsby";
 
 function getWindowDimensions() {
-  if(window) {
+  if(typeof window != "undefined") {
     const { innerWidth: width, innerHeight: height } = window;
     return {
       width,

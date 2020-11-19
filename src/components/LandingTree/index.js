@@ -8,10 +8,11 @@ const Landing = React.forwardRef((props, ref) => {
         <div id="content">
             <div id = "text-content">
               <h1>Sustainable shopping, simplified</h1>
-              <h3>
-              With one click, EcoCart automatically calculates and eliminates the carbon footprint of your online orders at 10,000+ stores – all at no extra cost.
+              <h3 class="desktoph">
+              With one click, EcoCart automatically calculates and eliminates the carbon footprint of your online orders at 10,000+ stores &mdash; all at no extra cost.
 
               </h3>
+              <h3 class="mobileh">EcoCart automatically eliminates the carbon footprint of your online orders at 10,000+ stores.</h3>
               <div className="landing__btn">
                 <a
                   className="btn add-button"
@@ -25,17 +26,17 @@ const Landing = React.forwardRef((props, ref) => {
 
               </div>
               <MailWidget formId="hubspotForm" />
-              <img class="chrome-product-combined" alt="chrome store product hunt reviews" src={require("../../images/chrome-store-product-hunt-reviews.svg")} />
-              <img class="chrome-image" alt="Chrome review" src={require("../../images/chrome-review.png")} />
+              <img class="chrome-product-combined" alt="chrome store product hunt reviews" src={require("../../images/chrome-store-product-hunt-reviews-new.svg")} />
+              <img class="chrome-image" alt="Chrome review" src={require("../../images/image-stars.png")} /><h3 class="inline-review">Chrome Store reviews</h3>
             </div>
             <div id = "content" style={{paddingTop:0,zIndex:-1}}>
               <div id = "image-content">
-                <img alt="splash-image" src={require("../../images/hero-1.png")} />
+                <img alt="splash-image" src={require("../../images/hero-1-min.png")} />
               </div>
             </div>
         </div>
 
-        
+
     </section>
   );
 });

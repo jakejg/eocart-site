@@ -9,7 +9,7 @@ const Landing = React.forwardRef((props, ref) => {
             <div id = "text-content">
               <h1>Sustainable shopping, simplified</h1>
               <h3 class="desktoph">
-              With one click, EcoCart automatically calculates and eliminates the carbon footprint of your online orders at 10,000+ stores — all at no extra cost.
+              With one click, EcoCart automatically calculates and eliminates the carbon footprint of your online orders at 10,000+ stores &mdash; all at no extra cost.
 
               </h3>
               <h3 class="mobileh">EcoCart automatically eliminates the carbon footprint of your online orders at 10,000+ stores.</h3>

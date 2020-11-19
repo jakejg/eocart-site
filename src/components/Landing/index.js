@@ -31,7 +31,7 @@ const Landing = React.forwardRef((props, ref) => {
             </div>
             <div id = "content" style={{paddingTop:0,zIndex:-1}}>
               <div id = "image-content">
-                <img alt="splash-image" src={require("../../images/Hero-1.svg")} />
+                <img alt="splash-image" src={require("../../images/hero-1-min.png")} />
               </div>
             </div>
         </div>

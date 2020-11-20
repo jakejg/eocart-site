@@ -58,7 +58,7 @@ fetch("https://ecocart.io/api/profile",{method: "GET",
 
 
 var IndexPage;
-if(typeof profileData['email'] != 'undefined') {
+if(typeof profileData !== 'undefined') {
   console.log(profileData);
   IndexPage = () => (
     <Layout>

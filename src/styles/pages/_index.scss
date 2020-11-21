@@ -5,6 +5,10 @@
   padding-right: 0px;
 }
 
+.order-class {
+  flex-direction: column;
+}
+
 /* HOW IT WORKS SECTION */
 
 #how-it-works {
@@ -12,6 +16,10 @@
   justify-content: center;
   height: auto;
   padding: 15rem 0;
+  order: 2;
+  @media (max-width: 780px) {
+    order: 1;
+  }
   .steps-container {
     #title {
       font-size: 5rem;

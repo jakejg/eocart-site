@@ -63,19 +63,8 @@ IndexPage = () => (
     <SEO title="Carbon Neutral Shopping" />
     <Landing logo={logo} />
 
-    <BrowserView>
-      <AffiliateStores />
-      <section id="how-it-works">
-        <Container fluid>
-          <Video
-            video={howItWorks}
-            stepOne="1"
-            stepTwo="5"
-            stepThree="14"
-          ></Video>
-        </Container>
-      </section>
-    </BrowserView>
+    
+
     <MobileView>
       <section id="how-it-works">
         <Container fluid>

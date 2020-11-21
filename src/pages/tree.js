@@ -59,8 +59,8 @@ const IndexPage = () => (
           ></Video>
         </Container>
       </section>
+      <AffiliateStores />
     </section>
-    <AffiliateStores />
     <CtaTree />
     <WhyEcocart />
 

@@ -58,12 +58,14 @@ fetch("https://ecocart.io/api/profile",{method: "GET",
 
 
 var IndexPage;
-if(isMobile) {
+if(isBrowser) {
   console.log("is mobile");
   IndexPage = () => (
     <Layout>
       <SEO title="Carbon Neutral Shopping" />
       <Landing logo={logo} />
+
+      <AffiliateStores />
 
       <section id="how-it-works">
         <Container fluid>
@@ -76,7 +78,7 @@ if(isMobile) {
         </Container>
       </section>
 
-      <AffiliateStores />
+
 
 
       <Cta />
@@ -244,15 +246,13 @@ if(isMobile) {
       </section>
     </Layout>
   );
-} else if(isBrowser) {
+} else if(isMobile) {
   console.log('not mobile');
   IndexPage = () => (
     <Layout>
       <SEO title="Carbon Neutral Shopping" />
       <Landing logo={logo} />
 
-      <AffiliateStores />
-      
       <section id="how-it-works">
         <Container fluid>
           <Video
@@ -264,6 +264,7 @@ if(isMobile) {
         </Container>
       </section>
 
+      <AffiliateStores />
 
       <Cta />
       <WhyEcocart />

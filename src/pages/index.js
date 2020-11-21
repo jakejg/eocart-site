@@ -244,7 +244,7 @@ if(isMobile) {
       </section>
     </Layout>
   );
-} else {
+} else if(isBrowser) {
   console.log('not mobile');
   IndexPage = () => (
     <Layout>

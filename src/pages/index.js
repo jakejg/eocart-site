@@ -251,7 +251,6 @@ if(isMobile) {
       <SEO title="Carbon Neutral Shopping" />
       <Landing logo={logo} />
 
-      <AffiliateStores />
       <section id="how-it-works">
         <Container fluid>
           <Video
@@ -262,6 +261,8 @@ if(isMobile) {
           ></Video>
         </Container>
       </section>
+
+      <AffiliateStores />
 
       <Cta />
       <WhyEcocart />

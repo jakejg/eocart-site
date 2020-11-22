@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import pin from "../../images/pin.svg";
 
 export default class ProjectBox extends Component {
@@ -11,16 +11,21 @@ export default class ProjectBox extends Component {
   }
   render() {
     return (
-      <Col className="panel-group my-3" xl={4}>
-        <div className="panel panel-default">
+      <Col className="panel">
+        <div className="panel-default">
           <div className="panel-heading p-4">
             <img
               id="project-photo"
               src={this.props.projectImg}
               alt="project"
             ></img>
-            <div id="heading-text" className="vertical-center">
+            <div id="heading-text">
               <h3 id="project-title">{this.props.title}</h3>
+              <p>{this.props.description}</p>
+              <i style={{ fontSize: "16px" }}>
+                <img src={this.props.typeIcon} height="25px" width="25px" alt="green pin"></img>
+                {this.props.type}
+              </i>
               <i style={{ fontSize: "16px" }}>
                 <img src={pin} height="25px" width="25px" alt="green pin"></img>
                 {this.props.location}
@@ -35,48 +40,67 @@ export default class ProjectBox extends Component {
                 : "panel-collapse panel-close"
             }
           >
-            <div className="project-bullets">
-              <ul style={{ paddingLeft: "24px" }}>
-                {this.props.bullets.map((value, index) => {
-                  return <li key={index}>{value}</li>;
-                })}
-              </ul>
-            </div>
-            <h4 className="box-label mb-4 mt-4">Verifications</h4>
-            <div className="project-images">
-              {this.props.verifications.map((value, index) => {
-                return (
-                  <img
-                    key={index}
-                    className="verification-image"
-                    src={value}
-                    alt={value}
-                  ></img>
-                );
-              })}
-            </div>
-            <h4 className="box-label mb-3">Sustainable Development</h4>
-            <div className="project-images">
-              {this.props.developments.map((value, index) => {
-                return (
-                  <img
-                    key={index}
-                    className="sd-image"
-                    src={value}
-                    alt={value}
-                  />
-                );
-              })}
-            </div>
+            <Row className="details">
+              <Col className="project-bullets">
+                <h4 className="box-label mb-4 mt-4 text-left">Benefits</h4>
+                <ul style={{ paddingLeft: "24px" }}>
+                  {this.props.bullets.map((value, index) => {
+                    return <li key={index}>{value}</li>;
+                  })}
+                </ul>
+              </Col>
+              <Col>
+                <Row>
+                  <Col>
+                      <h4 className="box-label mb-4 mt-4 text-left">Verifications</h4>
+                    <div className="project-images">
+                      {this.props.verifications.map((value, index) => {
+                        return (
+                          <img
+                            key={index}
+                            className="verification-image"
+                            src={value}
+                            alt={value}
+                          ></img>
+                        );
+                      })}
+                    </div>
+                  </Col>
+                </Row>
+                <Row>
+                  
+                  <Col>
+                    <h4 className="box-label mb-3 text-left">UN Goals</h4>
+                    <div className="project-images">
+                      {this.props.developments.map((value, index) => {
+                        return (
+                          <img
+                            key={index}
+                            className="sd-image"
+                            src={value}
+                            alt={value}
+                          />
+                        );
+                      })}
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+              <img src={this.props.collageImg} width="100%" />
+              </Col>
+            </Row>
           </div>
-          <div className="center mb-3">
+          <div className="center my-3">
             <a
               className="toggle-expand"
               onClick={function () {
                 this.setState({ open: !this.state.open });
               }.bind(this)}
             >
-              {this.state.open ? "Hide " : "Learn more "}
+              {this.state.open ? "Hide " : "Show more "}
               <span style={{ fontSize: "0.9em" }}>
                 {this.state.open ? <>&and;</> : <>&or;</>}
               </span>

@@ -59,8 +59,8 @@ const IndexPage = () => (
       </Container>
     </section>
     <AffiliateStores />
-    <CtaTree />
-    <WhyEcocart />
+    {/* <CtaTree />
+    <WhyEcocart /> */}
 
     {/* Impact section */}
     <section id="impact">

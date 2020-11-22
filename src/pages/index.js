@@ -21,7 +21,7 @@ import howItWorks from "../videos/how-it-works.mp4";
 import tree from "../images/tree.png";
 import earth from "../images/earth.png";
 import waterProj from "../images/projects/water-project.png";
-import forestProj from "../images/projects/forest-project.png";
+import forestProj from "../images/projects/forest-project-full.jpg";
 import windProj from "../images/projects/cw.png";
 import un6 from "../images/projects/UN-Sustainability-Goal-6.png";
 import un7 from "../images/projects/UN-Sustainability-Goal-7.png";
@@ -121,7 +121,7 @@ if(profileData['email']) {
 
         {/* Projects EcoCart is involved with */}
         <Container className="project-boxes">
-          <Row>
+          <Row className="d-flex align-items-center">
             <ProjectBox
               projectImg={forestProj}
               title="Protecting forests"
@@ -134,7 +134,6 @@ if(profileData['email']) {
               verifications={[americanCarbon, verifiedCarbon]}
               developments={[un6, un13, un14, un15]}
             ></ProjectBox>
-
             <ProjectBox
               projectImg={waterProj}
               title="Providing clean water"
@@ -147,7 +146,6 @@ if(profileData['email']) {
               verifications={[energyGlobe, goldStandard]}
               developments={[un6, un8, un13, un15]}
             ></ProjectBox>
-
             <ProjectBox
               projectImg={windProj}
               title="Creating wind energy"
@@ -306,7 +304,7 @@ if(profileData['email']) {
 
         {/* Projects EcoCart is involved with */}
         <Container className="project-boxes">
-          <Row>
+          <Row className="d-flex flex-column align-items-center">
             <ProjectBox
               projectImg={forestProj}
               title="Protecting forests"

@@ -48,19 +48,21 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Carbon Neutral Shopping" />
     <Landing logo={logo} />
-    <section id="how-it-works">
-      <Container fluid>
-        <Video
-          video={howItWorks}
-          stepOne="1"
-          stepTwo="5"
-          stepThree="14"
-        ></Video>
-      </Container>
+    <section id="order-class">
+      <section id="how-it-works">
+        <Container fluid>
+          <Video
+            video={howItWorks}
+            stepOne="1"
+            stepTwo="5"
+            stepThree="14"
+          ></Video>
+        </Container>
+      </section>
+      <AffiliateStores />
     </section>
-    <AffiliateStores />
-    {/* <CtaTree />
-    <WhyEcocart /> */}
+    <CtaTree />
+    <WhyEcocart />
 
     {/* Impact section */}
     <section id="impact">

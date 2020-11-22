@@ -50,6 +50,9 @@
 /api/messages https://shop.ecocart.io/api/messages 200
 /api/messages/* https://shop.ecocart.io/api/messages/:splat 200
 /api/profile https://shop.ecocart.io/api/profile 200
+/mobile/register https://shop.ecocart.io/mobile/register 200
+/mobile/success https://shop.ecocart.io/mobile/success 200
+/mobile_token/* https://shop.ecocart.io/mobile_token/:splat 200
 /api/redeem https://shop.ecocart.io/api/redeem 200
 /api/email-link https://shop.ecocart.io/api/email-link 200
 /activate https://shop.ecocart.io/activate 200

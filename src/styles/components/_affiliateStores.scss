@@ -6,6 +6,10 @@
   background-color: #eaf6fa;
   padding: 20rem 0;
   position: relative;
+  order: 1;
+  @media (max-width: 780px) {
+    order:2;
+  }
   #affiliate-title {
     font-size: 5rem;
     font-weight: bold;

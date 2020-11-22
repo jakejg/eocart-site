@@ -44,7 +44,6 @@ const Header = () => {
             </Link>
 
               {showResults ? (
-                <>
                 <a
                   className="btn navbar-button"
                   size="small"
@@ -54,18 +53,17 @@ const Header = () => {
                 >
                   <strong>Add to Chrome</strong> — It's Free!
                 </a>
-                <span
-                  tabIndex={0}
-                  role="button"
-                  className="hamburger"
-                  onClick={handleMenuToggle}
-                  onKeyDown={handleMenuToggle}
-                >
-                  <FaBars />
-                </span>
-                </>
-              ) : (<div></div>)}
 
+              ) : (<div></div>)}
+              <span
+                tabIndex={0}
+                role="button"
+                className="hamburger"
+                onClick={handleMenuToggle}
+                onKeyDown={handleMenuToggle}
+              >
+                <FaBars />
+              </span>
           </div>
         </div>
       </nav>

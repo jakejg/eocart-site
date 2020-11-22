@@ -75,6 +75,7 @@
     }
   }
   .desktoph {
+    width:120%!important;
     @media (max-width: 450px) {
       display: none
     }
@@ -99,7 +100,7 @@
   }
 
   .chrome-product-combined {
-    margin-top: 25px;
+    margin-top: 22px;
     display: block;
     width: 49%;
     @media (max-width: 450px) {
@@ -128,7 +129,7 @@
   }
   /* Styles for the app button */
   .add-button {
-    margin-top: 0.75rem;
+    margin-top: 1.00rem;
     color: white;
     text-decoration: none;
     background-color: #00b04f;

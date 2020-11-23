@@ -21,12 +21,12 @@ export default class ProjectBox extends Component {
             ></img>
             <div id="heading-text">
               <h3 id="project-title">{this.props.title}</h3>
-              <p>{this.props.description}</p>
-              <i style={{ fontSize: "16px" }}>
+              <p id="project-description">{this.props.description}</p>
+              <i style={{ fontSize: "16px" }} className="project-icon">
                 <img src={this.props.typeIcon} height="25px" width="25px" alt="green pin"></img>
                 {this.props.type}
               </i>
-              <i style={{ fontSize: "16px" }}>
+              <i style={{ fontSize: "16px" }} className="project-icon">
                 <img src={pin} height="25px" width="25px" alt="green pin"></img>
                 {this.props.location}
               </i>
@@ -39,6 +39,7 @@ export default class ProjectBox extends Component {
                 ? "panel-collapse p-4"
                 : "panel-collapse panel-close"
             }
+
           >
             <Row className="details">
               <Col className="project-bullets">

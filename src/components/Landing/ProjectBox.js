@@ -17,20 +17,20 @@ export default class ProjectBox extends Component {
             <img
               id="project-photo"
               src={this.props.projectImg}
-              alt="project"
+              alt={this.props.altText}
             ></img>
             <div id="heading-text">
               <h3 id="project-title">{this.props.title}</h3>
               <p id="project-description">{this.props.description}</p>
               <div className="project-icon">
                 <i >
-                  <img src={this.props.typeIcon} height="25px" width="25px" alt="green pin"></img>
+                  <img src={this.props.typeIcon} height="35px" width="35px" alt="green pin"></img>
                 </i>
                 <span className="ml-3">{this.props.type}</span>
               </div>
               <div className="project-icon">
                 <i>
-                  <img src={pin} height="25px" width="25px" alt="project pin"></img>
+                  <img src={pin} height="35px" width="35px" alt="project pin"></img>
                   </i>
                   <span className="ml-3">{this.props.location}</span>
               </div>
@@ -44,7 +44,7 @@ export default class ProjectBox extends Component {
             }
           >
             <Row className="details">
-              <Col className="project-bullets ml-4">
+              <Col className="project-bullets">
                 <h4 className="box-label mb-4 mt-4 text-left">Benefits</h4>
                 <ul style={{ paddingLeft: "24px" }}>
                   {this.props.bullets.map((value, index) => {
@@ -52,7 +52,7 @@ export default class ProjectBox extends Component {
                   })}
                 </ul>
               </Col>
-              <Col>
+              <Col className="project-bullets">
                 <Row>
                   <Col>
                       <h4 className="box-label mb-4 mt-4 text-left">Verifications</h4>

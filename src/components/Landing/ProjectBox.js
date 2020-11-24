@@ -22,27 +22,29 @@ export default class ProjectBox extends Component {
             <div id="heading-text">
               <h3 id="project-title">{this.props.title}</h3>
               <p id="project-description">{this.props.description}</p>
-              <i style={{ fontSize: "16px" }} className="project-icon">
-                <img src={this.props.typeIcon} height="25px" width="25px" alt="green pin"></img>
-                {this.props.type}
-              </i>
-              <i style={{ fontSize: "16px" }} className="project-icon">
-                <img src={pin} height="25px" width="25px" alt="green pin"></img>
-                {this.props.location}
-              </i>
+              <div className="project-icon">
+                <i >
+                  <img src={this.props.typeIcon} height="25px" width="25px" alt="green pin"></img>
+                </i>
+                <span className="ml-3">{this.props.type}</span>
+              </div>
+              <div className="project-icon">
+                <i>
+                  <img src={pin} height="25px" width="25px" alt="project pin"></img>
+                  </i>
+                  <span className="ml-3">{this.props.location}</span>
+              </div>
             </div>
           </div>
-
           <div
             className={
               this.state.open
                 ? "panel-collapse p-4"
                 : "panel-collapse panel-close"
             }
-
           >
             <Row className="details">
-              <Col className="project-bullets">
+              <Col className="project-bullets ml-4">
                 <h4 className="box-label mb-4 mt-4 text-left">Benefits</h4>
                 <ul style={{ paddingLeft: "24px" }}>
                   {this.props.bullets.map((value, index) => {
@@ -69,7 +71,6 @@ export default class ProjectBox extends Component {
                   </Col>
                 </Row>
                 <Row>
-                  
                   <Col>
                     <h4 className="box-label mb-3 text-left">UN Goals</h4>
                     <div className="project-images">
@@ -101,7 +102,7 @@ export default class ProjectBox extends Component {
                 this.setState({ open: !this.state.open });
               }.bind(this)}
             >
-              {this.state.open ? "Hide " : "Show more "}
+              <span style={{ fontSize: "9pt" }}>{this.state.open ? "Hide " : "SHOW MORE "}</span>
               <span style={{ fontSize: "0.9em" }}>
                 {this.state.open ? <>&and;</> : <>&or;</>}
               </span>

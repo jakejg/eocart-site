@@ -16,12 +16,12 @@
 }
 
 .panel-collapse {
-  max-height: 540px;
-  overflow: hidden;
+  // max-height: 540px;
+  // overflow: hidden;
   transition: max-height 0.2s ease;
-  @media (min-width: 1000px) {
-    height: 540px;
-  }
+  // @media (min-width: 1000px) {
+  //   height: 540px;
+  // }
 }
 
 .panel-close {
@@ -32,7 +32,12 @@
   display: flex;
   justify-content: left;
   border-bottom: solid rgb(204, 204, 204) 1px;
+}
 
+@media (max-width: 800px) {
+  .panel-heading {
+    flex-direction: column;
+  }
 }
 
 .toggle-expand {
@@ -56,14 +61,15 @@
   height: 247px;
   padding: 10px;
   border-radius: 15px;
-  @media (max-width: 767px) {
-    max-width: 15rem;
-    max-height: 15rem;
-  }
 }
 
 .project-icon {
   margin: 10px 0px;
+}
+
+
+#project-description {
+  line-height: 25px;
 }
 
 #heading-text {
@@ -71,18 +77,17 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: left;
-  margin: 25px 0px 25px 15px;
+  margin: 10px 0px 25px 15px;
+  font-size: 17px;
+  font-weight: 500;
 }
 
-#project-description {
-  font-size: 15px;
-  color: #918b8b;
-}
 
 #project-title {
-  font-size: 2.2rem;
+  font-size: 2.7rem;
   font-weight: 700;
   text-align: left;
+  margin-bottom: 20px;
   @media (max-width: 600px) {
     font-size: 3rem;
   }
@@ -113,8 +118,11 @@ li {
 }
 
 .sd-image {
-  width: 75px;
+  width: 85px;
   padding-bottom: 1vh;
+  @media (max-width: 600px) {
+    width: 75px;
+  }
 }
 
 .project-images {

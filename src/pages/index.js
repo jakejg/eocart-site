@@ -23,11 +23,11 @@ import waterFaucet from "../images/projects/water-faucet.png";
 import kite from "../images/projects/kite.png";
 import earth from "../images/earth.png";
 import waterProj from "../images/projects/water-project.png";
-import forestProj from "../images/projects/forest-project-full.jpg";
+import forestProj from "../images/projects/forest-project-full.png";
 import triCityCollage from "../images/projects/tri-city-collage-v2.png";
 import cambodiaCollage from "../images/projects/cambodia-collage-v2.png";
 import turkeyWindCollage from "../images/projects/turkey-wind-collage-v2.png";
-import windProj from "../images/projects/cw.png";
+import windProj from "../images/projects/wind-project.png";
 import un6 from "../images/projects/UN-Sustainability-Goal-6.png";
 import un7 from "../images/projects/UN-Sustainability-Goal-7.png";
 import un8 from "../images/projects/UN-Sustainability-Goal-8.png";
@@ -131,11 +131,11 @@ IndexPage = () => (
         <Row className=" d-flex flex-column align-items-center">
           <ProjectBox
             projectImg={forestProj}
-            title="Tri-City Forest Project"
-            location="Massachusetts"
+            title="Protecting Forests"
+            location="Massachusetts, USA"
             type="Forest Protection"
             typeIcon={tree}
-            description="Protects a Spruce forest in Massachusetts that captures over 100,000 metric tonnes of harmful carbon dioxide every year"
+            description="Protects a Spruce forest in Massachusetts that captures over 100,000 metric tonnes of harmful carbon dioxide every year."
             bullets={[
               "Captures a significant number of carbon emissions each year",
               "Protects the habitat of a variety of threatened mammals, birds, and reptiles",
@@ -149,10 +149,10 @@ IndexPage = () => (
           <ProjectBox
             projectImg={waterProj}
             title="Providing clean water"
-            location="Cambodia"
+            location="Khum Longvek, Cambodia"
             type="Water Purification"
             typeIcon={waterFaucet}
-            description="Provides locally made ceramic water purifiers to over 1 million Cambodians. By filtering water instead of boiling it over a wood burning fire, these purifiers prevent 90,000 tonnes of carbon emissions and protect 450 hectares of Cambodian forest every year. That’s 320 football fields worth of protected habitat!"
+            description="The Water Purification Project provides locally made ceramic water purifiers to over 1 million Cambodians. By filtering water instead of boiling it over a wood-burning fire, these purifiers prevent 90,000 tonnes of carbon emissions and protect 450 hectares of Cambodian forest every year"
             bullets={[
               "Reduces air pollution while protecting forests and local ecosystems",
               "Creates jobs and economic growth in under-served communities",
@@ -166,10 +166,10 @@ IndexPage = () => (
           <ProjectBox
             projectImg={windProj}
             title="Creating wind energy"
-            location="Turkey"
+            location="Kayseri, Turkey"
             type="Wind Energy"
             typeIcon={kite}
-            description="Generates clean energy to displace fossil fuel-based grid power. Before the introduction of wind power, the primary contributor to the local grid was power plants that burn fossil fuels. This project installs 94 new wind turbines to provide 360,000 MWh of reliable and clean energy to the grid"
+            description="The Renewable Energy Wind Turbine project generates clean energy to diaplce fossil fuel-based power in Kayseri, Turkey. This project installs 94 new wind turbines to provide 360,000 MWh of reliable and clean energy to the grid"
             bullets={[
               "Displaces fossil fuel-based energy",
               "Diversifies the country’s energy balance and helps address demand supply gaps",

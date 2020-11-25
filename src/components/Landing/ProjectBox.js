@@ -89,7 +89,7 @@ export default class ProjectBox extends Component {
                 </Row>
               </Col>
             </Row>
-            <Row>
+            <Row className="collage-img">
               <Col>
               <img src={this.props.collageImg} width="100%" />
               </Col>

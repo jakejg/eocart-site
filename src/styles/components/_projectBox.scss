@@ -13,7 +13,7 @@
 .details {
   margin: 0px 10px 10px 0px;
   @media (max-width: 600px) {
-    margin: 0px 10px 20px 0px;
+    margin: 0px 10px 20px 20px;
   }
 }
 
@@ -127,7 +127,7 @@ li {
 .sd-image {
   width: 85px;
   @media (max-width: 600px) {
-    width: 75px;
+    width: 65px;
   }
 }
 
@@ -142,6 +142,10 @@ li {
   height: 80px;
   padding-bottom: 20px;
   margin-right: 20px;
+  @media (max-width: 600px) {
+    width: 130px;
+  }
+
 }
 
 img[alt~="/static/gold-standard-99b0e4e73bad882238b9accef2ef7435.png"] {

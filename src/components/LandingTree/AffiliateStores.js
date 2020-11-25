@@ -3,8 +3,8 @@ import React from "react";
 // Affiliated stores
 import foot_locker from "../../images/affiliate-images/foot_locker.png";
 import freshly from "../../images/affiliate-images/freshly.png";
-import glossier from "../../images/affiliate-images/glossier.png";
-import ugg from "../../images/affiliate-images/ugg_logo.png";
+import sephora from "../../images/affiliate-images/sephora.png";
+import bose from "../../images/affiliate-images/bose.png";
 import kohls from "../../images/affiliate-images/kohls.png";
 import levis from "../../images/affiliate-images/levis.png";
 import nixon from "../../images/affiliate-images/nixon.png";
@@ -39,15 +39,15 @@ const AffiliateStores = () => {
       ></img>
       <img
         className="store-md"
-        id="glossier"
-        src={glossier}
-        alt="glossier logo"
+        id="sephora"
+        src={sephora}
+        alt="sephora logo"
       ></img>
       <img
         className="store-lg"
-        id="ugg"
-        src={ugg}
-        alt="ugg logo"
+        id="bose"
+        src={bose}
+        alt="bose logo"
       ></img>
       <img className="store-md" id="kohls" src={kohls} alt="kohls logo"></img>
       <img className="store-lg" id="levis" src={levis} alt="levis logo"></img>
